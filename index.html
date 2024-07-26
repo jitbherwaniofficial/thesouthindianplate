@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The South Indian Plate</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./mundi.svg" sizes="16x16 32x32" type="image/x-icon">
+  </head>
+  <body>
+    <nav>
+      <ul class="nav_ul">
+        <span class="logo">
+          <img src="./fulllogo.svg" alt="" width="100%">
+        </span>
+        <div class="link">
+          <li class="nav_li"><a href="">Idli</a></li>
+          <li class="nav_li"><a href="">Mehduwada</a></li>
+        </div>
+      </ul>
+    </nav>
+    <section class="hero_section">
+      <div class="hero_text_wrapper">
+        <h1 class="hero_heading">
+          <span>We Deliver Delicious</span> Idli And Mehduwada at your door.
+        </h1>
+        <a href="" class="place_order">Place Order</a>
+      </div>
+
+      <img src="./blob_plate.svg" alt="" class="blob" />
+
+      <!-- SLIDESHOW ************************************************** -->
+      <div class="slideshow-container idli" >
+
+        <div class="mySlides fade">
+          <img src="./idli_new.png" alt="" class="img1 slide_img" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./mehduwada.png" alt="" class="img2 slide_img" />
+        </div>
+
+        <!-- <div class="mySlides fade">
+          <img src="./idlis.png" alt="" class="img3 slide_img" />
+        </div>
+      </div> -->
+    </section>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "flex";
+        setTimeout(showSlides, 2000);
+      }
+    </script>
+  </body>
+</html>
