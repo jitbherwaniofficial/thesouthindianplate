@@ -239,7 +239,7 @@ nav {
 
 /* MENU SECTION */
 .menu_section_wrapper {
-  width: 100vw;
+  width: 100%;
   padding-top: 6vw;
   padding-bottom: 4.8vw;
   height: 100vh;
