@@ -7,27 +7,28 @@
   <title>The South Indian Plate</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="./mundi.svg" sizes="16x16 32x32" type="image/x-icon">
+  <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
   <nav>
     <ul class="nav_ul">
-      <span class="logo">
-        <img src="./logo_take_3.svg" alt="" width="100%">
-
-      </span>
+      <a href="#home" class="logo">
+        <img src="./its_final_now_kasam_se.png" alt="">
+      </a>
       <div class="link">
-        <li class="nav_li"><a href="">Idli</a></li>
-        <li class="nav_li"><a href="">Mehduwada</a></li>
+        <li class="nav_li"><a href="#idli">Idli</a></li>
+        <li class="nav_li"><a href="#wada">Mehduwada</a></li>
       </div>
     </ul>
   </nav>
-  <section class="hero_section">
+  <section class="hero_section" id="home">
     <div class="diagonal_trapezium"></div>
     <div class="hero_text_wrapper">
       <h1 class="hero_heading"><span>We Deliver Delicious</span> Idli And Mehduwada at your door.
       </h1>
       <a href="" class="place_order">Place Order</a>
+      <span class="min_order">Minimum 100 pieces order</span>
     </div>
 
     <img src="./blob_plate.svg" alt="" class="blob" />
@@ -48,41 +49,62 @@
         </div>
       </div> -->
   </section>
-  <!-- MENU SECTION -->
-  <!-- <section class="menu_section_wrapper">
-    <div class="menu_section_top">
+  <section class="menu_section">
+    <div class="menu_heading_wrapper">
       <h2 class="menu_heading">Browse our menu</h2>
       <p class="order_request">To enjoy the exquisite delicacy of our delicious Idli and Mehduwada <a
           href="https://web.whatsapp.com/send/?phone=917506286718&text=I+want+to+place+an+order.+Please+call.">Whatsapp
           us at +919167674367</a> or <a href="tel:+919167674367">Call us</a> to place an order.</p>
     </div>
-    <div class="price_chart_idli">
-      <div class="idli_image">
-        <p>Our traditionally steamed, fluffy, and soft idlis are the perfect breakfast option for all your occasions.
-          Serve them to your guests or enjoy them yourself!!</p>
-        <img src="./idli_new.png" alt="">
-      </div>
-      <div class="price_list">
-        <h3>idli, sambhar & chutney</h3>
-        <p class="hun_pieces">100 Pieces - ₹ 2,500/-</p>
-        <p class="hun_pieces">500 Pieces - ₹ 12,500/-</p>
+    <!-- <div class="menu_option">
+  <a href="#idli"  class="menu_option_anchor">Idli</a>
+  <a href="#wada"  class="menu_option_anchor">Mehduwada</a>
+ </div> -->
+
+  </section>
+
+  <section class="idli_section" id="idli">
+    <div class="half_idli">
+      <p class="idli_content_heading">Our traditionally steamed, fluffy, and soft idlis are the perfect breakfast option
+        for all your occasions. Serve it to your guests or enjoy it yourself!!</p>
+      <div class="idli_pieces_box">
+        <div class="hun_pieces">
+          <p class="hun_pieces_para">Idli, sambhar & chutney</p>
+          <p class="hun_pieces_price">100 pieces - ₹ 2,000/-</p>
+
+        </div>
+        <div class="fivehun_pieces">
+          <p class="fivehun_pieces_para">Idli, sambhar & chutney</p>
+          <p class="fivehun_pieces_price">500 pieces - ₹ 10,000/-</p>
+        </div>
       </div>
     </div>
-    <div class="price_chart_wada">
+    <div class="right_half_idli">
+      <img src="./idli_new.png" alt="">
+    </div>
+  </section>
+  <section class="wada_section" id="wada">
+    <div class="half_wada">
+      <p class="wada_content_heading">Our traditionally steamed, fluffy, and soft idlis are the perfect breakfast option
+        for all your occasions. Serve it to your guests or enjoy it yourself!!</p>
+      <div class="wada_pieces_box">
+        <div class="hun_pieces_wada">
+          <p class="hun_wada_para">Mehduwada, sambhar & chutney</p>
+          <p class="hun_wada_price">100 pieces - ₹ 2,500/-</p>
 
-      <div class="price_list_wada">
-        <h3>Mehduwada, chutney & sambhar </h3>
-        <p class="hun_pieces">100 Pieces - ₹ 3,000/-</p>
-        <p class="hun_pieces">500 Pieces - ₹ 15,000/-</p>
-      </div>
-      <div class="wada_image">
-        <img src="./mehduwada.png" alt="">
-        <p>Our traditionally steamed, fluffy, and soft idlis are the perfect breakfast option for all your occasions.
-          Serve them to your guests or enjoy them yourself!!</p>
-
+        </div>
+        <div class="fivehun_pieces_wada">
+          <p class="fivehun_wada_para">Mehduwada, sambhar & chutney</p>
+          <p class="fivehun_wada_price">500 pieces - ₹ 12,500/-</p>
+        </div>
       </div>
     </div>
-  </section> -->
+    <div class="right_half_wada">
+      <img src="./mehduwada.png" alt="">
+    </div>
+  </section>
+
+
   <script>
     let slideIndex = 0;
     showSlides();

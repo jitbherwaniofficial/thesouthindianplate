@@ -3,14 +3,37 @@
   margin: 0;
   padding: 0;
   font-family: cursive;
+  scroll-behavior: smooth;
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 
+
 body {
   overflow-x: hidden;
-
-  /* background-color: #feefe7 ; */
   
+  background-color: #feefe7;
+  
+}
+
+/* SCROLLBAR STYLE ***************************************** */
+::-webkit-scrollbar {
+  width: 0.3rem;
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #080708;
+  border-radius: 0.5rem;
+}
+
+
+.logo img {
+  width: 30vw;
 }
 
 nav {
@@ -97,7 +120,7 @@ nav {
   margin-top:2vw;
   display: flex;
   flex-direction: column;
-  gap: 3.5vw;
+  /* gap: 3.5vw; */
   justify-content: flex-start;
    margin-top: 4vw;
   width: 50%;
@@ -107,6 +130,7 @@ nav {
   color: #feefe7;
   line-height: 1.35;
   width: 70%;
+  margin-bottom: 3.5vw;
 }
 .hero_heading span{
   display: block;
@@ -134,13 +158,26 @@ nav {
 .place_order:active{
     transform: translateY(0.8vw) scale(0.9);
 }
-.blob {
-  width: 50%;
-  height: fit-content;
-  position: absolute;
-  right: -6%;
-  top: -30%;
-  z-index: -1;
+.min_order{
+  margin-top: 0.5vw;
+  display: block;
+  font-size: 1.2vw;
+  color: #feefe7;
+  text-transform: capitalize;
+  margin-left: 0.5vw;
+ 
+}
+
+@media only screen and (max-width: 1440px) {
+
+  .blob {
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    right: -6%;
+    top: -13.8vw !important;
+    z-index: -1;
+  }
 }
 
 
@@ -176,7 +213,6 @@ nav {
   width: 30vw;
   height: 30vw;
   margin-left: -6.5vw;
-  transform-origin: right;
 }
 
 /* Slideshow container */
@@ -230,147 +266,263 @@ nav {
   }
 }
 
-
 /* MENU SECTION */
-.menu_section_wrapper {
-  width: 100%;
-  padding-top: 6vw;
-  padding-bottom: 4.8vw;
-  height: 100vh;
-  /* border: 2px solid red; */
+.menu_section{
+ padding: 5vw 0;
+
 }
-.menu_section_top {
+
+.menu_heading_wrapper{
   width: 85%;
   margin: 0 auto;
+
 }
-.menu_heading {
+
+.menu_heading{
   text-align: center;
-  font-size: 2.8vw;
+  text-transform: capitalize;
+  font-size: 3.2vw;
+  font-weight: 600;
   color: #f85a11;
-  letter-spacing: 0.1vw;
-  margin-bottom: 0.8vw;
+  position: relative;
+ margin-bottom: 1vw;
+
 }
-.order_request {
+.menu_heading::before{
+  content: '';
+  position: absolute;
+ bottom: 0;
+ left: 33.5%;
+ width: 33%;
+ 
+ height: 0.25vw;
+ background-color: #f85a11;
+
+}
+.order_request{
   text-align: center;
-  color: #321203;
-  font-size: 2vw;
+  text-transform: capitalize;
+  color: #080708;
+  font-size: 2.3vw;
+  font-weight: 500;
+  margin-bottom: 3vw;
 }
-.order_request a {
+.order_request a{
   color: #f85a11;
 }
 
-.price_chart_idli {
-  /* margin-top: 7vw; */
-  width: 90%;
-  margin: 7vw auto 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  /* gap: 4vw; */
-}
-.idli_image {
-  background-color: #f85a11;
-  width: 55%;
-  height: 15vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-top-right-radius: 8vw;
-  border-bottom-right-radius: 8vw;
-}
-.idli_image p {
-  color: #feefe7;
-  margin-left: 2vw;
-  font-size: 1.5vw;
-  letter-spacing: 0.05vw;
-}
-.idli_image img {
-  width: 15vw;
-  height: 15vw;
-}
-.price_list {
-  width: 45%;
-  margin-left: -6vw;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.price_list h3 {
-  font-size: 1.8vw;
-  text-transform: capitalize;
-  color: #321203;
-  font-weight: 700;
-  margin-bottom: 1.2vw;
-  position: relative;
-}
-.price_list h3::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
+/* IDLI SECTION */
+
+.idli_section {
   width: 100%;
-  height: 0.2vw;
-  background-color: #321203;
-}
-.price_list p {
-  font-size: 1.5vw;
-  color: #f85a11;
+  height: 100vh;
+  position: relative;
+  background-color: #f85a11;
+  margin: 0 auto;
+  /* margin-bottom: 3vw; */
 }
 
-.price_chart_wada {
-  width: 90%;
-  margin: 7vw auto 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-bottom: 5vw;
+.half_idli {
+
+position: absolute;
+background-color: #080708;
+width: 65%;
+height: 100vh;
+clip-path:polygon(0 0,75% 0, 100% 100%,0 100%) ;
+/* padding: 3vw 1vw; */
+padding-top: 5vw;
+color: #feefe7;
+display: flex;
+align-items: flex-start;
+justify-content:center;
+flex-direction: column;
+gap: 4vw;
 }
-.wada_image {
-  background-color: #f85a11;
-  width: 55%;
-  height: 15vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-top-left-radius: 8vw;
-  border-bottom-left-radius: 8vw;
-}
-.wada_image p {
+.idli_content_heading{
+  width: 70%;
+  margin-left: 4.2vw;
+  margin-bottom: 1.3vw;
+  text-align: start;
+  font-size: 2.2vw;
   color: #feefe7;
-  margin-right: 2vw;
-  font-size: 1.5vw;
-  letter-spacing: 0.05vw;
+  font-weight: 600;
+  letter-spacing: 0.01vw;
+
 }
-.wada_image img {
-  width: 20vw;
-  margin-left: -4vw;
-  /* height: 15vw; */
-}
-.price_list_wada {
-  width: 45%;
-  margin-left: -6vw;
+.idli_pieces_box{
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  /* flex-direction: column; */
+  gap: 2vw;
+  width: 85%;
+  /* margin: 0 auto; */
+  /* border: 2px solid red; */
+
 }
-.price_list_wada h3 {
-  font-size: 1.8vw;
+.hun_pieces{
+  width: 42%;
+  padding: 1.5vw;
+  border-radius: 0.5vw;
+  background-color: #f85a11;
+}
+.hun_pieces_para{
+  text-align: center;
+  font-size: 1.6vw;
+  color: #080708;
+  font-weight: 600;
+  letter-spacing: 0.01vw;
+  margin-bottom: 1.5vw;
   text-transform: capitalize;
-  color: #321203;
-  font-weight: 700;
-  margin-bottom: 1.2vw;
-  position: relative;
 }
-.price_list_wada h3::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.hun_pieces_price{
+   text-align: center;
+   font-size: 1.4vw;
+   color: #feefe7;
+   font-weight: 600;
+   letter-spacing: 0.01vw;
+}
+.fivehun_pieces{
+  width: 42%;
+  padding: 1.5vw;
+  border-radius: 0.5vw;
+  background-color: #f85a11;
+}
+.fivehun_pieces_para{
+  text-align: center;
+  font-size: 1.6vw;
+  color: #080708;
+  font-weight: 600;
+  letter-spacing: 0.01vw;
+  margin-bottom: 1.5vw;
+  text-transform: capitalize;
+}
+.fivehun_pieces_price{
+   text-align: center;
+   font-size: 1.4vw;
+   color: #feefe7;
+   font-weight: 600;
+   letter-spacing: 0.01vw;
+}
+.right_half_idli{
   width: 100%;
-  height: 0.2vw;
-  background-color: #321203;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 5vw;
 }
-.price_list_wada p {
-  font-size: 1.5vw;
+.right_half_idli img{
+  width: 40vw;
+  height: 40vw;
+}
+/* IDLI SECTION */
+
+
+/* WADA SECTION */
+
+.wada_section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #080708;
+  margin: 0 auto;
+  /* margin-bottom: 3vw; */
+}
+
+.half_wada {
+
+position: absolute;
+background-color: #f85a11;
+width: 65%;
+height: 100vh;
+clip-path:polygon(0 0,100% 0, 80% 100%,0 100%) ;
+/* padding: 3vw 1vw; */
+padding-top: 5vw;
+/* color: #feefe7; */
+display: flex;
+align-items: flex-start;
+justify-content:center;
+flex-direction: column;
+gap: 4vw;
+}
+.wada_content_heading{
+  width: 70%;
+  margin-left: 4.2vw;
+  margin-bottom: 1.3vw;
+  text-align: start;
+  font-size: 2.2vw;
+  color: #080708;
+  font-weight: 600;
+  letter-spacing: 0.01vw;
+
+}
+.wada_pieces_box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  gap: 2vw;
+  width: 85%;
+  /* margin: 0 auto; */
+  /* border: 2px solid red; */
+
+}
+.hun_pieces_wada{
+  width: 42%;
+  padding: 1.5vw;
+  border-radius: 0.5vw;
+  background-color: #080708;
+}
+.hun_wada_para{
+  text-align: center;
+  font-size: 1.6vw;
   color: #f85a11;
+  font-weight: 600;
+  letter-spacing: 0.01vw;
+  margin-bottom: 1.5vw;
+  text-transform: capitalize;
 }
+.hun_wada_price{
+   text-align: center;
+   font-size: 1.4vw;
+   color: #feefe7;
+   font-weight: 600;
+   letter-spacing: 0.01vw;
+}
+.fivehun_pieces_wada{
+  width: 42%;
+  padding: 1.5vw;
+  border-radius: 0.5vw;
+  background-color: #080708;
+}
+.fivehun_wada_para{
+  text-align: center;
+  font-size: 1.6vw;
+  color: #f85a11;
+  font-weight: 600;
+  letter-spacing: 0.01vw;
+  margin-bottom: 1.5vw;
+  text-transform: capitalize;
+}
+.fivehun_wada_price{
+   text-align: center;
+   font-size: 1.4vw;
+   color: #feefe7;
+   font-weight: 600;
+   letter-spacing: 0.01vw;
+}
+.right_half_wada{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 5vw;
+}
+.right_half_wada img{
+  width: 60vw;
+  margin-right:-7vw;
+  /* height: 40vw; */
+}
+/* WADA SECTION */

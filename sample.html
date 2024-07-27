@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .menu_option{
+  width: 85%;
+  margin: 0 auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4vw;
+  margin-bottom: 2vw;
+} */
+
+/* .menu_option_anchor{
+  padding: 1.5vw 3.2vw;
+  text-decoration: none;
+  font-size: 1.5vw;
+  font-weight: 600;
+  letter-spacing: 0.05;
+  background-color: #080708;
+  color: #f85a11;
+  border-radius: 0.5vw;
+} */
+
+.menu_options_box{
+  width: 100%;
+  height: 25vw;
+  padding-top: 6vw  ;
+  padding-bottom: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  /* background-color: #080708; */
+  margin-bottom: 5vw;
+  background-color: #f85a11;
+}
+.menu_option_content{
+  width: 70%;
+  height: 100%;
+  clip-path: polygon(0 0,80% 0,100% 100%, 0 100%);
+  background-color: #080708;
+}
+.menu_option_img{
+  width: 30%;
+  
+}
+.menu_option_img img{
+  width: 100%;
+  height: 100%;
+}
+.quality{
+  position: absolute;
+  top: 4vw;
+  right: -7vw;
+  transform: rotate(48deg);
+  background-color: #f85a11;
+  color: #080708;
+  font-size: 1.6vw;
+  letter-spacing: 0.01vw;
+  padding: 1.2vw 6vw;
+  border-radius: 1vw;
+}
+
+.section_option_para{
+  text-align: center;
+  font-size: 1.8vw;
+  letter-spacing: 0.02vw;
+  color: #feefe7;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5vw;
+}
+
+.option_pieces_box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  width: 80%;
+  margin: 0 auto;
+}
+.hun_pieces{
+  width: 40%;
+  padding: 1.5vw;
+  border-radius: 0.5vw;
+  background-color: #f85a11;
+}
+.hun_pieces_para{
+  text-align: center;
+  font-size: 1.5vw;
+  color: #080708;
+  font-weight: 600;
+  letter-spacing: 0.01vw;
+  margin-bottom: 1.5vw;
+  text-transform: capitalize;
+}
+.hun_pieces_price{
+   text-align: center;
+   font-size: 1.4vw;
+   color: #feefe7;
+   font-weight: 600;
+   letter-spacing: 0.01vw;
+}
+
+.fivehun_pieces{
+  width: 40%;
+  padding: 1.5vw;
+  border-radius: 0.5vw;
+  background-color: #f85a11;
+}
+.fivehun_pieces_para{
+  text-align: center;
+  font-size: 1.5vw;
+  color: #080708;
+  font-weight: 600;
+  letter-spacing: 0.01vw;
+  margin-bottom: 1.5vw;
+  text-transform: capitalize;
+}
+.fivehun_pieces_price{
+   text-align: center;
+   font-size: 1.4vw;
+   color: #feefe7;
+   font-weight: 600;
+   letter-spacing: 0.01vw;
+}
+/* .wada_option_box{
+  background-image: linear-gradient(to right, rgba(0, 0, 0,0.8),rgba(0, 0, 0,0.8)), url("./mehduwada.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+    </style>
+</head>
+<body>
+    <section class="menu_options_box" id="idli">
+    
+        <div class="menu_option_content">
+        <p class="quality">Premium Quality</p>
+        <p class="section_option_para">Our traditionally steamed, fluffy, and soft idlis are the perfect breakfast option for all your occasions. Serve it to your guests or enjoy it yourself!!</p>
+        <div class="option_pieces_box">
+          <div class="hun_pieces">
+            <p class="hun_pieces_para">Idli, sambhar & chutney</p>
+            <p class="hun_pieces_price">100 pieces - ₹ 2,000/-</p>
+    
+          </div>
+          <div class="fivehun_pieces">
+            <p class="fivehun_pieces_para">Idli, sambhar & chutney</p>
+            <p class="fivehun_pieces_price">500 pieces - ₹ 10,000/-</p>
+          </div>
+        </div>
+      </div>
+      <div class="menu_option_img">
+        <img src="./idli_new.png" alt="">
+      </div>
+      </section>
+      <section class="menu_options_box wada_option_box" id="wada">
+        <p class="quality">Premium Quality</p>
+        <p class="section_option_para">Our traditionally steamed, fluffy, and soft idlis are the perfect breakfast option for all your occasions. Serve it to your guests or enjoy it yourself!!</p>
+        <div class="option_pieces_box">
+          <div class="hun_pieces">
+            <p class="hun_pieces_para">mehduwada, sambhar & chutney</p>
+            <p class="hun_pieces_price">100 pieces - ₹ 2,500/-</p>
+    
+          </div>
+          <div class="fivehun_pieces">
+            <p class="fivehun_pieces_para">Mehduwada, sambhar & chutney</p>
+            <p class="fivehun_pieces_price">500 pieces - ₹ 12,500/-</p>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
