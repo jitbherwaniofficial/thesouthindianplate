@@ -235,3 +235,148 @@ nav {
     font-size: 11px;
   }
 }
+
+
+/* MENU SECTION */
+.menu_section_wrapper {
+  width: 100vw;
+  padding-top: 6vw;
+  padding-bottom: 4.8vw;
+  height: 100vh;
+  /* border: 2px solid red; */
+}
+.menu_section_top {
+  width: 85%;
+  margin: 0 auto;
+}
+.menu_heading {
+  text-align: center;
+  font-size: 2.8vw;
+  color: #f85a11;
+  letter-spacing: 0.1vw;
+  margin-bottom: 0.8vw;
+}
+.order_request {
+  text-align: center;
+  color: #321203;
+  font-size: 2vw;
+}
+.order_request a {
+  color: #f85a11;
+}
+
+.price_chart_idli {
+  /* margin-top: 7vw; */
+  width: 90%;
+  margin: 7vw auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 4vw; */
+}
+.idli_image {
+  background-color: #f85a11;
+  width: 55%;
+  height: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-right-radius: 8vw;
+  border-bottom-right-radius: 8vw;
+}
+.idli_image p {
+  color: #feefe7;
+  margin-left: 2vw;
+  font-size: 1.5vw;
+  letter-spacing: 0.05vw;
+}
+.idli_image img {
+  width: 15vw;
+  height: 15vw;
+}
+.price_list {
+  width: 45%;
+  margin-left: -6vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.price_list h3 {
+  font-size: 1.8vw;
+  text-transform: capitalize;
+  color: #321203;
+  font-weight: 700;
+  margin-bottom: 1.2vw;
+  position: relative;
+}
+.price_list h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.2vw;
+  background-color: #321203;
+}
+.price_list p {
+  font-size: 1.5vw;
+  color: #f85a11;
+}
+
+.price_chart_wada {
+  width: 90%;
+  margin: 7vw auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5vw;
+}
+.wada_image {
+  background-color: #f85a11;
+  width: 55%;
+  height: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-left-radius: 8vw;
+  border-bottom-left-radius: 8vw;
+}
+.wada_image p {
+  color: #feefe7;
+  margin-right: 2vw;
+  font-size: 1.5vw;
+  letter-spacing: 0.05vw;
+}
+.wada_image img {
+  width: 20vw;
+  margin-left: -4vw;
+  /* height: 15vw; */
+}
+.price_list_wada {
+  width: 45%;
+  margin-left: -6vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.price_list_wada h3 {
+  font-size: 1.8vw;
+  text-transform: capitalize;
+  color: #321203;
+  font-weight: 700;
+  margin-bottom: 1.2vw;
+  position: relative;
+}
+.price_list_wada h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.2vw;
+  background-color: #321203;
+}
+.price_list_wada p {
+  font-size: 1.5vw;
+  color: #f85a11;
+}
