@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-/* SCROLLBAR STYLE ***************************************** */
+/* SCROLLBAR STYLE ******************************************************* */
 ::-webkit-scrollbar {
   width: 0.3rem;
 }
@@ -27,6 +27,7 @@ body {
   border-radius: 0.5rem;
 }
 
+/* NAV ********************************************************************** */
 .logo {
   transition: 0.5s;
 }
@@ -119,7 +120,7 @@ body {
   transform: translateX(0);
 }
 
-/* HERO SECTION */
+/* HERO SECTION ********************************************************************* */
 .hero_section {
   width: 100%;
   height: 100vh;
@@ -309,7 +310,7 @@ body {
     font-size: 11px;
   }
 }
-/* HOW TO ORDER SECTION */
+/* HOW TO ORDER SECTION ********************************************************** */
 .how_to_order {
   width: 100%;
   height: 100vh;
@@ -436,7 +437,7 @@ body {
   color: #080708;
 }
 
-/* IDLI SECTION */
+/* IDLI SECTION *************************************************************** */
 
 .idli_section {
   width: 100%;
@@ -589,9 +590,9 @@ body {
   margin-top: 7vw;
 }
 
-/* IDLI SECTION */
+/* IDLI SECTION ******************************************************************** */
 
-/* WADA SECTION */
+/* WADA SECTION ******************************************************************** */
 
 .wada_section {
   width: 100%;
@@ -741,9 +742,9 @@ body {
   padding-top: 5vw;
 }
 
-/* WADA SECTION */
+/* WADA SECTION ************************************************************* */
 
-/* WHY US SECTION */
+/* WHY US SECTION *********************************************************** */
 .why_us {
   width: 100%;
   height: 100vh;
@@ -834,7 +835,7 @@ body {
   text-transform: capitalize;
 }
 
-/* ABOUT US */
+/* ABOUT US *********************************************************************** */
 .about_us {
   width: 100%;
   height: 100vh;
@@ -915,7 +916,7 @@ align-items: flex-end;
   
 }
 
-/* BANNER */
+/* BANNER ************************************************************************ */
 .banner{
   padding-top: 10vw;
   padding-bottom: 7vw;
@@ -975,7 +976,7 @@ align-items: flex-end;
  text-decoration: none;
  padding: 1.5vw 3vw;
  width: 22vw;
- color: #feefe7;
+ color: #080708;
  background-color: #f85a11;
  border-radius: 1vw;
  font-size: 1.8vw;
@@ -983,10 +984,19 @@ align-items: flex-end;
  text-transform: capitalize;
  font-weight: 600;
  text-align: center;
+ transition: 0.5s;
+ border: 2px solid #feefe7;
+}
+
+.banner_anchor:hover {
+  scale: 1.05;
+  color: #feefe7;
+ background-color: #080708;
+ 
 }
 
 
-/* FOOTER ****************************************** */
+/* FOOTER ***************************************************************** */
 #footer {
   width: 100%;
   display: flex;
@@ -1009,13 +1019,14 @@ align-items: flex-end;
 }
 
 .footer_middle {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 2vw;
   gap: 3vw;
+  padding-left: 5vw;
 }
 
 .footer_middle .footer_unorder_list {
@@ -1057,4 +1068,26 @@ align-items: flex-end;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer_bottom li{
+  list-style: none;
+}
+
+.footer_bottom li a {
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: #feefe7;
+}
+
+.jswebart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
+}
+
+.jswebart a {
+  text-decoration: none;
+  color: #feefe7;
 }
