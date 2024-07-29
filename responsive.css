@@ -8,3 +8,41 @@
         z-index: -1;
       }
 }
+
+@media only screen and (max-width: 1280px) {
+  .slideshow-container {
+    top: 4.5%;
+    right: -5%;
+  }
+
+  .blob {
+    top: -8% !important;
+    right: -11%;
+  }
+
+
+}
+
+@media only screen and (max-width:1024px) {
+  
+  .burger {
+    display: block;
+    font-size: 4vw;
+    transition: 0.5s;
+    z-index: 1000;
+}
+.link {
+  display: none;
+}
+
+.nav_ul {
+  margin-left: 0;
+  padding: 1.8vw 10vw;
+}
+
+.diagonal_trapezium {
+  width: 100%;
+  height: 55%;
+  clip-path: none;
+}
+}
