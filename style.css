@@ -19,12 +19,12 @@ body {
 
 ::-webkit-scrollbar-track {
   background-color: transparent;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #080708;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
 }
 
 /* NAV ********************************************************************** */
@@ -207,21 +207,6 @@ body {
   /* margin-left: 0.5vw; */
 }
 
-@media only screen and (max-width: 1440px) {
-  .hero_section {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .blob {
-    width: 50%;
-    height: fit-content;
-    position: absolute;
-    right: -6%;
-    top: -14.1vw !important;
-    z-index: -1;
-  }
-}
 
 .idli {
   width: 30%;

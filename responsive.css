@@ -1,12 +1,44 @@
 @media only screen and (max-width: 2200px) {
-    .blob {
-        width: 50%;
-        height: fit-content;
-        position: absolute;
-        right: -6%;
-        top: -12.5vw;
-        z-index: -1;
-      }
+  .blob {
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    right: -6%;
+    top: -12.5vw;
+    z-index: -1;
+  }
+}
+
+@media only screen and (max-width:1440px) {
+  .blob {
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    right: -7%;
+    top: -9.5vw !important;
+    z-index: -1;
+  }
+
+  .slideshow-container {
+    right: -1%;
+  }
+}
+
+
+@media only screen and (max-width: 1390px) {
+  .hero_section {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .blob {
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    right: -7%;
+    top: -14.1vw !important;
+    z-index: -1;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -19,30 +51,27 @@
     top: -8% !important;
     right: -11%;
   }
-
-
 }
 
-@media only screen and (max-width:1024px) {
-  
+@media only screen and (max-width: 1024px) {
   .burger {
     display: block;
     font-size: 4vw;
     transition: 0.5s;
     z-index: 1000;
-}
-.link {
-  display: none;
-}
+  }
+  .link {
+    display: none;
+  }
 
-.nav_ul {
-  margin-left: 0;
-  padding: 1.8vw 10vw;
-}
+  .nav_ul {
+    margin-left: 0;
+    padding: 1.8vw 10vw;
+  }
 
-.diagonal_trapezium {
-  width: 100%;
-  height: 55%;
-  clip-path: none;
-}
+  .diagonal_trapezium {
+    width: 100%;
+    height: 55%;
+    clip-path: none;
+  }
 }
