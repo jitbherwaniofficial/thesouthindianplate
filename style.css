@@ -1021,7 +1021,7 @@ align-items: flex-end;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 5vw;
+  padding: 2vw;
   background-color: #080708;
   color: #feefe7;
   margin-top: 7vw;
@@ -1043,7 +1043,6 @@ align-items: flex-end;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 2vw;
   gap: 3vw;
   padding-left: 5vw;
 }
