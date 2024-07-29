@@ -932,7 +932,7 @@ align-items: flex-end;
   margin: 0 auto;
   border-radius: 1vw;
   height: 34vw;
-  background-image: linear-gradient(to right,rgba(8, 7, 8,0.9),rgba(8, 7, 8,0.9)),url("./idli_new.png");
+  background-image: linear-gradient(to right,rgba(8, 7, 8,0.9),rgba(8, 7, 8,0.9)),url("./og.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
