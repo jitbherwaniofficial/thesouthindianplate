@@ -1,4 +1,5 @@
-@media only screen and (max-width: 2200px) {
+@media only screen and (max-width: 1920px) {
+  /*1920X1080px*/
   .blob {
     width: 50%;
     height: fit-content;
@@ -7,9 +8,30 @@
     top: -12.5vw;
     z-index: -1;
   }
+
+  .slideshow-container {
+    top: 3.5%;
+  }
 }
 
-@media only screen and (max-width:1440px) { /*1440X900px*/
+@media only screen and (max-width: 1536px) {
+  /*1536X864px*/
+  .blob {
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    right: -10%;
+    top: -9.2vw !important;
+    z-index: -1;
+  }
+
+  .slideshow-container {
+    right: -4%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  /*1440X900px*/
   .blob {
     width: 50%;
     height: fit-content;
@@ -24,7 +46,8 @@
   }
 }
 
-@media only screen and (max-width: 1366px) { /*1366X768px*/
+@media only screen and (max-width: 1366px) {
+  /*1366X768px*/
 
   .blob {
     width: 50%;
@@ -34,11 +57,14 @@
     top: -14.1vw !important;
     z-index: -1;
   }
+
+  .slideshow-container {
+    right: -1%;
+  }
 }
 
-
-
-@media only screen and (max-width: 1280px) { /*1280X720px*/
+@media only screen and (max-width: 1280px) {
+  /*1280X720px*/
   .slideshow-container {
     top: 4.5%;
     right: -5%;
@@ -51,14 +77,52 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  nav {
+    position: relative;
+  }
   .burger {
     display: block;
     font-size: 4vw;
     transition: 0.5s;
     z-index: 1000;
   }
+
   .link {
     display: none;
+  }
+
+  .link2 {
+    width: 45%;
+    height: 100vh;
+    margin-left: auto;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vw;
+    background-color: #f85a11;
+    box-shadow: -6px 0px 6px 1px rgba(254, 239, 231, 0.5);
+  }
+
+  .link2.active {
+    right: 0;
+  }
+
+  #burger.active {
+    background-color: transparent;
+  }
+  #burger.active .ri-menu-5-fill {
+    color: #080708;
+    background-color: transparent;
+  }
+
+  .link2 .nav_li a {
+    font-size: 4vw;
+    text-align: center;
   }
 
   .nav_ul {
@@ -68,7 +132,7 @@
 
   .diagonal_trapezium {
     width: 100%;
-    height: 55%;
-    clip-path: none;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
   }
 }

@@ -91,6 +91,10 @@ body {
   gap: 1.7vw;
 }
 
+.link2 {
+  display: none;
+}
+
 .nav_li {
   list-style: none;
 }
@@ -100,7 +104,6 @@ body {
   text-decoration: none;
   font-size: 1.4vw;
   font-weight: 600;
-  letter-spacing: 0.2vw;
   color: inherit;
   position: relative;
   transition: all 0.5s;
@@ -130,6 +133,11 @@ body {
   display: none;
   cursor: pointer;
   z-index: 10;
+  transition: 0.5s;
+}
+
+.burger i {
+  color: green;
 }
 
 /* HERO SECTION ********************************************************************* */
@@ -919,6 +927,87 @@ align-items: flex-end;
   height: 16vw;
  align-items: flex-start;
   
+}
+/* DO BUSINESS */
+#dobusiness{
+  width: 100%;
+  height: 100vh;
+  background-image: url("./background_business.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 8vw;
+  padding-bottom: 7vw;
+ 
+}
+.business_content_wrapper{
+  width: 85%;
+  height: calc(100vh - 15vw);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.frame_wrapper{
+  width: 50%;
+  height:100% ;
+  
+}
+.frame_wrapper img{
+  width: 28vw;
+  height: 37vw;
+}
+.content_business{
+  margin-top: 3vw;
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #080708;
+}
+.business_heading{
+  font-size: 2.7vw;
+  font-weight: 600;
+  letter-spacing: 0.01vw;
+  color: #080708;
+  margin-bottom: 1.5vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.business_heading::before{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  background-color: #080708;
+  width: 100%;
+  height: 0.2vw;
+  
+
+}
+.business_para{
+  font-size: 2.1vw;
+  letter-spacing: 0.01vw;
+  color: #f85a11;
+  font-weight: 500;
+  margin-bottom: 3.5vw;
+  text-align: center;
+
+}
+.business_order{
+  text-decoration: none;
+  padding: 1.5vw 3.5vw;
+  font-size: 1.5vw;
+  font-weight: 600;
+  letter-spacing: 0.01vw;
+  border-radius: 1vw;
+  background-color:#f85a11;
+  color: #feefe7;
+  border: 1.5px solid #080708;
 }
 
 /* BANNER ************************************************************************ */
