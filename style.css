@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
   box-sizing: border-box;
@@ -9,11 +7,13 @@
   font-family: cursive;
   scroll-behavior: smooth;
   font-family: "Open Sans", sans-serif;
+  
 }
 
 body {
+  position: relative;
   background-color: #feefe7;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 /* SCROLLBAR STYLE ******************************************************* */
@@ -127,17 +127,24 @@ body {
   transform: translateX(0);
 }
 
+
 /* BURGER ********************************************************************************* */
 .burger {
   font-size: 3vw;
   display: none;
   cursor: pointer;
-  z-index: 10;
+  z-index: 999;
   transition: 0.5s;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 3vw;
 }
 
 .burger i {
-  color: green;
+  font-size: 5vw;
+  color: #feefe7;
+  text-shadow: 0 0 3px #080708;
 }
 
 /* HERO SECTION ********************************************************************* */
@@ -219,7 +226,6 @@ body {
   width: 37%;
   text-align: center;
 }
-
 
 .idli {
   width: 30%;
@@ -914,7 +920,7 @@ body {
   padding: 1.7vw;
   height: 20vw;
   margin-bottom: 0.5vw;
-align-items: flex-end;
+  align-items: flex-end;
   flex-direction: column;
 }
 .name {
@@ -926,11 +932,10 @@ align-items: flex-end;
 .our_vision {
   padding: 1vw;
   height: 16vw;
- align-items: flex-start;
-  
+  align-items: flex-start;
 }
 /* DO BUSINESS */
-#dobusiness{
+#dobusiness {
   width: 100%;
   height: 100vh;
   background-image: url("./new2.svg");
@@ -939,9 +944,8 @@ align-items: flex-end;
   background-repeat: no-repeat;
   padding-top: 8vw;
   padding-bottom: 7vw;
- 
 }
-.business_content_wrapper{
+.business_content_wrapper {
   width: 85%;
   height: calc(100vh - 15vw);
   margin: 0 auto;
@@ -949,16 +953,15 @@ align-items: flex-end;
   align-items: center;
   justify-content: space-between;
 }
-.frame_wrapper{
+.frame_wrapper {
   width: 50%;
-  height:100% ;
-  
+  height: 100%;
 }
-.frame_wrapper img{
+.frame_wrapper img {
   width: 28vw;
   height: 37vw;
 }
-.content_business{
+.content_business {
   margin-top: 3vw;
   width: 65%;
   height: 100%;
@@ -968,7 +971,7 @@ align-items: flex-end;
   justify-content: center;
   color: #080708;
 }
-.business_heading{
+.business_heading {
   font-size: 2.7vw;
   font-weight: 600;
   letter-spacing: 0.01vw;
@@ -979,48 +982,44 @@ align-items: flex-end;
   align-items: center;
   justify-content: center;
   text-transform: capitalize;
-
 }
-.business_heading::before{
+.business_heading::before {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 0;
   left: 0;
   background-color: #f85a11;
   width: 100%;
   height: 0.2vw;
-  
-
 }
-.business_para{
+.business_para {
   font-size: 2.1vw;
   letter-spacing: 0.01vw;
-  color:#feefe7;
+  color: #feefe7;
   font-weight: 500;
   margin-bottom: 3.5vw;
   text-align: center;
   text-transform: capitalize;
-
 }
-.business_order{
+.business_order {
   text-decoration: none;
   padding: 1.5vw 3.5vw;
   font-size: 1.5vw;
   font-weight: 600;
   letter-spacing: 0.01vw;
   border-radius: 1vw;
-  background-color:#f85a11;
+  background-color: #f85a11;
   color: #feefe7;
   border: 1.5px solid #080708;
-  text-transform:capitalize;
-  transition: 0.5s ;
+  text-transform: capitalize;
+  transition: 0.5s;
 }
 .business_order:hover {
   scale: 1.1;
 }
 
 /* BANNER ************************************************************************ */
-.banner{
+.banner {
   padding-top: 8vw;
   width: 100%;
   height: 100vh;
@@ -1029,12 +1028,17 @@ align-items: flex-end;
   align-items: center;
   flex-direction: column;
 }
-.banner_text_wrapper{
+.banner_text_wrapper {
   width: 75%;
   margin: 0 auto;
   border-radius: 1vw;
   height: 34vw;
-  background-image: linear-gradient(to right,rgba(8, 7, 8,0.87),rgba(8, 7, 8,0.87)),url("./yehwalapngmeh.png");
+  background-image: linear-gradient(
+      to right,
+      rgba(8, 7, 8, 0.87),
+      rgba(8, 7, 8, 0.87)
+    ),
+    url("./yehwalapngmeh.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1046,7 +1050,7 @@ align-items: flex-end;
   position: relative;
   overflow: hidden;
 }
-.premium{
+.premium {
   position: absolute;
   width: 35vw;
   text-align: center;
@@ -1060,47 +1064,43 @@ align-items: flex-end;
   color: #080708;
   transform: rotate(52deg);
 }
-.banner_heading{
+.banner_heading {
   font-size: 3.4vw;
   letter-spacing: 0.1vw;
   color: #f85a11;
   margin-bottom: 1.5vw;
   text-transform: uppercase;
-  
 }
-.banner_para{
+.banner_para {
   width: 60%;
   font-size: 2.2vw;
   letter-spacing: 0.01vw;
   color: #feefe7;
   text-transform: capitalize;
   text-align: center;
- padding-bottom: 2vw;
- 
+  padding-bottom: 2vw;
 }
-.banner_anchor{
- text-decoration: none;
- padding: 1.5vw 3vw;
- width: 22vw;
- color: #080708;
- background-color: #f85a11;
- border-radius: 1vw;
- font-size: 1.8vw;
- letter-spacing: 0.01vw;
- text-transform: capitalize;
- font-weight: 600;
- text-align: center;
- transition: 0.5s;
- border: 2px solid #feefe7;
+.banner_anchor {
+  text-decoration: none;
+  padding: 1.5vw 3vw;
+  width: 22vw;
+  color: #080708;
+  background-color: #f85a11;
+  border-radius: 1vw;
+  font-size: 1.8vw;
+  letter-spacing: 0.01vw;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-align: center;
+  transition: 0.5s;
+  border: 2px solid #feefe7;
 }
 
 .banner_anchor:hover {
   scale: 1.05;
   color: #feefe7;
- background-color: #080708;
- 
+  background-color: #080708;
 }
-
 
 /* FOOTER ***************************************************************** */
 #footer {
@@ -1121,7 +1121,6 @@ align-items: flex-end;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .footer_middle {
@@ -1150,7 +1149,6 @@ align-items: flex-end;
 
 .footer_unorder_list:last-child li a {
   text-align: start;
-  
 }
 
 .ul_head {
@@ -1183,11 +1181,11 @@ align-items: flex-end;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 0.2px solid rgba(254, 239, 231,0.3);
+  border-bottom: 0.2px solid rgba(254, 239, 231, 0.3);
   padding-bottom: 1vw;
 }
 
-.footer_bottom li{
+.footer_bottom li {
   list-style: none;
 }
 
