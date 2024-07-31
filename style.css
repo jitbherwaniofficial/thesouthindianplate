@@ -41,7 +41,7 @@ body {
   transition: 0.5s;
 }
 
-#nav {
+.nav {
   width: 100%;
   /* height: 10vw; */
   display: flex;
@@ -216,7 +216,8 @@ body {
   font-size: 1.2vw;
   color: #feefe7;
   text-transform: capitalize;
-  /* margin-left: 0.5vw; */
+  width: 37%;
+  text-align: center;
 }
 
 
@@ -932,7 +933,7 @@ align-items: flex-end;
 #dobusiness{
   width: 100%;
   height: 100vh;
-  background-image: url("./background_business.svg");
+  background-image: url("./new2.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -971,19 +972,21 @@ align-items: flex-end;
   font-size: 2.7vw;
   font-weight: 600;
   letter-spacing: 0.01vw;
-  color: #080708;
+  color: #f85a11;
   margin-bottom: 1.5vw;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: capitalize;
+
 }
 .business_heading::before{
   position: absolute;
   content: '';
   bottom: 0;
   left: 0;
-  background-color: #080708;
+  background-color: #f85a11;
   width: 100%;
   height: 0.2vw;
   
@@ -992,10 +995,11 @@ align-items: flex-end;
 .business_para{
   font-size: 2.1vw;
   letter-spacing: 0.01vw;
-  color: #f85a11;
+  color:#feefe7;
   font-weight: 500;
   margin-bottom: 3.5vw;
   text-align: center;
+  text-transform: capitalize;
 
 }
 .business_order{
@@ -1008,6 +1012,11 @@ align-items: flex-end;
   background-color:#f85a11;
   color: #feefe7;
   border: 1.5px solid #080708;
+  text-transform:capitalize;
+  transition: 0.5s ;
+}
+.business_order:hover {
+  scale: 1.1;
 }
 
 /* BANNER ************************************************************************ */
