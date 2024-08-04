@@ -429,15 +429,16 @@ body {
   color: #080708;
   position: relative;
   margin-bottom: 1.8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu_heading::before {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 33.5%;
-  width: 33%;
-
+  width: 28%;
   height: 0.25vw;
   background-color: #080708;
 }
