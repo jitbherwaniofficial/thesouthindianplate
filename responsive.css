@@ -157,9 +157,9 @@
     padding: 1.8vw 10vw;
   }
 
-  /* .logo_container {
+  .logo_container {
     background-color: rgba(8, 7, 8,0.6);
-  } */
+  }
 
 
   .diagonal_trapezium {
@@ -222,7 +222,7 @@
 
   .how_to_order {
     height: auto;
-    padding-top: 15vw;
+    padding-top: 12vw;
   }
 
   .how_to_heading {
@@ -344,7 +344,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5vw;
+  padding-top: 15vw;
   padding-bottom: 5vw;
   gap: 4vw;
  }
