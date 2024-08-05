@@ -892,7 +892,7 @@
   .slideshow-container {
     width: 60vw;
     height: 60vw;
-    top: 7%;
+    top: 8%;
   }
 
   .diagonal_trapezium {
@@ -915,13 +915,13 @@
   .order_request {padding: 5vw;font-size: 5vw;}
 
   .right_half_idli {
-    height: 70vw;
+    height: 77vw;
     position: relative;
     overflow: visible;
   }
   .right_half_idli img {
     position: absolute;
-    top: 30%;
+    top: 35%;
     z-index: 10;
     width: 58vw;
     height: 58vw;
@@ -1001,9 +1001,16 @@
     font-size: 7vw;
   }
 
+  .half_about {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
+
   .ethos_and_vision {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
     gap: 6vw;
   }
 
