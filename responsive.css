@@ -1051,7 +1051,7 @@
 
 }
 
-@media only screen and (max-height: 932px) {
+/* @media only screen and (max-height: 932px) {
   .slideshow-container {
     width: 75vw;
     height: 75vw;
@@ -1085,4 +1085,4 @@
   .min_order {
     font-size: 5vw;
   }
-}
+} */
