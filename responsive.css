@@ -1050,3 +1050,39 @@
   }
 
 }
+
+@media only screen and (max-height: 932px) {
+  .slideshow-container {
+    width: 75vw;
+    height: 75vw;
+    top: 6%;
+  }
+
+  .img2 {
+    width: 65vw;
+    height: 65vw;
+  }
+
+  .diagonal_trapezium {
+    height: 55%;
+    top: 45%;
+  }
+
+  .hero_text_wrapper {
+    padding-bottom: 10vw;
+  }
+
+  .hero_heading {
+    font-size: 8vw;
+    width: 85%;
+  }
+
+  .place_order {
+    padding: 3vw 6vw;
+    font-size: 6vw;
+  }
+
+  .min_order {
+    font-size: 5vw;
+  }
+}
