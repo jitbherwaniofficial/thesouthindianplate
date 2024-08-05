@@ -119,7 +119,7 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    right: -47%;
+    right: -100%;
     transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     background-color: #f85a11;
     box-shadow: -6px 0px 6px 1px rgba(254, 239, 231, 0.5);
@@ -561,6 +561,14 @@
 
 @media only screen and (max-width: 768px) {
 
+  #nav_mob {
+    width: 70%;
+  }
+
+  .nav_link {
+    font-size: 7vw !important;
+  }
+
   .logo_container {
     height: 20vw;
   }
@@ -632,8 +640,8 @@
   }
 
   .order_process {
-    width: 50vw;
-    height: 40vw;
+    width: 80vw;
+    height: 45vw;
     clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
     display: flex;
     justify-content: center;
@@ -651,13 +659,17 @@
   }
 
   .process_heading {
-    font-size: 3.6vw;
+    font-size: 4.5vw;
   }
 
   .process_para {
-    font-size: 3vw;
+    font-size: 3.5vw;
     line-height: 1.7;
     text-align: center;
+  }
+
+  .order_request {
+    font-size: 4vw;
   }
 
   .half_idli {
@@ -681,7 +693,9 @@
 
   .idli_pieces_box {
     gap: 4vw;
-    width: 70%;
+    width: 90%;
+    height:auto;
+    padding-top: 5vw;
   }
 
   .tablet_font {
@@ -719,6 +733,8 @@
   .wada_pieces_box {
     gap: 4vw;
     width: 90%;
+    height:auto;
+    padding-top: 5vw;
   }
 
   .why_heading {
@@ -735,30 +751,30 @@
   }
 
   .why_ans {
-    width: 50vw;
-    height: 50vw;
+    width: 80vw;
+    height: 80vw;
     gap: 3vw;
   }
 
   .why_ans:hover {
-    width: 50vw;
-    height: 50vw;
+    width: 80vw;
+    height: 80vw;
   }
 
   .why_logo img{
-    width: 10vw;
-    height: 10vw;
+    width: 20vw;
+    height: 20vw;
   }
 
   .why_ans_head {
-    font-size: 3.5vw;
+    font-size: 5vw;
   }
 
   .why_ans_para {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     height: fit-content;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
 
   .about_heading {
@@ -860,4 +876,170 @@
   .footer_bottom li a {
     font-size: 2vw;
   }
+}
+
+
+@media only screen and (max-width: 640px) {
+
+  .burger i {
+    font-size: 9vw;
+  }
+
+  .mobile_logo img {
+    width: 60vw;
+  }
+
+  .slideshow-container {
+    width: 60vw;
+    height: 60vw;
+    top: 7%;
+  }
+
+  .diagonal_trapezium {
+    height: 53%;
+    top: 47%;
+  }
+
+  .hero_heading {font-size: 7vw;padding-bottom: 6vw;}
+  .place_order {font-size: 5vw;}
+  .min_order {font-size: 4.5vw;width: fit-content;}
+  .how_to_heading {font-size:10vw;padding-top: 12vw;}
+  .how_to_heading::before {width: 90%;}
+  .order_process_wrapper {width: 100%;}
+  .order_process {width: 85%;height: 55vw;gap: 3vw;}
+  .process_heading {font-size: 6vw;}
+  .process_para {font-size: 4vw;}
+  .menu_heading_wrapper {width: 100%;}
+  .menu_heading {font-size: 10vw;width: 100%;}
+  .menu_heading::before {width: 90%;}
+  .order_request {padding: 5vw;font-size: 5vw;}
+
+  .right_half_idli {
+    height: 70vw;
+    position: relative;
+    overflow: visible;
+  }
+  .right_half_idli img {
+    position: absolute;
+    top: 30%;
+    z-index: 10;
+    width: 58vw;
+    height: 58vw;
+  }
+  .idli_picture {
+    position: absolute;
+    top: 30%;
+    z-index: 10;
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .idli_content_heading,
+  .wada_content_heading 
+  {
+    font-size: 5vw;
+    width: 90%;
+    padding-top: 5vw;
+  }
+
+  .tablet_font {
+    font-size: 5vw;
+    padding-top: 2vw;
+    padding-left: 2vw;
+  }
+
+  .idli_anchor,
+  .wada_anchor 
+  {
+    padding: 3vw;
+  }
+
+  .wada_pieces_box,
+  .idli_pieces_box {
+    gap: 6vw;
+  }
+
+  .half_wada {
+    height: 70vw;
+    position: relative;
+    overflow: visible;
+  }
+
+  .half_wada img {
+    position: absolute;
+    top: 35%;
+    z-index: 10;
+    width: 55vw;
+    height: 55vw;
+  }
+
+  .vada_picture {
+    width: 60vw;
+    height: 60vw;
+    top: 30%;
+  }
+
+  .why_heading {
+    width: 100%;
+    font-size: 10vw;
+    padding-top: 10vw;
+  }
+
+  .why_heading::before {
+    width: 95%;
+  }
+
+  .why_ans_head {
+    font-size: 6vw;
+  }
+
+  .why_ans_para {
+    font-size: 4.5vw;
+  }
+
+  .about_heading {
+    font-size: 7vw;
+  }
+
+  .ethos_and_vision {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 6vw;
+  }
+
+  .common_vision {
+    font-size: 4.5vw;
+  }
+
+  .business_heading {
+    font-size: 6vw;
+  }
+
+  .business_para {
+    font-size: 4.5vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+
+  .business_order {
+    font-size: 4.5vw;
+  }
+
+  .banner_text_wrapper {
+    width: 100%;
+  }
+
+  .banner_heading {
+    width: 90%;
+    font-size: 5vw;
+  }
+
+  .banner_para {
+    font-size: 4vw;
+  }
+
+  .banner_anchor {
+    font-size: 4.5vw;
+  }
+
 }
