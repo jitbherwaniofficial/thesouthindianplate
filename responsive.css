@@ -43,6 +43,7 @@
 
   .slideshow-container {
     right: -4%;
+    top: 6.5vw;
   }
 }
 
@@ -208,7 +209,7 @@
   }
 
   .img2 {
-    margin-left: -3.8vw;
+    margin-left: 2.9vw;
     margin-top: 0.8vw;
   }
 
@@ -556,8 +557,269 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+  .logo_container {
+    height: 20vw;
+  }
+
+  .burger {
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .burger i {
+    font-size: 6vw;
+  }
+
   .slideshow-container {
+    width: 55vw;
+    height: 55vw;
+  }
+
+  .img2 {
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .diagonal_trapezium {
+    height: 45%;
+    top: 55%;
+  }
+
+  .how_to_heading {
+    font-size: 5vw;
+  }
+
+  .how_to_heading::before {
+    width: 42%;
+    height: 0.50vw;
+  }
+  .menu_heading {
+    font-size: 5vw;
+  }
+
+  .menu_heading::before {
+    width: 54%;
+    height: 0.50vw;
+  }
+
+  .order_request {
+    font-size: 3.3vw;
+  }
+
+  .order_process_wrapper {
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  .order_process {
+    width: 50vw;
+    height: 35vw;
+    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 5vw;
+  }
+
+  .order_process:hover {
+    transform: translateY(2vw);
+  }
+
+  .last_process:hover {
+    transform: translateY(0);
+  }
+
+  .process_heading {
+    font-size: 3.6vw;
+  }
+
+  .process_para {
+    font-size: 2.5vw;
+    text-align: center;
+  }
+
+  .right_half_idli {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+
+  .right_half_idli img {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .idli_picture {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .idli_pieces_box {
+    gap: 4vw;
+  }
+
+  .tablet_font {
+    font-size: 3vw;
+  }
+
+  .idli_content_heading {
+    font-size: 3.5vw;
+  }
+
+  .wada_content_heading {
+    font-size: 3.5vw;
+  }
+
+  
+  .half_wada {
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+  }
+
+  .half_wada img {
     width: 40vw;
     height: 40vw;
+  }
+
+  .vada_picture {
+    width: 48vw;
+    height: 48vw;
+  }
+  
+  .wada_pieces_box {
+    gap: 4vw;
+  }
+
+  .why_heading {
+    font-size: 5vw;
+  }
+
+  .why_heading::before {
+    width: 60%;
+    height: 0.50vw;
+  }
+
+  .Why_ans_wrapper {
+    flex-direction: column;
+  }
+
+  .why_ans {
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .why_ans:hover {
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .why_logo img{
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .why_ans_head {
+    font-size: 3.5vw;
+  }
+
+  .why_ans_para {
+    font-size: 2.5vw;
+    height: fit-content;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  .about_heading {
+    font-size: 6vw;
+  }
+
+  .common_vision {
+    font-size: 3.5vw;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .content_business {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .business_heading {
+    font-size: 5vw;
+  }
+
+  .business_para {
+    font-size: 3.5vw;
+    line-height: 1.7;
+  }
+
+  .business_order {
+    padding: 2.5vw 5vw;
+    font-size: 3.5vw;
+  }
+
+  .banner {
+    height: 40vh;
+  }
+
+  .banner_text_wrapper {
+    width: 80%;
+    height: 100%;
+  }
+
+  .premium {
+    font-size: 2.2vw;
+    right: -8vw;
+    transform: rotate(45deg);
+    top: 7vw;
+  }
+
+  .banner_heading {
+    font-size: 4vw;
+    width: 45%;
+    text-align: center;
+  }
+
+  .banner_para {
+    font-size: 3.5vw;
+    width: 80%;
+  }
+
+  .banner_anchor {
+    font-size: 3vw;
+    width: auto;
+  }
+
+  .footer_top {
+    width: 90%;
+  }
+
+  .footer_middle {
+    padding-left: 0;
+    width: 90%;
+  }
+
+  .footer_unorder_list:nth-child(2) {
+    padding-left: 0;
+  }
+
+  .ul_head {
+    font-size: 2.8vw;
+  }
+
+  .footer_unorder_list li,
+  .footer_unorder_list li a {
+    font-size: 2.2vw;
+  }
+
+  .footer_bottom {
+    width: 90%;
+  }
+
+  .footer_bottom li a {
+    font-size: 2vw;
   }
 }

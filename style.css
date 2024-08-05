@@ -266,13 +266,14 @@ body {
 }
 
 .img1 {
-  margin-left: -3vw;
+  margin-left: -3.5vw;
 }
 
 .img2 {
-  width: 30vw;
-  height: 30vw;
-  margin-left: -6.5vw;
+  width: 25vw;
+  height: 25vw;
+  margin-right: 2.8vw;
+  margin-bottom: 1.5vw;
 }
 
 /* Slideshow container */
