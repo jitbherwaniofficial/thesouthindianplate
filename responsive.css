@@ -55,11 +55,12 @@
     height: fit-content;
     position: absolute;
     right: -7%;
-    top: -14.1vw !important;
+    top: -12vw !important;
     z-index: -1;
   }
 
   .slideshow-container {
+    top: 3.8vw;
     right: -1%;
   }
 }
@@ -67,6 +68,22 @@
 @media only screen and (max-width: 1280px) {
   /*1280X720px*/
 
+  
+
+  .slideshow-container {
+    top: 2.5%;
+    right: -3%;
+  }
+
+  .blob {
+    top: 5% !important;
+    right: -10%;
+    transform: rotate(22deg);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  
   .logo_container {
     display: flex;
     justify-content: center;
@@ -80,20 +97,6 @@
   .logo_container .mobile_logo {
     display: block;
   }
-
-  .slideshow-container {
-    top: 4.5%;
-    right: -5%;
-  }
-
-  .blob {
-    top: -15% !important;
-    right: -11%;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  
 
   #nav {
     display: none;
