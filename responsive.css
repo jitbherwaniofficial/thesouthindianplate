@@ -591,6 +591,20 @@
     top: 55%;
   }
 
+  .hero_heading {
+    font-size: 5vw;
+    width: 90%;
+  }
+
+  .place_order {
+    padding: 3vw 5vw;
+    font-size: 4vw;
+  }
+
+  .min_order {
+    font-size: 3.5vw;
+  }
+
   .how_to_heading {
     font-size: 5vw;
   }
@@ -619,7 +633,7 @@
 
   .order_process {
     width: 50vw;
-    height: 35vw;
+    height: 40vw;
     clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
     display: flex;
     justify-content: center;
@@ -641,13 +655,18 @@
   }
 
   .process_para {
-    font-size: 2.5vw;
+    font-size: 3vw;
+    line-height: 1.7;
     text-align: center;
   }
 
+  .half_idli {
+    padding: 10vw 0;
+  }
+
   .right_half_idli {
-    padding-top: 3vw;
-    padding-bottom: 3vw;
+    padding-top: 7vw;
+    padding-bottom: 7vw;
   }
 
   .right_half_idli img {
@@ -662,24 +681,29 @@
 
   .idli_pieces_box {
     gap: 4vw;
+    width: 70%;
   }
 
   .tablet_font {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   .idli_content_heading {
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 
   .wada_content_heading {
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 
   
+  .right_half_wada {
+    padding: 10vw 0;
+  }
+
   .half_wada {
-    padding-top: 6vw;
-    padding-bottom: 6vw;
+    padding-top: 9vw;
+    padding-bottom: 9vw;
   }
 
   .half_wada img {
@@ -694,6 +718,7 @@
   
   .wada_pieces_box {
     gap: 4vw;
+    width: 90%;
   }
 
   .why_heading {
@@ -710,13 +735,14 @@
   }
 
   .why_ans {
-    width: 45vw;
-    height: 45vw;
+    width: 50vw;
+    height: 50vw;
+    gap: 3vw;
   }
 
   .why_ans:hover {
-    width: 45vw;
-    height: 45vw;
+    width: 50vw;
+    height: 50vw;
   }
 
   .why_logo img{
@@ -739,10 +765,19 @@
     font-size: 6vw;
   }
 
+
+  .ethos_and_vision {
+    padding: 10vw 5vw;
+    gap: 4vw;
+  }
   .common_vision {
     font-size: 3.5vw;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  #dobusiness {
+    padding: 10vw 0;
   }
 
   .content_business {
