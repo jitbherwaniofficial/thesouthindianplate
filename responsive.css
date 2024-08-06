@@ -895,6 +895,7 @@
     top: 8%;
   }
 
+
   .diagonal_trapezium {
     height: 53%;
     top: 47%;
@@ -1051,7 +1052,7 @@
 
 }
 
-/* @media only screen and (max-height: 932px) {
+@media only screen and (max-width: 500px) {
   .slideshow-container {
     width: 75vw;
     height: 75vw;
@@ -1085,4 +1086,4 @@
   .min_order {
     font-size: 5vw;
   }
-} */
+}
