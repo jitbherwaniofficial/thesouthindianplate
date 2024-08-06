@@ -874,8 +874,8 @@
   .burger {
     display: block;
     position: fixed;
-    top: 85%;
-    right: 5vw;
+    top: 87.5%; /*85%*/
+    right: 2vw; /*5vw*/
     padding: 3vw;
     font-size: 4vw;
     transition: 0.5s;
