@@ -1003,15 +1003,14 @@
   }
 
   .about_heading {
-    font-size: 9vw;
+    font-size: 7vw;
     width: 80%;
     margin: 0 auto;
   }
 
   .half_about {
-    /* padding-top: 10vw;
-    padding-bottom: 10vw; */
-    height: 40vh;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
   }
 
   .ethos_and_vision {
