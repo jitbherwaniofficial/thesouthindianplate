@@ -1012,16 +1012,16 @@
   .half_about {
     padding-top: 10vw;
     padding-bottom: 10vw;
-    height: 30%;
+    height: 40%;
   }
 
   .ethos_and_vision {
-    height: 70%;
+    height: 60%;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 10vw;
-    padding-bottom: 10vw;
     gap: 6vw;
+
+    padding: 0;
   }
 
   .common_vision {
