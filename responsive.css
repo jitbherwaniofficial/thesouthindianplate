@@ -870,6 +870,21 @@
 }
 
 @media only screen and (max-width: 640px) {
+
+  .burger {
+    display: block;
+    position: fixed;
+    top: 85%;
+    right: 5vw;
+    padding: 3vw;
+    font-size: 4vw;
+    transition: 0.5s;
+    z-index: 999;
+    border: 3px solid #fff;
+    height: max-content;
+    border-radius: 50%;
+  }
+
   .burger i {
     font-size: 9vw;
   }
