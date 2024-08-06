@@ -1006,14 +1006,17 @@
     font-size: 7vw;
     width: 80%;
     margin: 0 auto;
+    
   }
 
   .half_about {
     padding-top: 10vw;
     padding-bottom: 10vw;
+    height: 30%;
   }
 
   .ethos_and_vision {
+    height: 70%;
     padding-left: 0;
     padding-right: 0;
     padding-top: 10vw;
