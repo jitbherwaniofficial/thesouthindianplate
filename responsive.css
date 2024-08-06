@@ -1043,9 +1043,22 @@
   .business_order {
     font-size: 4.5vw;
   }
+ 
+  .banner {
+    height: 70vh;
+  }
 
   .banner_text_wrapper {
-    width: 100%;
+    width: 90%;
+    background-image: linear-gradient(
+      to right,
+      rgba(8, 7, 8, 0.87),
+      rgba(8, 7, 8, 0.87)
+    ),
+    url("./vertical_banner.svg");
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   }
 
   .banner_heading {
