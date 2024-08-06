@@ -1045,7 +1045,7 @@
   }
  
   .banner {
-    height: 70vh;
+    height: 65vh;
   }
 
   .banner_text_wrapper {
@@ -1055,25 +1055,42 @@
       rgba(8, 7, 8, 0.87),
       rgba(8, 7, 8, 0.87)
     ),
-    url("./vertical_banner.svg");
+    url("./Vertical-banner.svg");
     background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   }
 
   .banner_heading {
-    width: 90%;
-    font-size: 5vw;
+    /* margin-top: 4.5vw; */
+    width: 95%;
+    font-size: 5.5vw;
+    margin-bottom: 3.5vw;
   }
 
   .banner_para {
-    font-size: 4vw;
+    font-size: 4.5vw;
+    margin-bottom: 4.8vw;
+    width: 85%;
   }
 
   .banner_anchor {
     font-size: 4.5vw;
-  }
+  padding: 2.5vw 5.5vw;
+  border-radius: 1vw;
 
+  }
+ .premium{
+  top: 7vw;
+  right: -12.5vw;
+  width: 39vw;
+  padding: 0.8vw;
+  font-size: 2.3vw;
+  transform: rotate(52deg);
+
+
+ }
 }
 
 @media only screen and (max-width: 500px) {
