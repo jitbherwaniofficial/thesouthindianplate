@@ -1154,8 +1154,8 @@
 
   #footer {
     margin-top: 0;
-    padding-bottom: 10vw;
-    padding-top: 10vw;
+    padding-bottom: 8vw;
+    padding-top: 8vw;
   }
 
   .footer_top {
@@ -1171,7 +1171,7 @@
   }
 
   footer a img {
-    width: 60%;
+    width: 80%;
   }
 
   .footer_middle {
@@ -1190,12 +1190,18 @@
   .footer_unorder_list li,
   .footer_unorder_list li a {
     text-align: center;
-    font-size: 2.7vw;
+    font-size: 4vw;
   }
 
   .footer_unorder_list:nth-child(1) {
     width: 100%;
     text-align: center;
+    gap: 2vw;
+  }
+
+  .footer_unorder_list:nth-child(2),
+  .footer_unorder_list:nth-child(3) {
+    width: 50%;
   }
 
   .footer_unorder_list:nth-child(3) {
@@ -1208,16 +1214,19 @@
 
   .ul_head {
     width: 100%;
-    font-size: 3.5vw;
+    font-size: 5vw;
     text-align: center;
+    padding-bottom: 1vw;
   }
 
   .footer_bottom {
     padding-bottom: 3vw;
     flex-direction: column-reverse;
+    gap: 2vw;
+    padding-top: 3vw;
   }
 
   .footer_bottom li a {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
