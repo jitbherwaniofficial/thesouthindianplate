@@ -1045,8 +1045,12 @@ body{
   padding-left: 5vw;
 }
 
+.footer_middle_nav {
+  width: 100%;
+}
+
 .footer_middle .footer_unorder_list {
-  width: 25%;
+  width: 80%;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -1056,7 +1060,7 @@ body{
 }
 
 .footer_unorder_list:nth-child(2) {
-  padding-left: 5vw;
+  padding-left: 2vw;
 }
 
 .footer_unorder_list:last-child li a {
@@ -1066,6 +1070,8 @@ body{
 .ul_head {
   font-size: 1.8vw;
   color: #f85a11;
+  padding-left: 2vw;
+  padding-bottom: 0.5vw;
 }
 
 .footer_unorder_list li {
