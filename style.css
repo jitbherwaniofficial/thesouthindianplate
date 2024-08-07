@@ -10,8 +10,8 @@
   
 }
 *:focus{
-  outline: 4px solid greenyellow;
-  outline-offset: 2px;
+  outline: none;
+  box-shadow: 0 0 0 0.4vw rgba(230, 125, 34, 0.5);
 }
 body{
   position: relative;
@@ -99,8 +99,9 @@ body{
 .nav_li {
   list-style: none;
 }
-
-.nav_li a {
+.nav_li a,
+.nav_li a:link,
+.nav_li a:visited {
   display: inline-block;
   text-decoration: none;
   font-size: 1.4vw;
