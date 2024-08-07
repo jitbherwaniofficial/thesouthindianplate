@@ -1,5 +1,4 @@
 @media only screen and (max-width: 1920px) {
-  /*1920X1080px*/
   .blob {
     width: 50%;
     height: fit-content;
@@ -15,7 +14,6 @@
 }
 
 @media only screen and (max-width: 1536px) {
-  /*1536X864px*/
   .blob {
     width: 50%;
     height: fit-content;
@@ -31,7 +29,6 @@
 }
 
 @media only screen and (max-width: 1440px) {
-  /*1440X900px*/
   .blob {
     width: 50%;
     height: fit-content;
@@ -48,7 +45,6 @@
 }
 
 @media only screen and (max-width: 1366px) {
-  /*1366X768px*/
 
   .blob {
     width: 50%;
@@ -66,7 +62,6 @@
 }
 
 @media only screen and (max-width: 1280px) {
-  /*1280X720px*/
 
   .slideshow-container {
     top: 2.5%;
@@ -142,10 +137,7 @@
   #burger.active {
     background-color: transparent;
   }
-  /* #burger.active .ri-menu-5-fill {
-    color: #080708;
-    background-color: transparent;
-  } */
+  
 
   .link2 .nav_li a {
     font-size: 4vw;
@@ -226,9 +218,6 @@
     padding-bottom: 3vw;
   }
 
-  /* .hero_heading span {
-    font-size: 4.2vw;
-  } */
 
   .place_order {
     align-self: center;
@@ -547,11 +536,6 @@
   }
 }
 
-/* @media only screen and (max-height: 600px) {
-  .hero_section {
-    height: 125vh;
-  }
-} */
 
 @media only screen and (max-width: 768px) {
   #nav_mob {
@@ -883,6 +867,11 @@
     border: 3px solid #fff;
     height: max-content;
     border-radius: 50%;
+  }
+
+  #burger.active .ri-menu-5-fill {
+    color: #080708;
+    background-color: transparent;
   }
 
   .burger i {
