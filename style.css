@@ -1052,7 +1052,6 @@ body{
 }
 .left_about_vada{
   width: 55%;
-  /* height: 80vh; */
   display: flex;
   align-items: flex-start;
   justify-content: center;
