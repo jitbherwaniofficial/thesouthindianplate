@@ -1104,20 +1104,7 @@
     font-size: 4.5vw;
   }
 
-  .business_heading {
-    font-size: 6vw;
-  }
-
-  .business_para {
-    font-size: 4.5vw;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-  }
-
-  .business_order {
-    font-size: 4.5vw;
-  }
-
+  
   .banner {
     height: 65vh;
     margin: 10vw 0;
@@ -1213,11 +1200,17 @@
     padding: 15vw 0;
   }
   .below_hero_para{
-    font-size: 4vw;
+    font-size: 4.3vw;
     line-height: 1.6;
     font-weight: 600;
   }
-
+  .about_idli_heading, .about_vada_heading{
+    font-size: 5vw;
+  }
+  .about_idli_para, .about_vada_para , .about_idli_scnd_para, .about_vada_scnd_para{
+    font-size: 4.3vw;
+    line-height: 1.6;
+  }
   #footer {
     margin-top: 0;
     padding-bottom: 8vw;
