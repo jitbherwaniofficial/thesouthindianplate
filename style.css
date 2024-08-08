@@ -322,6 +322,35 @@ body{
     font-size: 11px;
   }
 }
+
+/* Below hero content **************************************************/
+
+.below_hero{
+  width: 100%;
+  padding-top: 8vw ;
+}
+
+.below_hero_wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.below_hero_para{
+  text-align: center;
+  font-size: 2.3vw;
+  color: #080708;
+  font-weight: 500;
+  letter-spacing: 0.1vw;
+}
+
+.below_hero_para a{
+  text-decoration: underline;
+  color: #f85a11;
+  font-weight: 600;
+}
+
+
+
 /* HOW TO ORDER SECTION ********************************************************** */
 .how_to_order {
   width: 100%;
@@ -409,50 +438,7 @@ body{
   align-items: flex-start;
 }
 
-/* MENU SECTION */
-.menu_section {
-  padding: 6vw 0;
-}
 
-.menu_heading_wrapper {
-  width: 85%;
-  margin: 0 auto;
-}
-
-.menu_heading {
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 2.7vw;
-  font-weight: 600;
-  color: #080708;
-  position: relative;
-  margin-bottom: 1.8vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu_heading::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 28%;
-  height: 0.25vw;
-  background-color: #080708;
-}
-
-.order_request {
-  text-align: center;
-  text-transform: capitalize;
-  color: #f85a11;
-  font-size: 2.3vw;
-  font-weight: 500;
-  margin-bottom: 3vw;
-}
-
-.order_request a {
-  color: #080708;
-}
 
 /* IDLI SECTION *************************************************************** */
 
@@ -880,7 +866,7 @@ body{
       rgba(248, 90, 17, 0.9),
       rgba(248, 90, 17, 0.9)
     ),
-    url("./mundi.svg");
+    url("./logo_face.webp");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -931,6 +917,82 @@ body{
   height: 16vw;
   align-items: flex-start;
 }
+
+/* IDLI DESCRIPTION SECTION*************************************** */
+
+.about_idli{
+  width: 100%;
+  padding: 8vw 0;
+  background-image: url("./light_orange_bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.about_idli_heading{
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: #080708;
+  font-size: 2.5vw;
+  letter-spacing: 0.1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-transform: capitalize;
+}
+.about_idli_heading:before {
+  width: 65%;
+  height: 0.25vw;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #080708;
+}
+.about_idli_wrapper{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 6vw;
+}
+.left_about_idli{
+  width: 40%;
+  
+
+}
+.left_about_idli img{
+  width: 100%;
+ 
+}
+.right_about_idli{
+  width: 55%;
+  /* height: 80vh; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4vw;
+}
+.about_idli_para{
+  width: 100%;
+  font-size: 1.8vw;
+  font-weight: 500;
+  color: #f85a11;
+  letter-spacing: 0.05vw;
+  text-transform: capitalize;
+}
+.about_idli_scnd_para{
+  width: 100%;
+  font-size: 1.8vw;
+  font-weight: 500;
+  color: #f85a11;
+  letter-spacing: 0.05vw;
+  text-transform: capitalize;
+}
+
+/* MEDUVADA DESCRIPTION SECTION*************************************** */
 
 /* BANNER ************************************************************************ */
 .banner {

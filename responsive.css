@@ -538,6 +538,7 @@
 
 
 @media only screen and (max-width: 768px) {
+
   #nav_mob {
     width: 50%;
   }
@@ -598,19 +599,9 @@
     width: 42%;
     height: 0.5vw;
   }
-  .menu_heading {
-    font-size: 5vw;
-  }
+ 
 
-  .menu_heading::before {
-    width: 54%;
-    height: 0.5vw;
-  }
-
-  .order_request {
-    font-size: 3.3vw;
-  }
-
+  
   .order_process_wrapper {
     flex-direction: column;
     gap: 3vw;
@@ -645,9 +636,7 @@
     text-align: center;
   }
 
-  .order_request {
-    font-size: 4vw;
-  }
+  
 
   .half_idli {
     padding: 10vw 0;
