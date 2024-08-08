@@ -1204,12 +1204,15 @@
     line-height: 1.6;
     font-weight: 600;
   }
+
+  .about_idli, .about_vada {padding-top: 15vw; padding-bottom: 15vw;}
   .about_idli_heading, .about_vada_heading{
     font-size: 6vw;
     font-weight: 600;
   }
   .about_idli_wrapper , .about_vada_wrapper{
     width: 100%;
+    padding-bottom: 0;
   }
   .left_about_idli, .right_about_vada{
     width: 100%;
@@ -1228,6 +1231,11 @@
   .about_idli_heading::before, .about_vada_heading::before{
     height: 0;
   }
+
+  .about_vada_heading {
+    padding-top: 0;
+  }
+
   #footer {
     margin-top: 0;
     padding-bottom: 8vw;
