@@ -1200,7 +1200,7 @@
     padding: 15vw 0;
   }
   .below_hero_para{
-    font-size: 4.3vw;
+    font-size: 4.5vw;
     line-height: 1.6;
     font-weight: 600;
   }
@@ -1213,12 +1213,13 @@
   }
   .left_about_idli, .right_about_vada{
     width: 100%;
+    height: 100vw;
   }
   .right_about_idli, .left_about_vada{
     width: 100%;
   }
   .about_idli_para, .about_vada_para , .about_idli_scnd_para, .about_vada_scnd_para{
-    font-size: 4.9vw;
+    font-size: 4.3vw;
     font-weight: 700;
     line-height: 1.6;
     width: 92%;
