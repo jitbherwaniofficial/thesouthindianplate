@@ -230,8 +230,21 @@
     font-size: 2.5vw;
   }
 
+  .below_hero {
+    padding: 5vw;
+  }
+
+  .below_hero_wrapper {
+    width: 100%;
+  }
+
+  .below_hero_para {
+    font-size: 3vw;
+  }
+
   .how_to_order {
     height: auto;
+    margin-bottom: 5vw;
   }
 
   .how_to_heading {
@@ -480,38 +493,70 @@
     height: auto;
   }
 
-  #dobusiness {
-    height: auto;
-  }
-
-  .business_content_wrapper {
+  .about_idli_wrapper {
     flex-direction: column;
-    height: auto;
-  }
-
-  .frame_wrapper {
-    width: 100%;
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-bottom: 8vw;
+    width: 80%;
   }
 
-  .frame_wrapper img {
-    height: max-content;
-    object-fit: fill;
-    width: 45%;
-    display: none;
+  .right_about_idli {width: 100%;}
+  .about_idli_para {text-align: center; font-size: 2.5vw;width: 90%;margin: 0 auto;}
+  .about_idli_scnd_para {text-align: center; font-size: 2.5vw;width: 90%;margin: 0 auto;}
+  .about_idli_heading {font-size: 3vw;}
+  .about_idli_heading::before {
+    width: 80%;
   }
 
-  .business_heading {
-    font-size: 3.5vw;
+  .left_about_idli {
+    width: 100%;
+    height: 60vw;
   }
 
-  .business_para {
+  .about_idli_img {
+    object-fit: cover;
+  }
+
+  .about_vada_heading {
+    font-size: 3vw;
+  }
+
+  .about_vada_heading::before {
+    width: 85%;
+  }
+
+  .about_vada_wrapper {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8vw;
+    width: 80%;
+    display: flex;
+  }
+
+  .right_about_vada {
+    width: 100%;
+    height: 60vw;
+  }
+
+  .right_vada_img {
+    object-fit: cover;
+  }
+
+  .left_about_vada {
+    width: 100%;
+  }
+
+  .about_vada_para {
     font-size: 2.5vw;
+    text-align: center;
   }
 
-  .business_order {
+  .about_vada_scnd_para {
+    text-align: center;
     font-size: 2.5vw;
   }
 
@@ -600,8 +645,19 @@
     height: 0.5vw;
   }
  
-
-  
+.below_hero{
+  padding: 10vw 0;
+ 
+}
+  .below_hero_wrapper{
+    width: 85%;
+    margin: 0 auto;
+  }
+  .below_hero_para{
+    font-size: 3.3vw;
+    line-height: 1.5;
+    letter-spacing: 0.1vw;
+  }
   .order_process_wrapper {
     flex-direction: column;
     gap: 3vw;
@@ -755,30 +811,39 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-
-  #dobusiness {
-    padding: 10vw 0;
+  .about_idli_heading , .about_vada_heading{
+    font-size: 3.8vw;
   }
-
-  .content_business {
+  .about_idli_heading::before, .about_vada_heading::before{
+    width: 94%;
+  }
+   .right_about_idli,.left_about_vada{
+    width: 90%;
+   }
+   .about_idli_para , .about_idli_scnd_para{
     width: 100%;
-    margin-top: 0;
-  }
-
-  .business_heading {
-    font-size: 5vw;
-  }
-
-  .business_para {
-    font-size: 3.5vw;
-    line-height: 1.7;
-  }
-
-  .business_order {
-    padding: 2.5vw 5vw;
-    font-size: 3.5vw;
-  }
-
+    font-size: 2.9vw;
+    letter-spacing: 0.05vw;
+    line-height: 1.5;
+    font-weight: 600;
+  
+   }
+   .about_idli_para, .about_vada_para{
+    padding-top: 2vw;
+   }
+   .about_vada_wrapper{
+  
+    padding-bottom: 14vw;
+   }
+   .left_about_vada{
+    width: 85%;
+   }
+   .about_vada_para , .about_vada_scnd_para{
+    width: 100%;
+    font-size: 2.8vw;
+    letter-spacing: 0.05vw;
+    line-height: 1.5;
+   }
   .banner {
     height: 40vh;
   }
@@ -1143,6 +1208,14 @@
 
   .min_order {
     font-size: 5vw;
+  }
+  .below_hero{
+    padding: 15vw 0;
+  }
+  .below_hero_para{
+    font-size: 4vw;
+    line-height: 1.6;
+    font-weight: 600;
   }
 
   #footer {

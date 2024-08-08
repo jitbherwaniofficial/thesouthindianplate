@@ -1032,7 +1032,7 @@ body{
   text-transform: capitalize;
 }
 .about_vada_heading:before {
-  width: 64%;
+  width: 68%;
   height: 0.25vw;
   content: "";
   position: absolute;
