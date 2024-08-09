@@ -1286,21 +1286,15 @@ body{
   scale: 1.08;
 }
 
-.jswebart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer_bottom li p {
   font-size: 1.5vw;
-}
-
-.jswebart a {
+  text-decoration: none;
   color: #feefe7;
   display: inline-block;
-  transition: 0.5s;
-  text-decoration: none;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
-.jswebart a:hover {
-  scale: 1.1;
-  color: #f85a11;
+.footer_bottom li p:hover {
+  scale: 1.08;
 }

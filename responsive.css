@@ -576,7 +576,7 @@
     font-size: 1.6vw;
   }
 
-  .footer_bottom li a {
+  .footer_bottom li a, .footer_bottom li p {
     font-size: 1.8vw;
   }
 }
@@ -876,6 +876,11 @@
     width: auto;
   }
 
+  #footer {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+
   .footer_top {
     width: 90%;
   }
@@ -891,6 +896,7 @@
 
   .ul_head {
     font-size: 2.8vw;
+    padding-left: 0;
   }
 
   .footer_unorder_list li,
@@ -902,7 +908,7 @@
     width: 90%;
   }
 
-  .footer_bottom li a {
+  .footer_bottom li a, .footer_bottom li p {
     font-size: 2vw;
   }
 }
@@ -914,8 +920,7 @@
     position: fixed;
     top: 87.5%; /*85%*/
     right: 2vw; /*5vw*/
-    padding: 3vw;
-    font-size: 4vw;
+    padding: 2vw;
     transition: 0.5s;
     z-index: 999;
     border: 3px solid #fff;
@@ -929,7 +934,7 @@
   }
 
   .burger i {
-    font-size: 9vw;
+    font-size: 7vw;
   }
 
   .mobile_logo img {
@@ -1150,6 +1155,90 @@
     font-size: 5vw;
     transform: rotate(35deg);
   }
+
+  
+  #footer {
+    margin-top: 0;
+    padding-bottom: 8vw;
+    padding-top: 8vw;
+  }
+
+  .footer_top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer_top a {
+    text-align: center;
+    display: block;
+  }
+
+  footer a img {
+    width: 100%;
+  }
+
+  .footer_middle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7vw;
+  }
+
+  .footer_unorder_list {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer_unorder_list li,
+  .footer_unorder_list li a {
+    text-align: center;
+    font-size: 2.8vw;
+  }
+
+  .footer_unorder_list:nth-child(1) {
+    width: 100%;
+    text-align: center;
+    gap: 2vw;
+  }
+
+  .footer_unorder_list:nth-child(2),
+  .footer_unorder_list:nth-child(3) {
+    width: 100%;
+  }
+
+  .footer_unorder_list:last-child li a {
+    text-align: center;
+  }
+
+  .footer_unorder_list:nth-child(3) {
+    align-items: center;
+  }
+
+  .footer_unorder_list:nth-child(3) li a {
+    text-align: center;
+  }
+
+  .ul_head {
+    width: 100%;
+    font-size: 3.5vw;
+    text-align: center;
+    padding-bottom: 1vw;
+  }
+
+  .footer_bottom {
+    padding-bottom: 3vw;
+    flex-direction: column-reverse;
+    gap: 2vw;
+    padding-top: 3vw;
+  }
+
+  .footer_bottom li a,.footer_bottom li p {
+    font-size: 3vw;
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -1314,7 +1403,8 @@
     padding-top: 3vw;
   }
 
-  .footer_bottom li a {
+  .footer_bottom li a,.footer_bottom li p {
     font-size: 4vw;
   }
+
 } 
