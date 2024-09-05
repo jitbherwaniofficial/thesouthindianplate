@@ -132,14 +132,16 @@
         padding-right: 5vw;
     }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
     .menu_page {
         padding-top: 25vw;
-    } 
+        padding-bottom: 10vw;
+    }
 
     .menu_head {
         width: 85%;
         font-size: 5.5vw;
+        padding-bottom: 5vw;
     }
 
     .menu_page_img {
@@ -148,6 +150,7 @@
 
     .menu_order_head {
         font-size: 4.5vw;
+        padding-bottom: 5vw;
     }
 
     .idli_bulk_img {
@@ -159,15 +162,19 @@
     }
 
     .idli_menu_wrapper {
-        gap: 5vw;
+        gap: 10vw;
         width: 100%;
     }
 
     .menu_order {
-        font-size: 4vw;
-        padding: 2vw 5vw;
+        font-size: 5vw;
+        padding: 3vw 6vw;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .menu {
+        padding: 12vw 0;
     }
 }
