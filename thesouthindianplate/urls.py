@@ -34,3 +34,5 @@ urlpatterns = [
     path('robots.txt', views.robot, name='robot'),
 ] 
 
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
