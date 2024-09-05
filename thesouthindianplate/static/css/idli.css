@@ -851,22 +851,29 @@
 
 @media only screen and (max-width:500px) {
   .idli_hero_section  {
-    padding-top: 15vw;
-    padding-bottom: 10vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .idli_hero_section_wrapper {
-    width: 90%;
-    gap: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vw;
   }
 
   .idli_hero_section_right {
     width: 100%;
     justify-content: center;
+    height: 80vw;
   }
 
   .clip_img {
-    width: 65vw;
-    height: 65vw;
+    width: 85%;
+    height: 100%;
   }
 
   .clip_img::before {
@@ -876,11 +883,12 @@
 
   .idli_hero_section_left {
     width: 100%;
+    height: fit-content;
   }
 
   .idli_hero_section_title {
     width: 100%;
-    font-size: 6vw;
+    font-size: 8vw;
   } 
 
   .idli_hero_section_title span {
@@ -888,56 +896,81 @@
   }
 
   .idli_place_order {
-    font-size: 4vw;
+    font-size: 6vw;
+    width: 70%;
+    text-align: center;
+    padding: 3vw 6vw;
     margin-top: 2vw;
     margin-bottom: 2vw;
   }
 
   .idli_hero_section_para {
-    font-size: 4vw;
+    font-size: 6vw;
   }
 
   .idli_section_desc_title {
-    font-size: 5vw;
+    font-size: 6vw;
+    margin-bottom: 5vw;
   }
 
   .idli_section_desc_para {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
   }
 
   .place_order_heading {
-    font-size: 5vw;
+    font-size: 6vw;
   }
 
   .order_idli_wrapper {
     width: 95%;
-    padding-top: 8vw;
-    padding-bottom: 8vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
   }
 
   .order_idli_heading {
-    font-size: 4.2vw;
+    font-size: 6vw;
+  }
+
+  .right_about_idli {
+    width: 90%;
+  }
+
+  .about_idli_heading {
+    font-size: 6vw;
+  }
+
+  .about_idli_para {
+    font-size: 4.5vw;
+    width: 100%;
+  }
+
+  .about_idli_scnd_para {
+    font-size: 4.5vw;
+    width: 100%;
   }
 
   .order_idli_para {
-    font-size: 3.2vw;
+    font-size: 4.5vw;
   }
 
   .meduvada_order_redirect {
-    font-size: 3.5vw;
-    width: 45vw;
+    font-size: 4.5vw;
+    width: 60vw;
   }
   .place_idli_order {
-    font-size: 3.5vw;
-    width: 45vw;
+    font-size: 4.5vw;
+    width: 60vw;
   }
 
   .idli_speciality_head, .why_idli_head {
-    font-size: 5vw !important;
+    font-size: 6vw !important;
   }
 
   .idli_speciality_para, .why_idli_para, .idli_point {
-    font-size: 3.6vw !important;
+    font-size: 4.5vw !important;
     line-height: 1.6;
 }
 
@@ -946,21 +979,31 @@
 }
 
 .idli_party_heading {
-  font-size: 3.8vw;
+  font-size: 6vw;
   width: 80%;
   text-align: center;
 }
 
 .idli_party_para {
-  font-size: 2.5vw;
+  font-size: 4.5vw;
+  width: 88%;
 }
 
 .idli_party_anchor {
-  font-size: 3.5vw;
+  font-size: 4.5vw;
+  padding: 2vw 6vw;
 }
 
 .idli_party_text_wrapper {
   width: 95%;
+  padding: 15vw 0;
+  gap: 3vw;
+}
+
+.idli_premium {
+  width: 43vw;
+  top: 8vw;
+  font-size: 3vw;
 }
 
 .faq_main_container {
@@ -972,12 +1015,16 @@
 }
 
 .faq_question-text h3 {
-  font-size: 3.3vw;
-  line-height: 1.6;
+  font-size: 4.5vw;
+  line-height: 1.7;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
 }
 
 .answer p {
-  font-size: 2.8vw;
+  font-size: 3.5vw;
+  padding-top: 5vw;
+  line-height: 1.7;
 }
 
 .dalvada_right {

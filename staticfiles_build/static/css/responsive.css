@@ -767,6 +767,7 @@
 
   .half_idli {
     padding: 10vw 0;
+    z-index: 0;
   }
 
   .right_half_idli {
@@ -1355,7 +1356,7 @@
   }
 
   .social_media_icons a {
-    font-size: 13vw;
+    font-size: 11vw;
   }
 
   #nav_mob {
@@ -1463,6 +1464,11 @@
   .idli_point, .why_idli_para,.idli_speciality_para {
     font-size: 4.5vw !important;
     width: 100%;
+  }
+
+  .dalvada img {
+    width: 55vw;
+    height: 55vw;
   }
 
   .map {height: 60vw;}
