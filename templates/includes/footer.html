@@ -1,0 +1,89 @@
+{% load static %}
+
+<!-- FOOTER ********************************************************************** -->
+<footer id="footer">
+    <div class="footer_top">
+      <a href="{% url 'home' %}"
+        ><img
+          src="{% static 'img/thesouthindianplate_social_logo.svg' %}"
+          alt="Social logo of The South Indian Plate in top of the footer section to navigate to index page."
+      /></a>
+    </div>
+    <div class="footer_middle">
+      <nav class="footer_middle_nav">
+        <h3 class="ul_head">Contact Us</h3>
+        <ul class="footer_unorder_list">
+          <li>
+             Location: 21st Road Khar West, Mumbai:400052</li>
+          <li><a href="tel:+918108672615" rel="nofollow" title="The South Indian Plate contact phone number.">PhoneNo: +918108672615</a></li>
+          <li>
+            <a href="mailto:thesouthindianplate@gmail.com" rel="nofollow" title="The South Indian Plate contact email id."
+              >Email: thesouthindianplate@gmail.com</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav class="footer_middle_nav">
+        <h3 class="ul_head">Page Links</h3>
+        <ul class="footer_unorder_list">
+          <li>
+            <a class="nav_link" href="{% url 'how-to-order' %}" title="Step to order south Indian breakfast from The South Indian Plate.">HowToOrder</a>
+          </li>
+          <li><a href="{% url 'idli' %}" title="Idli page of the South Indian Plate at the footer section to navigate to Idli page.">Idli</a></li>
+          <li><a href="{% url 'meduvada' %}" title="Meduvada page of the South Indian Plate at the footer section to navigate to Meduvada page.">Meduvada</a></li>
+          <li><a href="{% url 'dalvada' %}" title="Dalvada page of the South Indian Plate at the footer section to navigate to Dalvada page.">Dalvada</a></li>
+          <li><a href="{% url 'menu' %}" title="Menu page of the South Indian Plate at the footer section to navigate to Menu page.">MenuPage</a></li>
+          <li><a href="{% url 'contact' %}" title="Contact page of the South Indian Plate at the footer section to navigate to the contact page.">Contact us</a></li>
+        </ul>
+      </nav>
+      <nav class="footer_middle_nav">
+        <h3 class="ul_head">Social Links</h3>
+        <ul class="footer_unorder_list">
+          <li>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/thesouthindianplate/" title="Instagarm profile page link of The South Indian Plate."
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/@thesouthindianplate"  title="Youtube profile page link of The South Indian Plate."
+              >Youtube</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/the-south-indian-plate"  title="Linkedin profile page link of The South Indian Plate."
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/thesouthindianplate/"  title="Facebook profile page link of The South Indian Plate."
+              >Facebook</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <ul class="footer_bottom">
+      <li>
+        <p>
+          Copyright © 2024
+          <span style="color: #f85a11">The South Indian Plate</span>
+        </p>
+      </li>
+      <li>
+        <a href="{% url 'privacy_policy' %}" target="_blank" title="Privacy policy page of The South Indian Plate">Privacy Policy</a>
+      </li>
+      <li>
+        <a href="{% url 'terms_and_conditions' %}" target="_blank" title="Terms and Conditions page of The South Indian Plate"
+          >Terms & Conditions</a
+        >
+      </li>
+    </ul>
+  </footer>

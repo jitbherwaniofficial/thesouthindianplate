@@ -1,0 +1,138 @@
+.contact_section_page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10vw;
+    background-color: #080708;
+    color: #feefe7;
+    padding-bottom: 5vw;
+}
+
+.contact_head {
+    font-size: 3.5vw;
+    padding-bottom: 2vw;
+}
+
+.contact_company {
+    font-size: 2.5vw;
+    color: #f85a11;
+    padding-bottom: 2vw;
+}
+
+.contact_location {
+    padding-top: 2vw;
+    font-size: 2vw;
+}
+
+a {
+    text-decoration: none;
+    color: #feefe7;
+    font-size: 1.6vw;
+}
+
+.contact_phone a {
+    font-size: 3vw;
+}
+
+.contact_email a {
+    font-size: 2.1vw;
+}
+
+.map {
+    padding-top: 3vw;
+}
+
+
+@media only screen and (max-width:1024px) {
+    .contact_section_page {
+        padding-top: 15vw;
+    }
+
+    .contact_head {
+        font-size: 5vw;
+    }
+
+    .contact_company {
+        font-size: 3.5vw;
+    }
+
+    .contact_email a, .contact_location {
+        font-size: 3vw;
+    }
+
+    .contact_phone a{
+        font-size: 4.5vw;
+        
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .contact_section_page {
+        padding-top: 25vw;
+    }
+
+    .contact_head {
+        font-size: 6.5vw;
+    }
+
+    .contact_company {
+        font-size: 4.5vw;
+    }
+
+    .contact_email a, .contact_location {
+        width: 50%;
+        text-align: center;
+        font-size: 4vw;
+        line-height: 1.6;
+    }
+
+    .contact_phone a{
+        font-size: 5.5vw;
+        
+    }
+
+    .map {
+        height: 60vw;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .contact_section_page {
+        padding-top: 30vw;
+        line-height: 1.8;
+    }
+
+    .contact_head {
+        font-size: 8vw;
+    }
+
+    .contact_company {
+        width: 65%;
+        text-align: center;
+        font-size: 5.5vw;
+    }
+
+    .contact_email a, .contact_location {
+        width: 50%;
+        text-align: center;
+        font-size: 6vw;
+        line-height: 1.6;
+    }
+
+    .contact_phone,.contact_email {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .contact_phone a{
+        font-size: 5.5vw;
+        text-align: center;
+    }
+
+    .map {
+        height: 80vw;
+    }
+}

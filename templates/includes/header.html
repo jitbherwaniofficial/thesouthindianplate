@@ -1,0 +1,71 @@
+{% load static %}
+<!-- NAV *************************************************************************** -->
+<nav id="nav" class="nav">
+    <div class="nav_ul">
+      <a href="{% url 'home' %}" class="logo nav_link">
+        <img
+          src="{% static 'img/thesouthindianplate_social_logo.svg' %}"
+          alt="Social logo of The South Indian Plate."
+        />
+      </a>
+      <ul class="link">
+        <li class="nav_li">
+          <a class="nav_link" href="{% url 'how-to-order' %}" title="Step to order south Indian breakfast from The South Indian Plate.">HowToOrder</a>
+        </li>
+        <li class="insights_links nav_li">
+          <p class="nav_link "
+            >OurMenu <i class="ri-arrow-up-s-line insights_arr"></i
+          ></p>
+          <div class="dropdown">
+            <a href="{% url 'idli' %}" class="dropdown_link" title="A link directing to the best Idli order page.">Idli</a>
+            <a href="{% url 'meduvada' %}" class="dropdown_link" title="A link directing to the best Meduvada order page.">Meduvada</a>
+            <a href="{% url 'dalvada' %}" class="dropdown_link" title="A link directing to the best Dal Vada order page.">Dal vada</a>
+            <a href="{% url 'menu' %}" class="dropdown_link our_menu " title="A link directing to the menu page of The South Indian Plate.">MenuCard</a>
+          </div>
+        </li>
+        <li class="nav_li">
+          <a class="nav_link" href="{% url 'contact' %}" title="A link directing to contact information page of The South Indian Plate">ContactUs</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- MOBILE LOGO ****************************************************************** -->
+  <div class="logo_container">
+    <a href="{% url 'home' %}" class="mobile_logo" 
+      ><img
+        src="{% static 'img/thesouthindianplate_social_logo.svg' %}"
+        alt="Mob version social logo of The South Indian Plate."
+    /></a>
+  </div>
+  <!-- BURGER MENU ******************************************************************* -->
+  <div id="burger" class="burger">
+    <i class="ri-menu-5-fill"></i>
+  </div>
+  <!-- MOBILE VIEW LINK ************************************************************* -->
+  <div class="nav" id="nav_mob">
+    <div class="link2">
+      <li class="nav_li active_mob">
+        <a class="nav_link" href="{% url 'how-to-order' %}" title="Step to order south Indian breakfast from The South Indian Plate.">HowToOrder</a>
+      </li>
+      <li class="nav_li active_mob">
+        <a class="nav_link" href="{% url 'idli' %}" title="A link directing to the best Idli order page.">Idli</a>
+      </li>
+      <li class="nav_li">
+        <a class="nav_link" href="{% url 'meduvada' %}" title="A link directing to the best Meduvada order page.">Meduvada</a>
+      </li>
+      <li class="nav_li">
+        <a class="nav_link" href="{% url 'dalvada' %}" title="A link directing to the best Dal Vada order page.">Dalvada</a>
+      </li>
+      <li class="nav_li">
+        <a class="nav_link" href="{% url 'contact' %}" title="A link directing to contact information page of The South Indian Plate">Contact Us</a>
+      </li>
+      <li class="nav_li">
+        <a class="nav_link" href="{% url 'menu' %}" title="A link directing to the menu page of The South Indian Plate.">Menu</a>
+      </li>
+    </div>
+  </div>
+  <!-- SOCIAL MEDIA ICONS *************************************** -->
+  <div class="social_media_icons">
+    <a class="whatsapp" href="https://wa.me/8108672615" rel="nofollow" title="A link for contacting The South Indian Plate via Whatsapp number."><i class="ri-whatsapp-line"></i></a>
+    <a class="call" href="tel:+918108672615" rel="nofollow" title="A link for calling The South Indian Plate via mobile number."><i class="ri-phone-fill"></i></a>
+   </div>
