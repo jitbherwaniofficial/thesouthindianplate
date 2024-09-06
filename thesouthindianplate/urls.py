@@ -40,4 +40,4 @@ urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 from django.conf.urls import handler404
 from thesouthindianplate.views import custom_page_not_found
 
-handler404 = custom_page_not_found
+handler404 = 'thesouthindianplate.views.handling_404'
