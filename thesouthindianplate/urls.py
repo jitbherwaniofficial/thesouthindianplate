@@ -37,4 +37,4 @@ urlpatterns = [
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-
+handler404 = 'thesouthindianplate.views.custom_page_not_found'
