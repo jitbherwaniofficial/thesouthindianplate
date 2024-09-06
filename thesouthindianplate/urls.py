@@ -37,6 +37,4 @@ urlpatterns = [
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-from django.conf.urls import handler404
-handler404 = 'thesouthindianplate.views.error_404_view'
 
