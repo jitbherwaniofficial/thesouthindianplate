@@ -2,9 +2,9 @@
 from django.shortcuts import render
 
 
+
 def robot(request):
     return render(request, 'robots.txt')
 
-def error_404(request, exception):
-    data = {"name": "thesouthindianplate.com"}
-    return render(request,'404.html', data)
+def custom_page_not_found(request, exception):
+    return render(request, '404.html', status=404)

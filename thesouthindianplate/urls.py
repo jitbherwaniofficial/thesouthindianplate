@@ -37,4 +37,7 @@ urlpatterns = [
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-handler404 = 'thesouthindianplate.views.custom_page_not_found'
+from django.conf.urls import handler404
+from thesouthindianplate.views import custom_page_not_found
+
+handler404 = custom_page_not_found
