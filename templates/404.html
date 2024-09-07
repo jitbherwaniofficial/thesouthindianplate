@@ -15,6 +15,10 @@
       referrerpolicy="no-referrer"
     />
     <style>
+        body {
+            background-color: #080708;
+            color: #feefe7;
+        }
         .error_404 {
             width: 100%;
             height: 100vh;
@@ -30,7 +34,7 @@
     {% include 'includes/header.html' %}
     <div class="error_404">
         <img src="{% static 'img/404.png' %}" alt="">
-        <h1>404 Error Chal Bhaag 👿</h1>
+        <h1 class="error_desc">404 Error Chal Bhaag 👿</h1>
 
     </div>
     {% include 'includes/footer.html' %}
