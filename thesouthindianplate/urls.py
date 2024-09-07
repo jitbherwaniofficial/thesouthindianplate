@@ -33,10 +33,11 @@ urlpatterns = [
     path('', include('core.urls')),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     path('robots.txt', views.robot, name='robot'),
-    path('*', views.error_handler, name='404'),
 ] 
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+# handler404 = 'myapp.views.custom_404'
 
 
 
