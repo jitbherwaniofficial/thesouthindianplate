@@ -44,6 +44,19 @@ a {
     padding-top: 3vw;
 }
 
+.contact_business_profile a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    font-size: 2vw;
+    color: #f85a11;
+  }
+ .business-img{
+  width: 4vw;
+  height: 4vw;
+ }
+
 
 @media only screen and (max-width:1024px) {
     .contact_section_page {
@@ -65,6 +78,10 @@ a {
     .contact_phone a{
         font-size: 4.5vw;
         
+    }
+
+    .contact_business_profile a {
+        font-size: 4vw;
     }
 
 }
@@ -96,6 +113,10 @@ a {
 
     .map {
         height: 60vw;
+    }
+
+    .contact_business_profile a {
+        font-size: 4vw;
     }
 }
 

@@ -67,6 +67,10 @@ body {
   font-size: 1.4vw;
   transition: 0.5s;
 }
+#nav.active .nav_li .nav_link {
+  font-size: 1.4vw;
+  transition: 0.5s;
+}
 #nav.active .nav_li a:before {
   background-color: #f85a11;
   height: 0.3vw;
@@ -99,6 +103,7 @@ body {
   list-style: none;
 }
 .nav_li a,
+.nav_li p,
 .nav_link,
 .nav_li a:link,
 .nav_li a:visited {
@@ -131,6 +136,10 @@ body {
 
 .insights_link {
   position: relative;
+}
+
+.insights_link.active {
+  font-size: 1.4vw !important;
 }
 
 .dropdown {
