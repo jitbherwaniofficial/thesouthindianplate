@@ -19,7 +19,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from thesouthindianplate import views  # Import your sitemap class
-
+from .views import sitemap_view
 
 
 
@@ -27,7 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.urls')),
     path('robots.txt', views.robot, name='robot'),
-    path('sitemap.xml', views.sitemap, name='sitemap'),
+    path('sitemap.xml', sitemap_view, name='sitemap'),
 ] 
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
