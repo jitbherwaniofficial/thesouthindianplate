@@ -5,11 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 ERROR</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
     {% include 'includes/header.html' %}
     <img src="{% static 'img/404.png' %}" alt="">
     <h1>404 Eroor Chal Bhaag 👿</h1>
     {% include 'includes/footer.html' %}
+
+    <script src="{% static 'js/burger.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
 </body>
 </html>
