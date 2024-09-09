@@ -19,42 +19,42 @@ def sitemap_view(request):
             "priority": "1.0"
         },
         {
-            "loc": "https://thesouthindianplate.com/how-to-order/",
+            "loc": "https://thesouthindianplate.com/how-to-order",
             "lastmod": '2024-09-07T11:09:00+00:00',
             "priority": "0.8"
         },
         {
-            "loc": "https://thesouthindianplate.com/best-idli-order-mumbai/",
+            "loc": "https://thesouthindianplate.com/best-idli-order-mumbai",
             "lastmod": '2024-09-07T11:09:00+00:00',
             "priority": "0.8"
         },
         {
-            "loc": "https://thesouthindianplate.com/best-meduvada-order-mumbai/",
+            "loc": "https://thesouthindianplate.com/best-meduvada-order-mumbai",
             "lastmod": '2024-09-07T11:09:00+00:00',
             "priority": "0.8"
         },
         {
-            "loc": "https://thesouthindianplate.com/best-dalvada-order-mumbai/",
+            "loc": "https://thesouthindianplate.com/best-dalvada-order-mumbai",
             "lastmod": '2024-09-07T11:09:00+00:00',
             "priority": "0.8"
         },
         {
-            "loc": "https://thesouthindianplate.com/menu-page/",
+            "loc": "https://thesouthindianplate.com/menu-page",
             "lastmod": '2024-09-07T11:09:00+00:00',
             "priority": "0.8"
         },
         {
-            "loc": "https://thesouthindianplate.com/contact-us/",
+            "loc": "https://thesouthindianplate.com/contact-us",
             "lastmod": '2024-09-07T11:09:00+00:00',
             "priority": "0.8"
         },
         {
-            "loc": "https://thesouthindianplate.com/privacy-policy/",
+            "loc": "https://thesouthindianplate.com/privacy-policy",
             "lastmod": '2024-09-07T11:09:00+00:00',
             "priority": "0.8"
         },
         {
-            "loc": "https://thesouthindianplate.com/terms-and-conditions/",
+            "loc": "https://thesouthindianplate.com/terms-and-conditions",
             "lastmod": '2024-09-07T11:09:00+00:00',
             "priority": "0.8"
         },
