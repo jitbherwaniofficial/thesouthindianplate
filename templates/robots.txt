@@ -1,4 +1,6 @@
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /private/
 
-Sitemap: https://thesouthindianplate.com/sitemap.xml
+# Allow search engines to crawl everything else
+Sitemap: {{ request.scheme }}://{{ request.get_host }}/sitemap.xml

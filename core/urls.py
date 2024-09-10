@@ -14,4 +14,5 @@ urlpatterns = [
     path('contact-us', views.contact, name='contact'),
     path('privacy-policy', views.privacy_policy, name='privacy_policy'),
     path('terms-and-conditions', views.terms_and_conditions, name='terms_and_conditions'),
+    path('robots.txt', views.robots_txt, name='robots_txt'),
 ]
