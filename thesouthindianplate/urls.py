@@ -20,15 +20,20 @@ from django.conf import settings
 from django.conf.urls.static import static
 from thesouthindianplate import views  # Import your sitemap class
 from .views import sitemap_view
+from django.contrib.sitemaps.views import sitemap
+from core.sitemaps import StaticViewSitemap  # Import your sitemap class
 
 
+sitemaps = {
+    'static': StaticViewSitemap,
+}
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.urls')),
     path('robots.txt', views.robot, name='robot'),
-    path('sitemap.xml', sitemap_view, name='sitemap'),
-] 
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
