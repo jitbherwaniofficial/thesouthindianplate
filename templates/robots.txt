@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 
 # Allow search engines to crawl everything else
-Sitemap: {{ request.scheme }}://{{ request.get_host }}/sitemap.xml
+Sitemap: https://thesouthindianplate.com/sitemap.xml
