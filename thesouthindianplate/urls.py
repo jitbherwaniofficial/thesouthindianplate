@@ -22,6 +22,7 @@ from thesouthindianplate import views  # Import your sitemap class
 from .views import sitemap_view
 from django.contrib.sitemaps.views import sitemap
 from core.sitemaps import StaticViewSitemap  # Import your sitemap class
+from django.views.generic import RedirectView
 
 
 sitemaps = {
@@ -33,6 +34,7 @@ urlpatterns = [
     path('', include('core.urls')),
     path('robots.txt', views.robot, name='robot'),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+    path('favicon.ico', RedirectView.as_view(url='/static/favicon.ico')),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
