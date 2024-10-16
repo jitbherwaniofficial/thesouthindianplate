@@ -26,7 +26,7 @@
     />
     
     <!-- FAVICONS ******************************************* -->
-    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png"/>
+    <link rel="icon" href="{% static 'img/chef_fav.png' %}" type="image/png"/>
     <link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon.png' %}"/>
     <link rel="manifest" href="{% static 'manifest.webmanifest' %}"/>
     <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
@@ -120,7 +120,7 @@
         "image": "https://thesouthindianplate.com/static/img/favicon-512.png",
         "@id": "",
         "url": "https://thesouthindianplate.com/",
-        "telephone": "+918108672615", 
+        "telephone": "+919167674367", 
         "priceRange": "$-$$$",
         "menu": "https://thesouthindianplate.com/menu-page",
         "servesCuisine": "Idli , Meduvada, Dal Vada",
@@ -169,36 +169,6 @@
             "position": 1, 
             "name": "Home",
             "item": "https://thesouthindianplate.com"  
-          },{
-            "@type": "ListItem", 
-            "position": 2, 
-            "name": "Menu Page",
-            "item": "https://thesouthindianplate.com/menu-page"  
-          },{
-            "@type": "ListItem", 
-            "position": 3, 
-            "name": "Best Idli Order In Khar West, Santacruz West and Bandra West",
-            "item": "https://thesouthindianplate.com/best-idli-order-mumbai"  
-          },{
-            "@type": "ListItem", 
-            "position": 4, 
-            "name": "Best Medu Vada Order In Khar West, Santacruz West and Bandra West",
-            "item": "https://thesouthindianplate.com/best-meduvada-order-mumbai"  
-          },{
-            "@type": "ListItem", 
-            "position": 5, 
-            "name": "Best Dal Vada Order In Khar West, Santacruz West and Bandra West",
-            "item": "https://thesouthindianplate.com/best-dalvada-order-mumbai"  
-          },{
-            "@type": "ListItem", 
-            "position": 6, 
-            "name": "How To place Your Order",
-            "item": "https://thesouthindianplate.com/how-to-order"  
-          },{
-            "@type": "ListItem", 
-            "position": 7, 
-            "name": "Contact Us",
-            "item": "https://thesouthindianplate.com/contact-us"  
           }]
         }
         </script>
@@ -223,7 +193,7 @@
         <h1 class="hero_heading">
           <span>We Deliver Best</span> South Indian Breakfast at your door.
         </h1>
-        <a href="{% url 'menu' %}" title="A link directing to the menu page of The South Indian Plate." class="place_order" 
+        <a href="tel:+919167674367" title="A link directing to the menu page of The South Indian Plate." class="place_order" 
           >Place An Order</a
         >
         <span class="min_order">Delivered 1000+ orders till now</span>
@@ -279,8 +249,8 @@
         <div class="order_process">
           <h3 class="process_heading">Place Your Order</h3>
           <p class="process_para">
-           Bulk order - 2 days before, as we have to make the batter for the
-            order. Single order same day or day before.
+            Order us 24 hours before as we have to make the batter for the
+            order. click on the place order button to Order..
           </p>
         </div>
 
@@ -295,23 +265,22 @@
         <div class="order_process">
           <h3 class="process_heading">Your Order is Placed</h3>
           <p class="process_para">
-            You will get a message confirming the order. After 2 days your order
-            will be at your home.
+            You will get a message confirming the order. We will deliver the order at a given time.
+          </p>
           </p>
         </div>
 
         <div class="order_process last_process">
           <h3 class="process_heading">Cancellation policy</h3>
           <p class="process_para">
-            Cancellation leads to Food Wastage, there will be no refund after
-            60s of payment, So think and order.
+            Cancellation leads to Food Wastage, there will be no refund after payment, So think and order.
           </p>
         </div>
       </div>
       <h2 class="our_Menu_head_index">Our Breakfast Menu : Idli, Meduvada & Dalvada</h2>
     </section>
     <!-- IDLI SECTION ***************************************************************** -->
-    <section class="idli_section" id="idli-bulk-order">
+    <section class="idli_section" id="idli">
       <div class="half_idli">
         
         <p class="idli_content_heading">
@@ -322,7 +291,7 @@
        
           <div class="hun_pieces price_box">
             <p class="hun_pieces_para tablet_font">Idli, sambhar & chutney</p>
-            <a href="{% url 'idli' %}" class="idli_anchor tablet_font" title="A link directing to idli page to place Idli plate and bulk order."
+            <a href="https://wa.me/+919167674367" class="idli_anchor tablet_font" title="A link directing to idli page to place Idli plate and bulk order."
               >Place Your Order</a
             >
           </div>
@@ -338,7 +307,7 @@
       </div>
     </section>
     <!-- MEDUVADA SECTION ************************************************************* -->
-    <section class="wada_section" id="vada-bulk-order">
+    <section class="wada_section" id="vada">
       <div class="half_wada">
         <div class="vada_picture"></div>
         <img
@@ -358,7 +327,7 @@
               Mehduwada, sambhar & chutney
             </p>
             
-            <a href="{% url 'meduvada' %}" class="wada_anchor tablet_font" title="A link directing to Meduvada page to place Meduvada plate and bulk order."
+            <a href="https://wa.me/+919167674367" class="wada_anchor tablet_font" title="A link directing to Meduvada page to place Meduvada plate and bulk order."
               >Place Order</a
             >
           
@@ -367,7 +336,7 @@
       </div>
     </section>
      <!-- DALVADA SECTION ***************************************************************** -->
-     <section class="idli_section" id="idli-bulk-order">
+     <section class="idli_section" id="dalvada">
       <div class="half_idli">
         
         <p class="idli_content_heading">
@@ -377,7 +346,7 @@
        
           <div class="hun_pieces price_box">
             <p class="hun_pieces_para tablet_font">Dalvada & chutney</p>
-            <a href="{% url 'dalvada' %}" class="idli_anchor tablet_font" title="A link directing to dal vada page to place dal vada plate and bulk order."
+            <a href="https://wa.me/+919167674367" class="idli_anchor tablet_font" title="A link directing to dal vada page to place dal vada plate and bulk order."
               >Place Your Order</a
             >
           </div>
@@ -460,7 +429,7 @@
       </div>
     </section>
     <!-- What is our speciality -->
-    <section class="section_why_idli_from_us mb_ pb_">
+    <!-- <section class="section_why_idli_from_us mb_ pb_">
       <div class="why_order_idli_from_us">
         <h2 class="why_idli_head">What is special in the breakfast from The South Indian Plate?</h2>
         <p class="why_idli_para">We are the best delivery restaurant that offers authentic South Indian breakfast in Khar West, Santacruz West and Bandra West. Our fluffy Idlis, crispy Meduvadas and Dal Vada, delicious coconut Chutney and Sambhar are the talk of the town. If you are pure vegetarian then you have got your perfect place to order. Some of the important reason why we are unique :- </p>
@@ -478,7 +447,7 @@
         <p class="idli_speciality_para index_speciality_para">We are leading delivery restaurant in South Indian breakfast for party orders in the following areas - Khar West, Santacruz West and Bandra West. South Indian dishes are making their own space in the party plates of any occasions. The popular ones are - Idli, Meduvada and Dal Vada as a breakfast item and we have expertise in it.  </p>
         <p class="idli_speciality_para"> If you are organizing birthday party in Bandra West, marriage ceremony in Santacruz West or Seminar in Khar West, we are the perfect choice for ordering bulk South Indian breakfast in Khar West, Santacruz West and Bandra West for any of your occasion and making your big day memorable.</p>
       </div>
-    </section>
+    </section> -->
     <!-- BANNER ********************************************************************** -->
     <section class="banner">
       <div
@@ -491,7 +460,7 @@
         <p class="banner_para">
           Offer yourself & your guest a plate full of love and taste.
         </p>
-        <a href="{% url 'menu' %}" class="banner_anchor" title="A link directing to menu page to place south indian breakfast plate and bulk order">Place Order</a>
+        <a href="https://wa.me/+919167674367" class="banner_anchor" title="A link directing to menu page to place south indian breakfast plate and bulk order">Place Order</a>
       </div>
     </section>
    

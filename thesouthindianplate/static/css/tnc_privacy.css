@@ -2,7 +2,7 @@
     background-image: url(../img/black_bg.webp);
     background-size: contain;
     background-repeat: repeat;
-    color: #feefe7;
+    color: #edf7ee;
     width: 100%;
     padding-top: 12vw;
     padding-bottom: 8vw;
@@ -25,7 +25,7 @@
 
 .tnc_head {
     font-size: 3vw;
-    color: #f85a11;
+    color: #4CAF50;
 }
 
 .tnc_para_head {
@@ -57,7 +57,7 @@
 
 .our_site {
     font-size: 1.5vw;
-    color: #f85a11;
+    color: #4CAF50;
     text-decoration: none;
 }
 
