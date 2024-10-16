@@ -117,7 +117,7 @@
     bottom: 0;
     right: -100%;
     transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    background-color: #f85a11;
+    background-color: #4CAF50;
     box-shadow: -3px 0px 3px 1px rgba(254, 239, 231, 0.5);
     display: flex;
     justify-content: center;
