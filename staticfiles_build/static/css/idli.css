@@ -483,7 +483,8 @@
   justify-content: center;
   align-items: center;
   /* gap: 2vw; */
-  margin-bottom: 8vw;
+  margin-bottom: 4vw;
+  margin-top: 8vw;
 }
 
 
