@@ -2,7 +2,7 @@
 <!-- NAV *************************************************************************** -->
 <nav id="nav" class="nav">
     <div class="nav_ul">
-      <a href="#homepage" class="logo nav_link">
+      <a href="{% url 'home' %}" class="logo nav_link">
         <img
           src="{% static 'img/logo.svg' %}"
           alt="Social logo of The South Indian Plate."
@@ -29,7 +29,7 @@
   </nav>
   <!-- MOBILE LOGO ****************************************************************** -->
   <div class="logo_container">
-    <a href="#homepage" class="mobile_logo" 
+    <a href="{% url 'home' %}" class="mobile_logo" 
       ><img
         src="{% static 'img/logo.svg' %}"
         alt="Mob version social logo of The South Indian Plate."
@@ -42,7 +42,7 @@
   <!-- MOBILE VIEW LINK ************************************************************* -->
   <div class="nav" id="nav_mob">
     <div class="link2">
-      <li class="nav_li"><a class="nav_link" href="#homepage">Home</a></li>
+      <li class="nav_li"><a class="nav_link" href="{% url 'home' %}">Home</a></li>
       <li class="nav_li">
         <a class="nav_link" href="#how-to-order">HowToOrder</a>
       </li>

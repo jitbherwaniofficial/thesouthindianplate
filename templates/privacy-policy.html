@@ -80,7 +80,7 @@
     </nav>
     <!-- MOBILE LOGO ****************************************************************** -->
     <div class="logo_container">
-      <a href="#homepage" class="mobile_logo" 
+      <a href="{% url 'home' %}" class="mobile_logo" 
         ><img
           src="{% static 'img/thesouthindianplate_social_logo.svg' %}"
           alt="Mob version social logo of The South Indian Plate."
@@ -384,6 +384,7 @@
         </li>
       </ul>
     </footer>
+
 
     <script src="{% static 'js/burger.js' %}"></script>
     <script src="{% static 'js/index.js' %}"></script>
