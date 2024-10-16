@@ -2,5 +2,5 @@ User-agent: *
 Disallow: /admin/
 Disallow: /private/
 
-# Allow search engines to crawl everything else
+
 Sitemap: https://thesouthindianplate.com/sitemap.xml
