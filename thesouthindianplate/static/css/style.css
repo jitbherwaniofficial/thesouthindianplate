@@ -90,7 +90,7 @@ body {
 .link {
   display: flex;
   align-items: flex-end;
-  width: 60%;
+  width: 45%;
   justify-content: space-between;
   gap: 1vw;
   align-self: stretch;
