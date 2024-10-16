@@ -7,12 +7,6 @@ class StaticViewSitemap(Sitemap):
     def items(self):
         return [
             'home',
-            'how-to-order',
-            'menu',
-            'dalvada',
-            'idli',
-            'meduvada',
-            'contact',
             'privacy_policy',
             'terms_and_conditions'
         ]
