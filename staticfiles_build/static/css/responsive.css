@@ -1396,13 +1396,13 @@
 
   .place_order {
     padding: 3vw 6vw;
-    font-size: 6vw;
+    font-size: 3vw;
   }
   
   .how_to_hero_heading {
     width: 80% !important;
-    font-size: 6vw !important;
-    height: 15vw  !important;
+    font-size: 3vw !important;
+    height: 10vw  !important;
   }
 
   .why_us {padding-top: 10vw;padding-bottom: 10dvw;}

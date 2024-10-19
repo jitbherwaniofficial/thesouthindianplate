@@ -465,14 +465,6 @@ body {
   align-items: center;
   margin-bottom: 5vw;
 }
-.how_to_heading::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 27%;
-  height: 0.25vw;
-  background-color: #000000;
-}
 
 .order_process_wrapper {
   width: 90%;
