@@ -465,14 +465,6 @@ body {
   align-items: center;
   margin-bottom: 5vw;
 }
-.how_to_heading::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 27%;
-  height: 0.25vw;
-  background-color: #000000;
-}
 
 .order_process_wrapper {
   width: 90%;
@@ -805,7 +797,7 @@ body {
   font-weight: 600;
   padding-bottom: 2vw;
 }
-.why_heading_para {
+/* .why_heading_para {
   padding-bottom: 4.5vw;
   width: 85%;
   margin: 0 auto;
@@ -814,7 +806,7 @@ body {
   letter-spacing: 0.01vw;
   color: #000000;
   font-weight: 500;
-}
+} */
 .Why_ans_wrapper {
   width: 90%;
   margin: 0 auto;
