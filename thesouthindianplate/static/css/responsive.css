@@ -1401,7 +1401,7 @@
   
   .how_to_heading {
     width: 80% !important;
-    font-size: 3vw !important;
+    font-size: 5vw !important;
     height: 10vw  !important;
   }
 
@@ -1409,7 +1409,7 @@
   .why_heading {width: 85%;font-size: 7vw;padding-bottom: 5vw;}
   .why_heading_para {width: 85%;font-size: 6vw;padding-bottom: 5vw;}
   .min_order {
-    font-size: 5vw;
+    font-size: 3.5vw;
   }
   .below_hero{
     padding: 15vw 0;
