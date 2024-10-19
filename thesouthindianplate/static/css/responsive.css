@@ -265,9 +265,6 @@
     font-size: 3.5vw;
   }
 
-  .how_to_heading::before {
-    width: 30%;
-  }
 
   .order_process_wrapper {
     flex-wrap: wrap;
@@ -684,11 +681,6 @@
     font-size: 5vw;
   }
 
-  .how_to_heading::before {
-    width: 42%;
-    height: 0.5vw;
-  }
-
   .how_to_hero_section {
     height: 70vw !important;
   }
@@ -1061,9 +1053,6 @@
   .how_to_heading {
     font-size: 10vw;
     padding-top: 15vw;
-  }
-  .how_to_heading::before {
-    width: 90%;
   }
   .order_process_wrapper {
     width: 100%;
