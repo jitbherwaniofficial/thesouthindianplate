@@ -1391,7 +1391,7 @@
   .how_to_heading {
     width: 80% !important;
     font-size: 6.5vw !important;
-    height: 10vw  !important;
+    height: auto  !important;
   }
 
   .why_us {padding-top: 10vw;padding-bottom: 10dvw;}
