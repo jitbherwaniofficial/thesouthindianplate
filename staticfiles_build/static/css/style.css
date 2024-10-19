@@ -217,6 +217,7 @@ body {
   z-index: 1000;
 }
 
+
 .social_media_icons a {
   text-decoration: none;
   font-size: 3.5vw;
@@ -229,6 +230,24 @@ body {
 .call {
   color: rgb(0, 77, 102);
 }
+
+
+.menu_card_download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  text-decoration: none;
+  margin-bottom: 1vw;
+}
+
+.menu_card_download svg {
+  width: 100%;
+  height: 100%;
+}
+
 
 /* HERO SECTION ********************************************************************* */
 .hero_section {
@@ -1284,3 +1303,4 @@ body {
 .index_speciality_para {
   margin-bottom: 1.5vw;
 }
+

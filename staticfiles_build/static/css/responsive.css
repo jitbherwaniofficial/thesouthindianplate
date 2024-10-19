@@ -158,6 +158,8 @@
     background-color: rgba(8, 7, 8, 0.6);
   }
 
+  
+
   .diagonal_trapezium {
     top: 50%;
     width: 100%;
@@ -185,6 +187,12 @@
   .social_media_icons a {
     font-size: 5vw;
   }
+
+  
+.menu_card_download {
+  width: 6vw;
+  height: 6vw;
+}
   
   .min_order {font-size: 2vw;text-align: center;}
 
@@ -657,6 +665,12 @@
   .social_media_icons a {
     font-size: 7vw;
   }
+
+   
+.menu_card_download {
+  width: 8vw;
+  height: 8vw;
+}
 
   .diagonal_trapezium {
     height: 45%;
@@ -1347,6 +1361,13 @@
   .social_media_icons a {
     font-size: 11vw;
   }
+
+     
+.menu_card_download {
+  width: 13.5vw;
+  height: 13.5vw;
+  margin-left: -1.8vw;
+}
 
   #nav_mob {
     width: 70vw;
