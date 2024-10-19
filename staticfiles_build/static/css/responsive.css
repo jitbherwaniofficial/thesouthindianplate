@@ -1055,7 +1055,7 @@
   }
   
   .min_order {
-    font-size: 4.5vw;
+    font-size: 3.5vw;
     width: fit-content;
   }
   .how_to_heading {
@@ -1396,7 +1396,7 @@
 
   .place_order {
     padding: 3vw 6vw;
-    font-size: 3vw;
+    font-size: 6vw;
   }
   
   .how_to_hero_heading {
