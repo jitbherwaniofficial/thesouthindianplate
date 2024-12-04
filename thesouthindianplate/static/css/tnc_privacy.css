@@ -1,8 +1,27 @@
+:root {
+    --heading-font: "Gloock", serif;
+    --para-font: "Poppins", sans-serif;
+    --dark-green-color: #0e1913;
+    --yellow-color: #f0e583;
+    --white-color: #ffffff;
+    --medium-white: #eee;
+    --secondary-color: #f1efdd;
+    --font-color: #000000;
+    --medium-black: #222;
+    --bold: 700;
+    --semi-bold: 600;
+    --medium: 500;
+    --normal: 400;
+    --section-padding: 10vw 0;
+    --within-section-padding: 7vw 0;
+}
+
 .tnc {
-    background-image: url(../img/black_bg.webp);
+    /* background-image: url(../img/black_bg.webp);
     background-size: contain;
-    background-repeat: repeat;
-    color: #edf7ee;
+    background-repeat: repeat; */
+    background-color: var(--secondary-color);
+    color: var(--font-color);
     width: 100%;
     padding-top: 12vw;
     padding-bottom: 8vw;
