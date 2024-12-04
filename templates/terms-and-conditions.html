@@ -21,13 +21,6 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" href="{% static 'css/tnc_privacy.css' %}" />
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
-      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
     <link
       rel="canonical"
@@ -64,91 +57,7 @@
   </head>
   <body>
 
-    <nav id="nav" class="nav">
-      <div class="nav_ul">
-        <a href="{% url 'home' %}" class="logo nav_link">
-          <img
-            src="{% static 'img/logo.svg' %}"
-            alt="Social logo of The South Indian Plate."
-          />
-        </a>
-        <ul class="link">
-          <li class="nav_li">
-            <a class="nav_link" href="{% url 'home' %}">Home</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- MOBILE LOGO ****************************************************************** -->
-    <div class="logo_container">
-      <a href="{% url 'home' %}" class="mobile_logo" 
-        ><img
-          src="{% static 'img/logo.svg' %}"
-          alt="Mob version social logo of The South Indian Plate."
-      /></a>
-    </div>
-    <!-- BURGER MENU ******************************************************************* -->
-    <div id="burger" class="burger">
-      <i class="ri-menu-5-fill"></i>
-    </div>
-    <!-- MOBILE VIEW LINK ************************************************************* -->
-    <div class="nav" id="nav_mob">
-      <div class="link2">
-        <li class="nav_li"><a class="nav_link" href="{% url 'home' %}">Home</a></li>
-      </div>
-    </div>
-    <!-- SOCIAL MEDIA ICONS *************************************** -->
-    <div class="social_media_icons">
-      <a href="{% static 'img/menu.jpg' %}" download class="menu_card_download" title="Menu Card of The South Indian Plate">
-        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    
-        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-        <svg
-          version="1.1"
-          id="Icons"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 32 32"
-          xml:space="preserve"
-        >
-          <g id="SVGRepo_bgCarrier" stroke-width="0" />
-    
-          <g
-            id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-    
-          <g id="SVGRepo_iconCarrier">
-            <style type="text/css">
-              .st0 {
-                fill: none;
-                stroke: orangered;
-                stroke-width: 1.5;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-miterlimit: 10;
-              }
-            </style>
-            <path
-              class="st0"
-              d="M8,9h15c0.6,0,1,0.4,1,1v18c0,0.6-0.4,1-1,1H9c-0.6,0-1-0.4-1-1V9l11.6-5.3C20.2,3.3,21,3.8,21,4.6V9"
-            />
-            <path
-              class="st0"
-              d="M17.1,29l-0.4-3.3c-0.1-1.3,0.3-2.6,1.2-3.5c0.7-0.7,1.1-2,1.1-3.7V13"
-            />
-            <path
-              class="st0"
-              d="M13,13v5.5c0,1.7,0.4,2.9,1.1,3.7c0.9,1,1.3,2.2,1.2,3.5L14.9,29"
-            />
-            <line class="st0" x1="16" y1="19" x2="16" y2="13" />
-          </g>
-        </svg>
-      </a>
-      <a class="whatsapp" href="https://wa.me/+918108672615" rel="nofollow" title="A link for contacting The South Indian Plate via Whatsapp number."><i class="ri-whatsapp-line"></i></a>
-      <a class="call" href="tel:+918108672615" rel="nofollow" title="A link for calling The South Indian Plate via mobile number."><i class="ri-phone-fill"></i></a>
-     </div>
+   
 
     <!-- TERMS AND CONDITIONS -->
     <section class="tnc">
@@ -323,91 +232,13 @@
       </div>
     </section>
 
-    <footer id="footer">
-      <div class="footer_top">
-        <a href="{% url 'home' %}"
-          ><img
-            src="{% static 'img/logo.svg' %}"
-            alt="Social logo of The South Indian Plate in top of the footer section to navigate to index page."
-        /></a>
-      </div>
-      <div class="footer_middle">
-        <nav class="footer_middle_nav">
-          <h3 class="ul_head">Contact Us</h3>
-          <ul class="footer_unorder_list">
-            <li>
-              <a href="https://g.co/kgs/NKmwqDK">
-               Location: 21st Road Khar West, Mumbai:400052
-              </a>
-            </li>
-            <li><a href="tel:+918108672615" rel="nofollow" title="The South Indian Plate contact phone number.">PhoneNo: +918108672615</a></li>
-            <li>
-              <a href="mailto:thesouthindianplate@gmail.com" rel="nofollow" title="The South Indian Plate contact email id."
-                >Email: thesouthindianplate@gmail.com</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <nav class="footer_middle_nav">
-          <h3 class="ul_head">Page Links</h3>
-          <ul class="footer_unorder_list">
-            <li>
-              <a href="{% url 'home' %}" title="Step to order south Indian breakfast from The South Indian Plate.">Home</a>
-            </li>
-        </nav>
-        <nav class="footer_middle_nav">
-          <h3 class="ul_head">Social Links</h3>
-          <ul class="footer_unorder_list">
-            <li>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/thesouthindianplate/" title="Instagarm profile page link of The South Indian Plate." rel="noopener"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.youtube.com/@thesouthindianplate"  title="Youtube profile page link of The South Indian Plate." rel="noopener"
-                >Youtube</a
-              >
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/company/the-south-indian-plate"  title="Linkedin profile page link of The South Indian Plate." rel="noopener"
-                >Linkedin</a
-              >
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.facebook.com/thesouthindianplate/"  title="Facebook profile page link of The South Indian Plate." rel="noopener"
-                >Facebook</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <ul class="footer_bottom">
-        <li>
-          <p>
-            Copyright © 2024
-            <span style="color: #4CAF50">The South Indian Plate</span>
-          </p>
-        </li>
-        <li>
-          <a href="{% url 'privacy_policy' %}" target="_blank" title="Privacy policy page of The South Indian Plate">Privacy Policy</a>
-        </li>
-        <li>
-          <a href="{% url 'terms_and_conditions' %}" target="_blank" title="Terms and Conditions page of The South Indian Plate"
-            >Terms & Conditions</a
-          >
-        </li>
-      </ul>
-    </footer>
+  <!-- FOOTER SECTION STARTS ******************************************************************** -->
 
-    <script src="{% static 'js/burger.js' %}"></script>
+  {% include 'includes/footer.html' %}
+
+  <!-- FOOTER SECTION ENDS ******************************************************************** -->
+
+    
     <script src="{% static 'js/index.js' %}"></script>
   </body>
 </html>
