@@ -1,6 +1,6 @@
 {
   "icons": [
-    { "src": "{% static 'img/logo-192.png' %}", "type": "image/png", "sizes": "192x192" },
-    { "src": "{% static 'img/logo-512.png' %}", "type": "image/png", "sizes": "512x512" }
+    { "src": "{% static 'img/logo_192' %}", "type": "image/png", "sizes": "192x192" },
+    { "src": "{% static 'img/logo_512' %}", "type": "image/png", "sizes": "512x512" }
   ]
 }
