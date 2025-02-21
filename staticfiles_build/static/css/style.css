@@ -203,7 +203,7 @@ a {
     width: 53vw;
     height: 53vw;
     right: -14%;
-    top: -5%;
+    top: -2%;
     z-index: 10;
     background-color: transparent;
 }
@@ -252,7 +252,7 @@ a {
     position: absolute;
     z-index: 11;
     right: 15%;
-    top: 0%;
+    top: 4%;
     width: 100%;
     height: 100%;
     transform: rotate(-15deg);
@@ -293,7 +293,7 @@ a {
 
 .oneandhalfsection {
     width: 100%;
-    height: 30vw;
+    height: 31vw;
     display: flex;
     justify-content: center;
     align-items: center;
