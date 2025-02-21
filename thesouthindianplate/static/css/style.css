@@ -198,15 +198,6 @@ a {
     align-items: center;
 }
 
-.plate_pattern {
-    position: absolute;
-    width: 53vw;
-    height: 53vw;
-    right: -14%;
-    top: -2%;
-    z-index: 10;
-    background-color: transparent;
-}
 
 .plate_pattern img {
     width: 100%;
