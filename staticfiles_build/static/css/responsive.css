@@ -36,7 +36,7 @@
     width: 53vw;
     height: 53vw;
     right: -14%;
-    top: -3%;
+    top: -2.5%;
     z-index: 10;
     background-color: transparent;
 }
@@ -150,13 +150,18 @@
         height: 100%;
     }
 
+    
+    .marquee_img_horizontal {
+        animation: scrollLeft 40s linear infinite;
+    }
+
     @keyframes scrollLeft {
         0% {
-            transform: translateX(40%);
+            transform: translateX(200%);
         }
 
         100% {
-            transform: translateX(-40%);
+            transform: translateX(-200%);
         }
     }
 
@@ -572,19 +577,19 @@
 
     .plate_pattern {
         position: absolute;
-        width: 70vw;
-        height: 70vw;
+        width: 80vw;
+        height: 75vw;
         top: 9%;
-        left: 15%;
+        left: 10%;
     }
 
     .plate {
         position: absolute;
         z-index: 11;
-        right: 29%;
+        right: 27%;
         top: 14%;
-        width: 42%;
-        height: 42%;
+        width: 45%;
+        height: 45%;
         transform: rotate(-15deg);
     }
 
@@ -599,11 +604,11 @@
 
     @keyframes scrollLeft {
         0% {
-            transform: translateX(42%);
+            transform: translateX(250%);
         }
 
         100% {
-            transform: translateX(-42%);
+            transform: translateX(-250%);
         }
     }
 
@@ -1105,12 +1110,12 @@
 
     @keyframes scrollLeft {
         0% {
-            transform: translateX(45%);
+            transform: translateX(350%);
         }
 
         100% {
-            transform: translateX(-45%);
-        }
+            transform: translateX(-350%);
+        } 
     }
 
     .second_section_title {

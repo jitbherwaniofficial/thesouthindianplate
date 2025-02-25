@@ -288,7 +288,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-background-color: var(--yellow-color);
+    background-color: var(--yellow-color);
+    overflow: hidden;
 }
 
 /* .hero_right_marque_container {
@@ -343,11 +344,11 @@ background-color: var(--yellow-color);
 
 @keyframes scrollLeft {
     0% {
-        transform: translateX(42%);
+        transform: translateX(39%);
     }
 
     100% {
-        transform: translateX(-42%);
+        transform: translateX(-39%);
         /* Move up by half of the total height */
     }
 }
