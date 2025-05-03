@@ -51,10 +51,10 @@ gsap.to(".hero_lines span", {
 const pills = document.querySelectorAll("button.pill");
 
 // Initialize Swiper with slide change listener
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper(".swiper-container", {
   spaceBetween: 40, // Space between slides
   grabCursor: true, // Enable grab effect
-    breakpoints: {
+  breakpoints: {
     1366: {
       spaceBetween: 50,
     },
@@ -81,41 +81,38 @@ const swiper = new Swiper('.swiper-container', {
     },
   },
   on: {
-    slideChange: function() {
+    slideChange: function () {
       const activeIndex = this.activeIndex;
       // Update active state of pills
-      pills.forEach(pill => {
+      pills.forEach((pill) => {
         const pillIndex = parseInt(pill.dataset.slide);
-        pill.classList.toggle('active', pillIndex === activeIndex);
+        pill.classList.toggle("active", pillIndex === activeIndex);
       });
-    }
-  }
+    },
+  },
 });
 
-
 // Pill click handlers
-pills.forEach(pill => {
-  pill.addEventListener('click', (e) => {
+pills.forEach((pill) => {
+  pill.addEventListener("click", (e) => {
     e.preventDefault();
     swiper.slideTo(parseInt(pill.dataset.slide));
   });
 });
 
 // Arrow navigation handlers
-document.querySelectorAll('.second_section_arrow').forEach(arrow => {
-  arrow.addEventListener('click', (e) => {
+document.querySelectorAll(".second_section_arrow").forEach((arrow) => {
+  arrow.addEventListener("click", (e) => {
     e.preventDefault();
-    const isPrev = arrow.querySelector('.prev');
+    const isPrev = arrow.querySelector(".prev");
     isPrev ? swiper.slidePrev() : swiper.slideNext();
   });
 });
-
 
 // ACCORDION //
 let questions = document.querySelectorAll(".faq_question");
 
 questions.forEach((question) => {
-
   question.addEventListener("click", (event) => {
     const active = document.querySelector(".faq_question.active");
 
@@ -136,3 +133,23 @@ questions.forEach((question) => {
   });
 });
 // ACCORDION //
+
+
+gsap.registerPlugin(ScrollSmoother) 
+// Initialize ScrollSmoother
+ScrollSmoother.create({
+  smooth: 3, // Seconds to smooth scrolling (default: 1)
+  effects: true, // Enable GPU-accelerated effects (parallax, etc.)
+  wrapper: "#smooth-wrapper", // Required wrapper selector
+  content: "#smooth-content", // Required content selector
+  normalizeScroll: true, // Fix touch/wheel delta (recommended)
+  ignoreMobileResize: true, // Prevent resize events on mobile
+});
+
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const target = link.getAttribute("href");
+    smoother.scrollTo(target, true, "top center"); // Scroll to target
+  });
+});
