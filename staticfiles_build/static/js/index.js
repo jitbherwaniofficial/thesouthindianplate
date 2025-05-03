@@ -1,5 +1,29 @@
 console.log("Har Har Mahadev");
 
+gsap.registerPlugin(ScrollSmoother) 
+// Initialize ScrollSmoother
+ScrollSmoother.create({
+  smooth: 3, // Seconds to smooth scrolling (default: 1)
+  effects: true, // Enable GPU-accelerated effects (parallax, etc.)
+  wrapper: "#smooth-wrapper", // Required wrapper selector
+  content: "#smooth-content", // Required content selector
+  normalizeScroll: true, // Fix touch/wheel delta (recommended)
+  ignoreMobileResize: true, // Prevent resize events on mobile
+});
+
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const target = link.getAttribute("href");
+    smoother.scrollTo(target, true, "top center"); // Scroll to target
+  });
+});
+
+const smoother = ScrollSmoother.create({
+  smooth: 1.5,
+  smoothHorizontal: false, // Disable horizontal smoothing
+});
+
 gsap.to(".hero_lines span", {
   y: 0,
   stagger: 0.2,
@@ -51,7 +75,12 @@ gsap.to(".hero_lines span", {
 const pills = document.querySelectorAll("button.pill");
 
 // Initialize Swiper with slide change listener
+const swiperContainer = document.querySelector(".swiper-container");
 const swiper = new Swiper(".swiper-container", {
+  touchEventsTarget: "container",
+  simulateTouch: true, // Disable touch if not needed
+  allowTouchMove: true, // ← Ensure this is enabled (default: true)
+  resizeObserver: false, // Let ScrollSmoother handle resizing
   spaceBetween: 40, // Space between slides
   grabCursor: true, // Enable grab effect
   breakpoints: {
@@ -135,21 +164,8 @@ questions.forEach((question) => {
 // ACCORDION //
 
 
-gsap.registerPlugin(ScrollSmoother) 
-// Initialize ScrollSmoother
-ScrollSmoother.create({
-  smooth: 3, // Seconds to smooth scrolling (default: 1)
-  effects: true, // Enable GPU-accelerated effects (parallax, etc.)
-  wrapper: "#smooth-wrapper", // Required wrapper selector
-  content: "#smooth-content", // Required content selector
-  normalizeScroll: true, // Fix touch/wheel delta (recommended)
-  ignoreMobileResize: true, // Prevent resize events on mobile
+// Update Swiper when ScrollSmoother resizes the container
+const resizeObserver = new ResizeObserver(() => {
+  swiper.update();
 });
-
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    const target = link.getAttribute("href");
-    smoother.scrollTo(target, true, "top center"); // Scroll to target
-  });
-});
+resizeObserver.observe(swiperContainer);
