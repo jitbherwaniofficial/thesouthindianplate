@@ -1,121 +1,81 @@
 console.log("Har Har Mahadev");
 
+
+
 gsap.to(".hero_lines span", {
   y: 0,
   stagger: 0.2,
   duration: 1,
 });
 
-// const swiper = new Swiper(".swiper-container", {
-//   grabCursor: true, // Enable grab effect
-//   loop: false, // Enable continuous loop mode
-//   spaceBetween: -80, // Space between slides
-//   breakpoints: {
-//     1366: {
-//       spaceBetween: 50,
-//     },
-//     1280: {
-//       spaceBetween: 50,
-//     },
-//     1024: {
-//       spaceBetween: 50,
-//     },
-//     768: {
-//       spaceBetween: 40,
-//     },
-//     450: {
-//       spaceBetween: 40,
-//     },
-//     400: {
-//       spaceBetween: 40,
-//     },
-//     375: {
-//       spaceBetween: 40,
-//     },
-//     360: {
-//       spaceBetween: 40,
-//     },
-//   },
-//   slidesPerView: 1, // Number of slides to show at once
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true, // Make pagination bullets clickable
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next", // Navigation arrows
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-
-// Get all the pill elements
-const pills = document.querySelectorAll("button.pill");
-
-// Initialize Swiper with slide change listener
-const swiper = new Swiper('.swiper-container', {
-  spaceBetween: 40, // Space between slides
-  grabCursor: true, // Enable grab effect
-    breakpoints: {
-    1366: {
-      spaceBetween: 50,
-    },
-    1280: {
-      spaceBetween: 50,
-    },
-    1024: {
-      spaceBetween: 50,
-    },
-    768: {
-      spaceBetween: 40,
-    },
-    450: {
-      spaceBetween: 40,
-    },
-    400: {
-      spaceBetween: 40,
-    },
-    375: {
-      spaceBetween: 40,
-    },
-    360: {
-      spaceBetween: 40,
-    },
+// swiper starts //
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 0,
+  centeredSlides: true,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
   },
-  on: {
-    slideChange: function() {
-      const activeIndex = this.activeIndex;
-      // Update active state of pills
-      pills.forEach(pill => {
-        const pillIndex = parseInt(pill.dataset.slide);
-        pill.classList.toggle('active', pillIndex === activeIndex);
-      });
-    }
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+// swiper starts //
+
+
+// Navbar //
+const navbar = document.querySelector(".main-navbar");
+let lastScroll = 0;
+
+if (document.body.clientWidth >= 1280) {
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll <= 0) {
+    // At top of page
+    navbar.classList.remove("activa");
+    return;
   }
+
+  if (currentScroll > lastScroll) {
+    // Scrolling down
+    navbar.classList.remove("activa");
+  } else {
+    // Scrolling up
+    navbar.classList.add("activa");
+  }
+  lastScroll = currentScroll;
 });
 
+}
 
-// Pill click handlers
-pills.forEach(pill => {
-  pill.addEventListener('click', (e) => {
-    e.preventDefault();
-    swiper.slideTo(parseInt(pill.dataset.slide));
-  });
+// GSAP Animation for Smooth Navbar
+gsap.from(".main-navbar", {
+  y: -100,
+  duration: 0.5,
+  ease: "power3.out",
 });
 
-// Arrow navigation handlers
-document.querySelectorAll('.second_section_arrow').forEach(arrow => {
-  arrow.addEventListener('click', (e) => {
-    e.preventDefault();
-    const isPrev = arrow.querySelector('.prev');
-    isPrev ? swiper.slidePrev() : swiper.slideNext();
-  });
-});
+ // Handle resize to disable scroll behavior on mobile
+        window.addEventListener('resize', function() {
+            if (document.body.clientWidth < 1280) {
+                navbar.classList.remove("chaalu");
+            }
+        });
+
+// Navbar //
 
 
 // ACCORDION //
 let questions = document.querySelectorAll(".faq_question");
-
 questions.forEach((question) => {
-
   question.addEventListener("click", (event) => {
     const active = document.querySelector(".faq_question.active");
 
@@ -136,3 +96,44 @@ questions.forEach((question) => {
   });
 });
 // ACCORDION //
+
+document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.tab-container input[type="radio"]');
+            let currentActive = document.querySelector('.content.active');
+
+            tabs.forEach(tab => {
+              tab.addEventListener('change', () => {
+                // Add delay for outgoing animation
+                currentActive.style.transition = 'none';
+                currentActive.classList.remove('active');
+
+                // Force reflow to reset animation
+                void currentActive.offsetWidth;
+
+                // Get new content
+                const targetContent = document.getElementById(tab.dataset.target);
+                console.log(targetContent);                
+                targetContent.style.transition = 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
+                targetContent.classList.add('active');
+                if (document.body.clientWidth < 1280) {
+                      let absoluteTabContainer = document.querySelector('.tab-container');
+                      absoluteTabContainer.classList.remove('chaalu');
+                      window.location.replace('#menuu');
+                    }
+                    currentActive = targetContent;
+                });
+            });
+        });
+
+
+const menu = document.querySelector('.fixed-menu');
+const absolutetabcontainer = document.querySelector('.tab-container');
+
+if (menu) { // Check if element exists
+  menu.addEventListener('click', () => {
+    absolutetabcontainer.classList.toggle('chaalu');
+    console.log("done"); // Optional debug log
+  });
+} else {
+  console.error("Error: '.fixed-menu' element not found!");
+}

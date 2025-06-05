@@ -3,22 +3,25 @@
 {% load static %}
 
 <head>
-  
+
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MT5VVC83');</script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MT5VVC83');</script>
   <!-- End Google Tag Manager -->
-  
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO********************************* -->
-  <title>Order Idli and Medu Vada near Khar, Bandra and Santacruz in Mumbai</title>
+  <title>Order Idli, Medu Vada &amp; More Near Khar, Bandra and Santacruz, Mumbai</title>
   <meta name="description"
-    content="We offer bulk Idli and Medu Vada delivery across Khar, Santacruz and Bandra in Mumbai for any occasion. Premium quality Idli and Medu Vada. Order now!" />
+    content="We serve Idli, Medu Vada, Daal Vada, Dosa, Uttapam & more across Bandra, Khar and Santacruz, Mumbai. Available for plate and bulk orders. Order now!" />
 
   <!-- FAVICONS ******************************************* -->
   <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png" />
@@ -28,21 +31,22 @@
   <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}" />
 
 
-<!-- SYLESHEET LINKS *************************************** -->
+  <!-- SYLESHEET LINKS *************************************** -->
   <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/image-slider.css' %}" />
   <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   <meta name="keywords"
-    content="Order Idli in Khar, Santacruz  and Bandra in Mumbai from The south indian plate, Medu Vada online order in Bandra , Santacruz , Khar in Mumbai, order south indian breakfast in bulk in Khar , Santacruz  and Bandra from The South Indian Plate. " />
+    content="Order Idli in Khar, Santacruz  and Bandra in Mumbai from The south indian plate, Medu Vada online order in Bandra , Santacruz , Khar in Mumbai, order south indian breakfast in bulk in Khar , Santacruz  and Bandra from The South Indian Plate , Order Dosa in Khar, Santacruz  and Bandra in Mumbai, Order uttapam in Khar, Santacruz  and Bandra in Mumbai, Order Dal Vada in Khar, Santacruz  and Bandra in Mumbai " />
   <link rel="canonical" href="https://thesouthindianplate.com/" />
 
   <!-- **************OG PROTOCOL**************************** -->
   <meta prefix="og: https://.me/ns#" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Order Idli and Medu Vada near Khar, Bandra and Santacruz in Mumbai" />
+  <meta property="og:title" content="Order Idli, Medu Vada &amp; More Near Khar, Bandra and Santacruz, Mumbai" />
   <meta property="og:description"
-    content="We offer bulk Idli and Medu Vada delivery across Khar, Santacruz and Bandra in Mumbai for any occasion. Premium quality Idli and Medu Vada. Order now! " />
+    content="We serve Idli, Medu Vada, Daal Vada, Dosa, Uttapam & more across Bandra, Khar and Santacruz, Mumbai. Available for plate and bulk orders. Order now!" />
   <meta property="og:image:type" content="image/jpg" />
   <meta property="og:image:width" content="2400" />
   <meta property="og:image:height" content="1260" />
@@ -82,7 +86,7 @@
         "sameAs": [
           "https://thesouthindianplate.com/",
           "https://www.linkedin.com/company/the-south-indian-plate",
-          "https://www.youtube.com/@thesouthindianplate",
+          "https://www.youtube.com/@TheSouthIndianPlate",
           "https://www.instagram.com/thesouthindianplate/",
           "https://www.facebook.com/thesouthindianplate/"
         ] 
@@ -99,7 +103,7 @@
         "telephone": "+918108672615",
         "priceRange": "$-$$$",
         "menu": "https://thesouthindianplate.com/static/img/menu.jpg",
-        "servesCuisine": "Idli , Meduvada",
+        "servesCuisine": "Idli , Meduvada, DalVada, Dosa, Uttapam, Masala Dosa, Masala Idli, Cheese Dosa",
         "acceptsReservations": "true",
         "address": {
           "@type": "PostalAddress",
@@ -130,314 +134,602 @@
         "sameAs": [
           "https://thesouthindianplate.com/",
           "https://www.linkedin.com/company/the-south-indian-plate",
-          "https://www.youtube.com/@thesouthindianplate",
+          "https://www.youtube.com/@TheSouthIndianPlate",
           "https://www.instagram.com/thesouthindianplate/",
           "https://www.facebook.com/thesouthindianplate/"
         ] 
       }
       </script>
-
+      <!-- ---------FAQ SCHEMA--------------------- -->
+       <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What makes your Idli, Medu Vada, Dalvada, Dosa and Uttapam the best in Mumbai?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We are the best Idli, Medu Vada, Dalvada, Dosa and Uttapam suppliers that offers authentic South Indian breakfast in Khar, Santacruz and Bandra in Mumbai. Our fluffy Idlis, and crispy Meduvadas, delicious Dalvada, Dosa, Uttapam, coconut Chutney and Sambhar are the talk of the town. If you are pure vegetarian then you have got your perfect place to order. Some of the important reason why we are unique :-
+1. Authenticity - Our dish has authentic South Indian flavor. We prepare it in a traditional way so that the authenticity maintains.
+2. Flavor - Our Idlis are big in size and soft, Meduvada is crispy and scrumptious, Dalvada, Dosa, Uttapam delicious, Chutney and Sambhar is cherry on the cake. The flavor you would never want to miss.
+3. Hygienic - We prepare these breakfast for you in home like environment. A food that makes you healthy along with the taste is our uniqueness. Organic Ingredients - We only use fresh and natural ingredients to prepare Idli, Meduvada, Dalvada, Dosa, Uttapam, Sambhar, and Chutney for you.
+4. Wide Delivery Network - We deliver across Mumbai, including Bandra, Santacruz, Khar, and beyond.
+5. Bulk Orders Simplified - Makes us the ideal choice for events and celebrations."
+    }
+  },{
+    "@type": "Question",
+    "name": "What makes The South Indian Plate’s food special?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We follow traditional South Indian recipes using fresh, high-quality ingredients. Our Idlis are soft and fluffy, Medu Vadas are perfectly crispy, and our other dishes like Daal Vada, Dosa, Masala Dosa, Cheese Dosa, Masala Idli, and Uttapam are prepared fresh daily to deliver authentic flavors that remind you of home."
+    }
+  },{
+    "@type": "Question",
+    "name": "Do you provide chutney and sambhar with every order?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes! Every bulk and plate order includes freshly made coconut chutney and authentic sambhar to complement your meal."
+    }
+  },{
+    "@type": "Question",
+    "name": "Which areas do you deliver to?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We deliver across Bandra, Khar, Santacruz in Mumbai."
+    }
+  },{
+    "@type": "Question",
+    "name": "How do I place an order?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ordering is easy! Simply send us a WhatsApp message or call with your order details — specify bulk or plate, your desired items, quantity, and delivery location. We’ll confirm availability and delivery time."
+    }
+  },{
+    "@type": "Question",
+    "name": "How far in advance should I place my order?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Bulk orders must be placed at least 24 hours in advance to allow us to prepare fresh batter and ingredients. Plate orders can be placed right away depending on availability — please check with us."
+    }
+  },{
+    "@type": "Question",
+    "name": "Are your food items vegetarian?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, all our dishes are 100% vegetarian and prepared with utmost hygiene and care."
+    }
+  },{
+    "@type": "Question",
+    "name": "How do I make payments?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We offer multiple convenient payment options to make your ordering experience smooth. You can pay via UPI, bank transfer, or other popular online payment methods. Please ensure payment is completed to confirm your order."
+    }
+  },{
+    "@type": "Question",
+    "name": "Do you provide food delivery for special occasions like weddings, corporate events, and festivals?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, we specialize in delivering fresh, flavorful South Indian food for all kinds of occasions — weddings, corporate events, festivals, family gatherings, and more — ensuring your event is perfectly served with authentic taste."
+    }
+  },{
+    "@type": "Question",
+    "name": "Do you offer takeaway or pickup options?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, if you prefer to pick up your order yourself, we can arrange it. Just place your order ahead of time and come by to collect it fresh and ready."
+    }
+  },{
+    "@type": "Question",
+    "name": "How do you ensure the freshness and quality of your food?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We prepare fresh batter every day, cook items on demand, and use traditional methods to preserve authentic taste and texture. Our team follows strict hygiene protocols to ensure every bite is safe and delicious."
+    }
+  }]
+}
+</script>
+<!------------------- FAQ SCHEMA ENDS HERE----------------------->
 </head>
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MT5VVC83"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MT5VVC83" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+
 
   <!-- HERO SECTION STARTS ******************************************************************* -->
 
-  <!-- <div class="hero_top">
-    <p class="hero_top_para">For any query contact us on <a href="tel:+918108672615" class="call_us" rel="nofollow" title="Contact Phone number..">+918108672615</a>.</p>
-  </div> -->
-
-  
-  <section class="hero_section">
-
-    <div class="section_wrapper hero_section_wrapper">
-
-      <div class="hero_left">
-
-        <figure class="brand_logo">
-          <img src="{% static 'img/brand_logo.svg' %}" alt="The South Indian Plate logo.">
-        </figure>
-
-        <h1 class="hero_title">
-          <div class="hero_lines"><span>For Every Occasion,</span> </div>
-          <div class="hero_lines"><span>Bring Home The Joy Of</span> </div>
-          <div class="hero_lines"><span>Idli and Medu Vada</span> </div>
-        </h1>
-
-        <p class="hero_para">
-          Your One-Stop Destination for Authentic South Indian Breakfast in Mumbai.
-        </p>
-
-        <span class="order_here_pill">
-          <a href="#menu" title="Whatsapp order link." rel="nofollow">Order Here</a>
-        </span>
-
-        <!-- <figure class="pattern1">
-          <img src="{% static 'img/pattern1.png' %}" alt="Decorative pattern.">
-        </figure> -->
-
-        <!-- <figure class="pattern2">
-          <img src="{% static 'img/pattern2.png' %}" alt="Decorative pattern.">
-        </figure> -->
-
-      </div>
-
-      <div class="hero_right">
-        <nav class="navbar">
-          <a href="#menu" class="menu navlink">Menu</a>
-          <a href="https://wa.me/+918108672615" class="contact navlink" title="Whatsapp order link.">
-            <img src="{% static 'img/whatsapp.svg' %}" alt="Whatsapp Logo icon">
-          </a>
-        </nav>
-        <figure class="plate_pattern">
-          <img src="{% static 'img/heropattern.svg' %}" alt="Motion Pattern">
-        </figure>
-        <figure class="plate">
-          <img src="{% static 'img/plate.png' %}" alt="The South Indian Combo Plate Image">
-        </figure>
-        
-      </div>
-
+  <nav class="main-navbar">
+    <div class="nav-logo"> <a href="{% url 'home' %}" title="Home page link"><img src="{% static 'img/main-logo.svg' %}"
+          alt="The South Indian Plate logo."></a></div>
+    <div class="nav-links">
+      <a class="blink_number" href="tel:+918108672615" title="Phone no to place order">Call us +91-8108672615</a>
+      <a href="#menu" title="Menu section">Menu</a>
+      <a href="#contact" title="Contact section">Contact</a>
     </div>
+  </nav> 
 
-  </section>
+  <!-- WHATSAPP LOGO ICON -->
+   <!-- <figure class="wa">
+    <a href="https://wa.me/8106872615"><img src="{% static 'img/m/wa.svg' %}" alt=""></a>
+   </figure> -->
+  <!-- WHATSAPP LOGO ICON -->
+
+  <!-- menu -->
+  <p class="fixed-menu"><span>M</span><span>E</span><span>N</span><span>U</span></p>
+   <!-- <div class="absolute_tab_container">
+      <div class="tab-container">
+          <input type="radio" name="tabs" id="tab11" checked data-target="content1">
+          <label for="tab1">Single Plate</label>
+  
+          <input type="radio" name="tabs" id="tab22" data-target="content2">
+          <label for="tab2">Combo Plate</label>
+  
+          <input type="radio" name="tabs" id="tab33" data-target="content3">
+          <label for="tab3">Bulk Order</label>
+  
+          <input type="radio" name="tabs" id="tab44" data-target="content4">
+          <label for="tab4">Jumbo Plate</label>
+      </div>
+    </div> -->
+
+    
+  <!-- menu -->
+
+  <!-- Swiper ******************************************************************************* -->
+  <div class="swiper mySwiper" id="home">
+    <div class="swiper-wrapper">
+      <picture class="swiper-slide">
+        <source media="(max-width: 500px)" srcset="{% static 'img/slider/mob/1.webp' %}">
+        <source media="(max-width: 768px)" srcset="{% static 'img/slider/768/1.webp' %}">
+        <source media="(max-width: 1024px)" srcset="{% static 'img/slider/1024/1.webp' %}">
+        <source media="(max-width: 1280px)" srcset="{% static 'img/slider/1280/1.webp' %}">
+        <img src="{% static 'img/slider/1.webp' %}" alt="Best Idli plate and bulk order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+      </picture>
+      <picture class="swiper-slide">
+        <source media="(max-width: 500px)" srcset="{% static 'img/slider/mob/2.webp' %}">
+        <source media="(max-width: 768px)" srcset="{% static 'img/slider/768/2.webp' %}">
+        <source media="(max-width: 1024px)" srcset="{% static 'img/slider/1024/2.webp' %}">
+        <source media="(max-width: 1280px)" srcset="{% static 'img/slider/1280/2.webp' %}">
+        <img src="{% static 'img/slider/2.webp' %}" alt="Best Medu Vada plate and bulk order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+      </picture>
+      <picture class="swiper-slide">
+        <source media="(max-width: 500px)" srcset="{% static 'img/slider/mob/3.webp' %}">
+        <source media="(max-width: 768px)" srcset="{% static 'img/slider/768/3.webp' %}">
+        <source media="(max-width: 1024px)" srcset="{% static 'img/slider/1024/3.webp' %}">
+        <source media="(max-width: 1280px)" srcset="{% static 'img/slider/1280/3.webp' %}">
+        <img src="{% static 'img/slider/3.webp' %}" alt="Best Plain Dosa plate and bulk order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+      </picture>
+      <picture class="swiper-slide">
+        <source media="(max-width: 500px)" srcset="{% static 'img/slider/mob/4.webp' %}">
+        <source media="(max-width: 768px)" srcset="{% static 'img/slider/768/4.webp' %}">
+        <source media="(max-width: 1024px)" srcset="{% static 'img/slider/1024/4.webp' %}">
+        <source media="(max-width: 1280px)" srcset="{% static 'img/slider/1280/4.webp' %}">
+        <img src="{% static 'img/slider/4.webp' %}" alt="Best Masala Dosa plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+      </picture>
+      <picture class="swiper-slide">
+        <source media="(max-width: 500px)" srcset="{% static 'img/slider/mob/5.webp' %}">
+        <source media="(max-width: 768px)" srcset="{% static 'img/slider/768/5.webp' %}">
+        <source media="(max-width: 1024px)" srcset="{% static 'img/slider/1024/5.webp' %}">
+        <source media="(max-width: 1280px)" srcset="{% static 'img/slider/1280/5.webp' %}">
+        <img src="{% static 'img/slider/5.webp' %}" alt="Best Uttapam plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+      </picture>
+      <picture class="swiper-slide">
+        <source media="(max-width: 500px)" srcset="{% static 'img/slider/mob/6.webp' %}">
+        <source media="(max-width: 768px)" srcset="{% static 'img/slider/768/6.webp' %}">
+        <source media="(max-width: 1024px)" srcset="{% static 'img/slider/1024/6.webp' %}">
+        <source media="(max-width: 1280px)" srcset="{% static 'img/slider/1280/6.webp' %}">
+        <img src="{% static 'img/slider/6.webp' %}" alt="Best Masala Idli plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+      </picture>
+      <picture class="swiper-slide">
+        <source media="(max-width: 500px)" srcset="{% static 'img/slider/mob/7.webp' %}">
+        <source media="(max-width: 768px)" srcset="{% static 'img/slider/768/7.webp' %}">
+        <source media="(max-width: 1024px)" srcset="{% static 'img/slider/1024/7.webp' %}">
+        <source media="(max-width: 1280px)" srcset="{% static 'img/slider/1280/7.webp' %}">
+        <img src="{% static 'img/slider/7.webp' %}" alt="Best Cheese Dosa plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+      </picture>
+      <picture class="swiper-slide">
+        <source media="(max-width: 500px)" srcset="{% static 'img/slider/mob/8.webp' %}">
+        <source media="(max-width: 768px)" srcset="{% static 'img/slider/768/8.webp' %}">
+        <source media="(max-width: 1024px)" srcset="{% static 'img/slider/1024/8.webp' %}">
+        <source media="(max-width: 1280px)" srcset="{% static 'img/slider/1280/8.webp' %}">
+        <img src="{% static 'img/slider/9.webp' %}" alt="Best Dalvada plate and bulk order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+      </picture>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- Swiper ******************************************************************************* -->
 
   <!-- HERO SECTION ENDS ******************************************************************* -->
-
-  <!-- SECTION 1/2 STARTS ******************************************************************* -->
-   <section class="oneandhalfsection">
-    <div class="hero_right_marque_container">
-      <!-- <div class="marquee_img_vertical">
-        <img class="hw_img hero_img_1" src="{% static 'img/idli1.jpg' %}" alt="Best idli from The South Indian Plate.">
-        <img class="hw_img hero_img_2" src="{% static 'img/meduwada.jpg' %}" alt="Best Medu Vada from The South Indian Plate.">
-        <img class="hw_img hero_img_3" src="{% static 'img/idli2.jpg' %}" alt="Authentic idli from The South Indian Plate.">
-        <img class="hw_img hero_img_4" src="{% static 'img/meduwada2.jpg' %}" alt="Premium quality Medu Vada from The South Indian Plate.">
-        <img class="hw_img hero_img_5" src="{% static 'img/idli3.jpg' %}" alt="Delicious idli from The South Indian Plate.">
-        <img class="hw_img hero_img_6" src="{% static 'img/meduwada3.jpg' %}" alt="Best Medu vada order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img hero_img_7" src="{% static 'img/idli4.jpg' %}" alt="Top quality idli from The South Indian Plate.">
-        <img class="hw_img hero_img_8" src="{% static 'img/meduwada4.jpg' %}" alt="Best Medu vada order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img hero_img_9" src="{% static 'img/idli5.jpg' %}" alt="Premium quality idli from The South Indian Plate.">
-        <img class="hw_img hero_img_10" src="{% static 'img/meduwada5.jpg' %}" alt="Best Medu vada order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img hero_img_11" src="{% static 'img/idli6.jpg' %}" alt="Best Idli and Sambhar order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img hero_img_12" src="{% static 'img/meduwada6.jpg' %}" alt="Best Medu vada order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img hero_img_13" src="{% static 'img/idli7.jpg' %}" alt="Best Idli and Sambhar order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img hero_img_14" src="{% static 'img/idli8.jpg' %}" alt="Best Idli and Sambhar order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img hero_img_15" src="{% static 'img/idli9.jpg' %}" alt="Best Idli and Sambhar order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img hero_img_16" src="{% static 'img/idli10.jpg' %}" alt="Best Idli and Sambhar order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-      </div> -->
-      <div class="marquee_img_horizontal">
-        <img class="hw_img_h hero_img_1" src="{% static 'img/idli1.jpg' %}" alt="Best Idli and Sambhar order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img_h hero_img_2" src="{% static 'img/meduwada.jpg' %}" alt="Best Medu vada order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img_h hero_img_3" src="{% static 'img/idli2.jpg' %}" alt="Best Idli and Sambhar order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img_h hero_img_4" src="{% static 'img/meduwada2.jpg' %}" alt="Best Medu vada order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img_h hero_img_5" src="{% static 'img/idli3.jpg' %}" alt="Best Idli and Sambhar order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img_h hero_img_6" src="{% static 'img/meduwada3.jpg' %}" alt="Best Medu vada order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img_h hero_img_7" src="{% static 'img/idli4.jpg' %}" alt="Best Idli and Sambhar order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img_h hero_img_8" src="{% static 'img/meduwada4.jpg' %}" alt="Best Medu vada order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img_h hero_img_9" src="{% static 'img/idli5.jpg' %}" alt="Best Idli and Sambhar order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img_h hero_img_10" src="{% static 'img/meduwada5.jpg' %}" alt="Best Medu vada order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img_h hero_img_11" src="{% static 'img/idli6.jpg' %}" alt="Best Idli and Sambhar order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img_h hero_img_12" src="{% static 'img/meduwada6.jpg' %}" alt="Best Medu vada order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img_h hero_img_13" src="{% static 'img/idli7.jpg' %}" alt="Best Idli and Sambhar order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img_h hero_img_14" src="{% static 'img/idli8.jpg' %}" alt="Best Idli and Sambhar order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img_h hero_img_15" src="{% static 'img/idli9.jpg' %}" alt="Best Idli and Sambhar order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-        <img class="hw_img_h hero_img_16" src="{% static 'img/idli10.jpg' %}" alt="Best Idli and Sambhar order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-      </div>
-    </div>
-   </section>
-  <!-- SECTION 1/2 ENDS ******************************************************************* -->
 
   <!-- SECOND SECTION STARTS ********************************************************************** -->
 
   <section class="second_section" id="menu">
-    <div class="section_wrapper second_section_wrapper">
-      <h2 class="second_section_title" >
-        We deliver premium quality, delicious Idli and Medu Vada to your doorstep.
-      </h2>
-
-      <div class="second_section_pill_container">
-        <div class="pills-wrapper">
-          <button class="pill active" data-slide="0">Small Gathering</button>
-          <button class="pill" data-slide="1">Party Starter</button>
-          <button class="pill" data-slide="2">Grand Celebration</button>
-          <button class="pill" data-slide="3">Ultimate Celebration</button>
-        </div>
-        <div class="arrows_container">
-          <div class="second_section_arrow pill"><span class="prev"></span></div>
-          <div class="second_section_arrow pill"><span class="next"></span></div>
-        </div>
-      </div>
-
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="services_box">
-              <figure class="service_box_left">
-                <img src="{% static 'img/idli_service.svg' %}" alt="Best Idli and Medu vada with Sambhar and chutney 10-25 Plates (For Small Gathering) order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-              </figure>
-              <div class="service_box_right">
-                <figure class="pattern3">
-                  <img src="{% static 'img/pattern2.png' %}" alt="Decoration pattern.">
-                </figure>
-                <p class="service_box_right_title">
-                  SMALL GATHERING ( 10 - 25 PLATES ) - Sambhar and Chutney Included
-                </p>
-
-                <div class="service_box_menu">
-                  <div class="service_box_menu_top">
-                    <p class="p_main">
-                      <span class="p_kid">Idli Plate (5 Pieces )</span> 
-                      <span class="p_kid">₹90.00</span>
-                    </p>
-                    <p class="p_main">
-                      <span class="p_kid">Medu Vada Plate (4 Pieces )</span> 
-                      <span class="p_kid">₹88.00</span>
-                    </p>
-                    <p class="p_main">
-                      <span class="p_kid">Combo ( 2 idli 1 medu vada )</span> 
-                      <span class="p_kid">₹58.00</span>
-                    </p>
-                    <p class="p_main">
-                      <span class="p_kid">Combo ( 3 idli 2 medu vada )</span> 
-                      <span class="p_kid">₹98.00</span>
-                    </p>
-                  </div>
-                  <div class="service_box_menu_bottom">
-                    <a href="https://wa.me/+918108672615" rel="nofollow" title="Whatsapp order link.">Place Your Order</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="services_box">
-              <figure class="service_box_left">
-                <img src="{% static 'img/medu.svg' %}" alt="Best Idli and Medu vada with Sambhar and chutney 30-45 Plates (For Party Starter) order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-              </figure>
-              <div class="service_box_right">
-                <figure class="pattern3">
-                  <img src="{% static 'img/pattern2.png' %}" alt="Decoration pattern.">
-                </figure>
-                <p class="service_box_right_title">
-                  PARTY STARTER ( 30 - 45 plate ) - Sambhar and Chutney Included
-                </p>
-
-                <div class="service_box_menu">
-                  <div class="service_box_menu_top">
-                    <p class="p_main">
-                      <span class="p_kid">Idli Plate (5 Pieces )</span> 
-                      <span class="p_kid">₹80.00</span>
-                    </p>
-                    <p class="p_main">
-                      <span class="p_kid">Medu Vada Plate (4 Pieces )</span> 
-                      <span class="p_kid">₹84.00</span>
-                    </p>
-                    <p class="p_main">
-                      <span class="p_kid">Combo ( 2 idli 1 medu vada )</span> 
-                      <span class="p_kid">₹53.00</span>
-                    </p>
-                    <p class="p_main">
-                      <span class="p_kid">Combo ( 3 idli 2 medu vada )</span> 
-                      <span class="p_kid">₹90.00</span>
-                    </p>
-                  </div>
-                  <div class="service_box_menu_bottom">
-                    <a href="https://wa.me/+918108672615" rel="nofollow" title="Whatsapp order link.">Place Your Order</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="services_box">
-              <figure class="service_box_left">
-                <img src="{% static 'img/idli_service.svg' %}" alt="Best Idli and Medu vada with Sambhar and chutney 50-100 Plates (For Grand Celebration) order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-              </figure>
-              <div class="service_box_right">
-                <figure class="pattern3">
-                  <img src="{% static 'img/pattern2.png' %}" alt="Decoration pattern.">
-                </figure>
-                <p class="service_box_right_title">
-                  GRAND CELEBRATION ( 50-100 PLATES ) - Sambhar and Chutney Included
-                </p>
-
-                <div class="service_box_menu">
-                  <div class="service_box_menu_top">
-                    <p class="p_main">
-                      <span class="p_kid">Idli Plate (5 Pieces )</span> 
-                      <span class="p_kid">₹75.00</span>
-                    </p>
-                    <p class="p_main">
-                      <span class="p_kid">Medu Vada Plate (4 Pieces )</span> 
-                      <span class="p_kid">₹80.00</span>
-                    </p>
-                    <p class="p_main">
-                      <span class="p_kid">Combo ( 2 idli 1 medu vada )</span> 
-                      <span class="p_kid">₹50.00</span>
-                    </p>
-                    <p class="p_main">
-                      <span class="p_kid">Combo ( 3 idli 2 medu vada )</span> 
-                      <span class="p_kid">₹85.00</span>
-                    </p>
-                  </div>
-                  <div class="service_box_menu_bottom">
-                    <a href="https://wa.me/+918108672615" rel="nofollow" title="Whatsapp order link.">Place Your Order</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="services_box">
-              <figure class="service_box_left">
-                <img src="{% static 'img/medu.svg' %}" alt="Best Idli, Medu vada, Sambhar and chutney (Ultimate celebration Pack) order from The South Indian Plate near Khar, Bandra and Santacruz in Mumbai.">
-              </figure>
-              <div class="service_box_right">
-                <figure class="pattern3">
-                  <img src="{% static 'img/pattern2.png' %}" alt="Decoration pattern.">
-                </figure>
-                <p class="service_box_right_title">
-                  ULTIMATE CELEBRATION PACK 
-                </p>
-
-                <div class="service_box_menu">
-                  <div class="service_box_menu_top">
-                    <p class="p_main">
-                      <span class="p_kid">For 100 Idli ( With Sambhar And Chutney )</span> 
-                      <span class="p_kid">₹1500.00</span>
-                    </p>
-                    <p class="p_main">
-                      <span class="p_kid">For 100 Medu Vada ( With Sambhar And Chutney )</span> 
-                      <span class="p_kid">₹2000.00</span>
-                    </p>
-                    <p class="p_main">
-                      <span class="p_kid">Coconut Chutney (Add On-per kg)</span> 
-                      <span class="p_kid">₹110.00</span>
-                    </p>
-                    <p class="p_main">
-                      <span class="p_kid">Sambhar (Add On - per kg)</span> 
-                      <span class="p_kid">₹65.00</span>
-                    </p>
-                  </div>
-                  <div class="service_box_menu_bottom">
-                    <a href="https://wa.me/+918108672615" rel="nofollow" title="Whatsapp order link.">Place Your Order</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <p class="queries">For any query call us on <a href="tel:+918108672615" class="call_us" rel="nofollow" title="Contact Phone number..">+918108672615</a> or
-        <a href="https://wa.me/+918108672615" class="wa_us" rel="nofollow" title="Whatsapp order link.">whatsapp us</a>.
+    <div class="section_wrapper">
+      <h1 class="second_section_title">We deliver premium quality, delicious Idli, Medu Vada, Dalvada, Dosa and Uttapam to
+        your doorstep. 
+      </h1>
+      <p class="second_section_para">
+        Your One-Stop Destination for Authentic South Indian Breakfast in Mumbai.
       </p>
+     <div class="tab-container">
+        <input type="radio" name="tabs" id="tab1" checked data-target="content1">
+        <label for="tab1">Single Plate</label>
+
+        <input type="radio" name="tabs" id="tab2" data-target="content2">
+        <label for="tab2">Combo Plate</label>
+
+        <input type="radio" name="tabs" id="tab3" data-target="content3">
+        <label for="tab3">Bulk Order</label>
+
+        <input type="radio" name="tabs" id="tab4" data-target="content4">
+        <label for="tab4">Jumbo Plate</label>
     </div>
+
+    <span id="menuu"></span>
+ 
+    <div id="content1" class="content active">
+      <h3 class="bulktitle">
+      Single Plate
+    </h3>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/30.webp' %}" alt="Best Idli single plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title">Idli</h2>
+          <div class="quantity_and_price">
+            <p class="price">108₹</p>
+            <p class="quantity">5pcs</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/29.webp' %}" alt="Best Meduvada single plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>Medu</span><span>vada</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">98₹</p>
+            <p class="quantity">4pcs</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/27.webp' %}" alt="Best Plain Dosa single plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>Plain</span>Dosa<span></span></h2>
+          <div class="quantity_and_price">
+            <p class="price">92₹</p>
+            <p class="quantity">2pcs</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/28.webp' %}" alt="Best Masala Idli single plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>Masala</span><span>Idli</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">125₹</p>
+            <p class="quantity">5pcs</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/31.webp' %}" alt="Best Masala Dosa single plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate." >
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>Masala</span><span>Dosa</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">146₹</p>
+            <p class="quantity">1pcs</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/32.webp' %}" alt="Best Uttapam single plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>Utta</span><span>pam</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">136₹</p>
+            <p class="quantity">1pcs</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/33.webp' %}" alt="Best Cheese Dosa single plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>Cheese</span><span>Dosa</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">172₹</p>
+            <p class="quantity">1pcs</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/43.webp' %}" alt="Best Dalvada single plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>Dal</span><span>Vada</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">98₹</p>
+            <p class="quantity">4pcs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="content2" class="content">
+      <h3 class="bulktitle">
+       Combo Plate
+     </h3>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/34.webp' %}" alt="3 Idli 2 Meduvada Combo plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>3 idlis</span><span>2 medu</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">116₹</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/35.webp' %}" alt="2 Idli 3 Meduvada Combo plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>2 idlis</span><span>3 medu</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">119₹</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/36.webp' %}" alt="3 Idli 3 Meduvada Combo plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>3 idlis</span><span>3 medu</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">141₹</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/37.webp' %}" alt="1 Idli 1 Meduvada 1 Plain Dosa Combo plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>1 idli</span><span>1 medu</span><span>1 dosa</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">93₹</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/38.webp' %}" alt="1 Idli 1 Meduvada 1 Masala Dosa Combo plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>1 idli</span><span>1 medu</span><span>1masala</span><span>dosa</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">193₹</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/39.webp' %}" alt="1 Idli 1 Meduvada 1 Cheese Dosa Combo plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>1 idli</span><span>1 medu</span><span>1cheese</span><span>dosa</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">219₹</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/41.webp' %}" alt="1 Plain Dosa 1 Cheese Dosa 1 Uttapam Combo plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>1 plain</span><span>1cheese</span><span>1 utta</span><span>pam</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">354₹</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/42.webp' %}" alt="1 Plain Dosa 1 Masala Dosa 1 Uttapam Combo plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>1 plain</span><span>1masala</span><span>1 utta</span><span>pam</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">328₹</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/43.webp' %}" alt="3 Idli 2 Dalvada Combo plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>3 idli</span><span>3 dal &</span><span>3 Medu</span><span>Vada</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">216₹</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="content3" class="content">
+      <h3 class="bulktitle">
+       Bulk Order
+     </h3>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/30.webp' %}" alt="Best Idli Bulk plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>Idli</span><span>4 pcs</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">78₹</p>
+            <p class="quantity"><b>/</b>plate</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/29.webp' %}" alt="Best Medu Vada Bulk plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>Medu</span><span>vada</span><span>4 pcs</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">89₹</p>
+            <p class="quantity"><b>/</b>plate</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/43.webp' %}" alt="Best Dal Vada Bulk plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>Dal</span><span>vada</span><span>4 pcs</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">89₹</p>
+            <p class="quantity"><b>/</b>plate</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/35.webp' %}" alt="3 Idli 2 MeduVada Bulk Combo plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>3 Idli</span><span>2 Medu</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">102₹</p>
+            <p class="quantity"><b>/</b>plate</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/34.webp' %}" alt="2 Idli 3 MeduVada Bulk Combo plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>2 Idli</span><span>3 Medu</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">106₹</p>
+            <p class="quantity"><b>/</b>plate</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/36.webp' %}" alt="3 Idli 3 MeduVada Bulk Combo plate order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>3 Idli</span><span>3 Medu</span></h2>
+          <div class="quantity_and_price">
+            <p class="price">127₹</p>
+            <p class="quantity"><b>/</b>plate</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/44.webp' %}" alt="Best Idli Bulk order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>100</span><span>Idlis</span></h2>
+          <div class="quantity_and_price">
+            <p class="price fourdigits">2000₹</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/29.webp' %}" alt="Best MeduVada Bulk order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>100</span><span>Medu</span><span>vada</span></h2>
+          <div class="quantity_and_price">
+            <p class="price fourdigits">2350₹</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <figure class="card_image_container">
+          <img src="{% static 'img/m/43.webp' %}" alt="Best DalVada Bulk order in Khar, Bandra, Santacruz, Mumbai from The South Indian Plate.">
+        </figure>
+        <div class="card_content">
+          <h2 class="card_title"><span>100</span><span>Dal</span><span>vada</span></h2>
+          <div class="quantity_and_price">
+            <p class="price fourdigits">2350₹</p>
+          </div>
+        </div>
+      </div>
+      <h3 class="disclaimer">For more than 50 plates order there will be a <b style="color:green;">discount of 5%</b> in total price.</h3>
+    </div>
+
+    <div id="content4" class="content">
+      <h3 class="bulktitle">
+       Jumbo Plate
+     </h3>
+      <div class="jumbo-card">
+        <figure class="card_image_container jumbo_images">
+          <img src="{% static 'img/m/37.webp' %}" alt="The South Indian Plate's Jumbo Plate - Delivery in Khar, Bandra, Santacruz, Mumbai.">
+          <img src="{% static 'img/m/43.webp' %}" alt="The South Indian Plate's Jumbo Plate - Delivery in Khar, Bandra, Santacruz, Mumbai.">
+          <img src="{% static 'img/m/41.webp' %}" alt="The South Indian Plate's Jumbo Plate - Delivery in Khar, Bandra, Santacruz, Mumbai.">
+          <img src="{% static 'img/m/21.webp' %}" alt="The South Indian Plate's Jumbo Plate - Delivery in Khar, Bandra, Santacruz, Mumbai.">
+          <img src="{% static 'img/m/33.webp' %}" alt="The South Indian Plate's Jumbo Plate - Delivery in Khar, Bandra, Santacruz, Mumbai.">
+        </figure>
+        <div class="card_content card_content_jumbo">
+          <div class="titles">
+            <h2 class="card_title">Idli - 1 piece</h2>
+            <h2 class="card_title">Meduvada - 1 piece</h2>
+            <h2 class="card_title">Dalvada - 1 piece</h2>
+            <h2 class="card_title">Plain Dosa - 1 piece</h2>          
+          </div>
+          <div class="titles">
+            <h2 class="card_title">Masala Idli - 1 plate</h2>
+            <h2 class="card_title">Masala Dosa - 1 piece</h2>
+            <h2 class="card_title">Uttapam - 1 piece</h2>
+            <h2 class="card_title">Cheese Dosa - 1 piece</h2>  
+          </div>
+          <div class="quantity_and_price qnp">
+            <p class="price jumboprice">692₹</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="delivery_term">
+      We apply a delivery charge of 90₹ for orders totaling less than 500₹. Orders of 500₹ or more qualify for complimentary delivery.
+    </p>
   </section>
+
+  
 
   <!-- SECOND SECTION ENDS ********************************************************************** -->
 
@@ -446,7 +738,8 @@
 
   <section class="third_section">
     <figure class="meal_tracker">
-      <img src="{% static 'img/Meal_application_tracking.svg' %}" alt="Areas serving in Mumbai by The South Indian Plate - Khar, Bandra and Santacruz.">
+      <img src="{% static 'img/Meal_application_tracking.svg' %}"
+        alt="Areas serving in Mumbai by The South Indian Plate - Khar, Bandra and Santacruz.">
     </figure>
     <div class="section_wrapper third_section_wrapper">
       <h2 class="third_section_title">
@@ -454,7 +747,7 @@
       </h2>
 
       <p class="third_section_para">
-        We serve your favorite Idli and Medu Vada in these areas.
+        We serve your favorite South Indian breakfast - Idli, Medu Vada, Dalvada, Dosa and Uttapam in these areas.
       </p>
 
       <div class="third_section_location_container">
@@ -498,42 +791,42 @@
 
       <div class="fourth_section_box">
         <figure class="fourth_section_image">
-          <img src="{% static 'img/g1.svg' %}" alt="Order Idli and Meduvada from The South Indian Plate for Corporate events in Khar, Bandra and Santacruz in Mumbai.">
+          <img src="{% static 'img/g1.svg' %}"
+            alt="Order Idli, Meduvada, Dosa, DalVada and Uttapam from The South Indian Plate for Corporate events in Khar, Bandra and Santacruz in Mumbai.">
         </figure>
         <div class="fourth_section_captions">
           <h3 class="box_title">Corporate Events</h3>
-          <p class="box_para">Host seamless meetings with bulk Idli and Medu Vada delivery. Energize your team
-            with fresh South Indian delicacies.</p>
+          <p class="box_para">Host seamless meetings with plate or bulk delivery of Idli, Medu Vada, Daal Vada, Dosa & more. Energize your team with fresh South Indian delicacies.</p>
         </div>
       </div>
       <div class="fourth_section_box">
         <figure class="fourth_section_image">
-          <img src="{% static 'img/g2.svg' %}" alt="Order Idli and Meduvada from The South Indian Plate for weddings & family gatherings in Khar, Bandra and Santacruz in Mumbai.">
+          <img src="{% static 'img/g2.svg' %}"
+            alt="Order Idli, Meduvada, Dosa, DalVada and Uttapam from The South Indian Plate for weddings & family gatherings in Khar, Bandra and Santacruz in Mumbai.">
         </figure>
         <div class="fourth_section_captions">
           <h3 class="box_title">Weddings & Family Gatherings</h3>
-          <p class="box_para">Make your special day even more memorable with authentic South Indian flavors.
-            Our bulk food delivery ensures stress-free planning.</p>
+          <p class="box_para">Make your special day even more memorable with authentic South Indian flavors like Idli, Medu Vada, Daal Vada, Dosa & more. Plate and bulk delivery available for stress-free planning.</p>
         </div>
       </div>
       <div class="fourth_section_box">
         <figure class="fourth_section_image">
-          <img src="{% static 'img/g3.svg' %}" alt="Order Idli and Meduvada from The South Indian Plate for festivals and pujas in Khar, Bandra and Santacruz in Mumbai.">
+          <img src="{% static 'img/g3.svg' %}"
+            alt="Order Idli, Meduvada, Dosa, DalVada and Uttapam from The South Indian Plate for festivals and pujas in Khar, Bandra and Santacruz in Mumbai.">
         </figure>
         <div class="fourth_section_captions">
           <h3 class="box_title">Festivals & Pujas</h3>
-          <p class="box_para">Celebrate traditions with traditional food. From Ganesh Chaturthi to Pongal, our
-            Idlis and Medu Vadas are perfect for festive feasts.</p>
+          <p class="box_para">Celebrate traditions with traditional food. From Ganesh Chaturthi to Pongal, our Idli, Medu Vada, Daal Vada, Dosa & more are perfect for festive feasts. Plate & bulk orders available. </p>
         </div>
       </div>
       <div class="fourth_section_box">
         <figure class="fourth_section_image">
-          <img src="{% static 'img/g4.svg' %}" alt="Order Idli and Meduvada from The South Indian Plate for parties & get-togethers in Khar, Bandra and Santacruz in Mumbai.">
+          <img src="{% static 'img/g4.svg' %}"
+            alt="Order Idli, Meduvada, Dosa, DalVada and Uttapam from The South Indian Plate for parties & get-togethers in Khar, Bandra and Santacruz in Mumbai.">
         </figure>
         <div class="fourth_section_captions">
           <h3 class="box_title">Parties & Get-Togethers</h3>
-          <p class="box_para">Hosting a birthday or an anniversary? Our menu is crowd-pleasing and convenient,
-            making your celebration a hit.</p>
+          <p class="box_para">Hosting a birthday or an anniversary? From Idli and Dosa to Daal Vada and Uttapam, our crowd-pleasing menu is available in plate and bulk orders — perfect for any celebration. </p>
         </div>
       </div>
     </div>
@@ -548,17 +841,16 @@
     <div class="section_wrapper fifth_section_wrapper">
       <div class="fifth_left">
         <h2 class="fifth_section_heading">
-          How to place your Idli and Medu vada bulk order?
+          Want to Order Idli, Dosa, Medu Vada & More? Here’s How to Get Them — Plate or Bulk!
         </h2>
       </div>
       <div class="fifth_right">
         <div class="fifth_section_box">
           <figure class="fifth_section_image">
-            <img src="{% static 'img/s1.svg' %}" alt="Place Idli and Medu Vada order from The South Indian Plate.">
+            <img src="{% static 'img/s1.svg' %}" alt="Place Idli, Meduvada, Dosa, DalVada and Uttapam order from The South Indian Plate.">
           </figure>
           <h4 class="fifth_box_title">Place Your Order</h4>
-          <p class="fifth_box_para">Order us atleast 24 hours before as we have to make the batter for the
-            order.</p>
+          <p class="fifth_box_para">To place your plate or bulk order, WhatsApp or call us on +918108672615.</p>
         </div>
         <div class="fifth_section_box">
           <figure class="fifth_section_image">
@@ -570,7 +862,7 @@
         </div>
         <div class="fifth_section_box">
           <figure class="fifth_section_image">
-            <img src="{% static 'img/s3.svg' %}" alt="Freshly prepared Idli and Medu Vada home delivery.">
+            <img src="{% static 'img/s3.svg' %}" alt="Freshly prepared Idli, Meduvada, Dosa, DalVada and Uttapam home delivery.">
           </figure>
           <h4 class="fifth_box_title">Enjoy Fresh Delivery</h4>
           <p class="fifth_box_para">We deliver your freshly prepared order at the time and location of your
@@ -603,15 +895,15 @@
       <div class="sixth_lower_container">
         <div class="sixth_lower_container_box">
           <figure class="sixth_lower_box_image">
-            <img src="{% static 'img/w1.svg' %}" alt="Authentic Idli and Medu Vada.">
+            <img src="{% static 'img/w1.svg' %}" alt="Authentic Idli, Meduvada, Dosa, DalVada and Uttapam.">
           </figure>
           <h3 class="sixth_lower_box_title">Authenticity in Every Bite</h3>
-          <p class="sixth_lower_box_para">Our Idlis are soft and fluffy, and our Medu Vadas are perfectly
-            crispy, made with traditional recipes that stay true to South Indian heritage.</p>
+          <p class="sixth_lower_box_para">Soft, fluffy Idlis; crispy Medu Vadas; and flavorful Dosas, Daal Vadas, and Uttapams — all made with authentic South Indian recipes. 
+          </p>
         </div>
         <div class="sixth_lower_container_box">
           <figure class="sixth_lower_box_image">
-            <img src="{% static 'img/w2.svg' %}" alt="For any occasion, perfectly fit Idli and Medu Vada.">
+            <img src="{% static 'img/w2.svg' %}" alt="For any occasion, perfectly fit Idli, Meduvada, Dosa, DalVada and Uttapam.">
           </figure>
           <h3 class="sixth_lower_box_title">Perfect for Every Occasion</h3>
           <p class="sixth_lower_box_para">We cater to all kinds of events, from small family gatherings to
@@ -619,7 +911,7 @@
         </div>
         <div class="sixth_lower_container_box">
           <figure class="sixth_lower_box_image">
-            <img src="{% static 'img/w3.svg' %}" alt="Freshly prepared idli and Medu vada.">
+            <img src="{% static 'img/w3.svg' %}" alt="Freshly prepared Idli, Meduvada, Dosa, DalVada and Uttapam.">
           </figure>
           <h3 class="sixth_lower_box_title"> Freshly Made, Always</h3>
           <p class="sixth_lower_box_para">Every order is prepared fresh in our hygienic kitchen, using
@@ -637,7 +929,8 @@
   <section class="seventh_section">
     <div class="section_wrapper seventh_section_wrapper">
       <figure class="seventh_section_image seventh_left">
-        <img src="{% static 'img/kitchen.jpg' %}" alt="The South Indian plate is a cloud based delivery restaurant serving Idli and Medu Vada in the areas - Khar, Bandra and Santacruz in Mumbai.">
+        <img src="{% static 'img/kitchen.jpg' %}"
+          alt="The South Indian plate is a cloud based delivery restaurant serving Idli, Meduvada, Dosa, DalVada and Uttapam in the areas - Khar, Bandra and Santacruz in Mumbai.">
       </figure>
       <div class="seventh_right">
         <figure class="seventh_right_image">
@@ -647,16 +940,10 @@
           About The South Indian Plate
         </h2>
         <p class="seventh_right_para">
-          The South Indian Plate is well recognized as the best Idli and Medu Vada bulk suppliers in Mumbai.
-          Our specialty is preparing Idli and Medu Vada that go along with any of your occasion. We are the
-          best choice if you are looking for bulk orders near Khar, Santacruz or Bandra in Mumbai. The
-          quality, authenticity, & flavor at a reasonable price that we provide are unmatched.
+          The South Indian Plate is well recognized as the best supplier of Idli, Medu Vada, Daal Vada, Dosa, Uttapam, and more. We happily deliver both bulk and plate orders across Mumbai to bring fresh, authentic South Indian flavors right to your doorstep. We are the best choice if you are looking for bulk or plate orders near Khar, Santacruz, or Bandra in Mumbai. The quality, authenticity, and flavor we provide at reasonable prices are unmatched.
         </p>
         <p class="seventh_right_para">
-          Whether you are craving for the authentic taste of South India or hosting an event and looking for
-          bulk food delivery that’s fresh, flavorful, and reliable. At The South Indian Plate, we specialize
-          in delivering Idlis and Medu Vadas in bulk, ensuring you and your guests enjoy the perfect blend of
-          tradition, taste, and authenticity.
+          Whether you’re craving the authentic taste of South India or hosting an event, The South Indian Plate delivers fresh, flavorful, and reliable food. We offer Idli, Medu Vada, Daal Vada, Dosa, Uttapam, and more — available in both plate and bulk orders to ensure you and your guests enjoy the perfect blend of tradition, taste, and authenticity.
         </p>
       </div>
       <div class="seventh_testimonial">
@@ -732,33 +1019,28 @@
             <div class="faq_question">
               <div class="faq_question-text">
                 <h3>
-                  1. What makes your Idli and Medu vada the best in Mumbai?
+                  1. What makes your Idli, Medu Vada, Dalvada, Dosa and Uttapam the best in Mumbai?
                 </h3>
               </div>
             </div>
             <div class="answercont">
               <div class="answer">
                 <p>
-                  We are the best Idli and Medu Vada suppliers that offers authentic South Indian
+                  We are the best Idli, Medu Vada, Dalvada, Dosa and Uttapam suppliers that offers authentic South Indian
                   breakfast in Khar, Santacruz and Bandra in Mumbai. Our fluffy Idlis, and crispy
-                  Meduvadas, delicious coconut Chutney and Sambhar are the talk of the town. If you are
+                  Meduvadas, delicious Dalvada, Dosa, Uttapam, coconut Chutney and Sambhar are the talk of the town. If you are
                   pure vegetarian then you have got your perfect place to order. Some of the important
                   reason why we are unique :-
                   <br>1. Authenticity - Our dish has authentic South Indian flavor. We prepare it in a
                   traditional way so that the authenticity maintains.
-                  <br>2. Flavor - Our Idlis are big in size and soft, Meduvada is crispy and scrumptious,
-                  Chutney and Sambhar is cherry on the cake. The flavor you would never want to miss.
+                  <br>2. Flavor - Our Idlis are big in size and soft, Meduvada is crispy and scrumptious, Dalvada, Dosa, Uttapam delicious, Chutney and Sambhar is cherry on the cake. The flavor you would never want to miss.
                   <br> 3. Hygienic - We prepare these breakfast for you in home like environment. A food
                   that makes you healthy along with the taste is our uniqueness.
                   Organic Ingredients - We only use fresh and natural ingredients to prepare Idli,
-                  Meduvada, Sambhar, and Chutney for you.
-                  <br> 4. Wide Delivery Network
+                  Meduvada, Dalvada, Dosa, Uttapam, Sambhar, and Chutney for you.
+                  <br> 4. Wide Delivery Network -
                   We deliver across Mumbai, including Bandra, Santacruz, Khar, and beyond.
-                  <br> 5. Bulk Orders Simplified
-                  Minimum order starts at just 100 pieces, making us the ideal choice for events and
-                  celebrations.
-
-
+                  <br> 5. Bulk Orders Simplified -  Makes us the ideal choice for events and celebrations.
                 </p>
                 </p>
               </div>
@@ -767,26 +1049,15 @@
           <div class="faq_container">
             <div class="faq_question">
               <div class="faq_question-text">
-                <h3>2. What is your minimum order size?</h3>
+                <h3>
+                  2. What makes The South Indian Plate’s food special?
+                </h3>
               </div>
             </div>
             <div class="answercont">
               <div class="answer">
                 <p>
-                  We accept a minimum order of 100 pieces for Idlis or Medu Vadas. </p>
-              </div>
-            </div>
-          </div>
-          <div class="faq_container">
-            <div class="faq_question">
-              <div class="faq_question-text">
-                <h3> 3. How far in advance should I place my order?</h3>
-              </div>
-            </div>
-            <div class="answercont">
-              <div class="answer">
-                <p>
-                  Please place your order at least 24 hours in advance to ensure fresh preparation.
+                 We follow traditional South Indian recipes using fresh, high-quality ingredients. Our Idlis are soft and fluffy, Medu Vadas are perfectly crispy, and our other dishes like Daal Vada, Dosa, Masala Dosa, Cheese Dosa, Masala Idli, and Uttapam are prepared fresh daily to deliver authentic flavors that remind you of home. 
                 </p>
               </div>
             </div>
@@ -794,13 +1065,13 @@
           <div class="faq_container">
             <div class="faq_question">
               <div class="faq_question-text">
-                <h3>4. Which areas do you deliver to?</h3>
+                <h3>3. Do you provide chutney and sambhar with every order?</h3>
               </div>
             </div>
             <div class="answercont">
               <div class="answer">
                 <p>
-                  We deliver across Mumbai, including Bandra, Santacruz, Khar, and nearby locations.
+                  Yes! Every bulk and plate order includes freshly made coconut chutney and authentic sambhar to complement your meal.  
                 </p>
               </div>
             </div>
@@ -808,13 +1079,13 @@
           <div class="faq_container">
             <div class="faq_question">
               <div class="faq_question-text">
-                <h3>5. Do you provide chutney and sambhar with the order?</h3>
+                <h3> 4. Which areas do you deliver to?</h3>
               </div>
             </div>
             <div class="answercont">
               <div class="answer">
                 <p>
-                  Yes, every order comes with complimentary sambhar and coconut chutney.
+                  We deliver across Bandra, Khar, Santacruz in Mumbai. 
                 </p>
               </div>
             </div>
@@ -822,13 +1093,97 @@
           <div class="faq_container">
             <div class="faq_question">
               <div class="faq_question-text">
-                <h3>6. How do I make payments?</h3>
+                <h3>5. How do I place an order?</h3>
               </div>
             </div>
             <div class="answercont">
               <div class="answer">
                 <p>
-                  We accept payments via UPI, bank transfer, and other online methods.
+                  Ordering is easy! Simply send us a WhatsApp message or call with your order details — specify bulk or plate, your desired items, quantity, and delivery location. We’ll confirm availability and delivery time. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq_container">
+            <div class="faq_question">
+              <div class="faq_question-text">
+                <h3>6. How far in advance should I place my order?</h3>
+              </div>
+            </div>
+            <div class="answercont">
+              <div class="answer">
+                <p>
+                  Bulk orders must be placed at least 24 hours in advance to allow us to prepare fresh batter and ingredients. Plate orders can be placed right away depending on availability — please check with us. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq_container">
+            <div class="faq_question">
+              <div class="faq_question-text">
+                <h3>7. Are your food items vegetarian?</h3>
+              </div>
+            </div>
+            <div class="answercont">
+              <div class="answer">
+                <p>
+                  Yes, all our dishes are 100% vegetarian and prepared with utmost hygiene and care. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq_container">
+            <div class="faq_question">
+              <div class="faq_question-text">
+                <h3>8. How do I make payments?</h3>
+              </div>
+            </div>
+            <div class="answercont">
+              <div class="answer">
+                <p>
+                  We offer multiple convenient payment options to make your ordering experience smooth. You can pay via UPI, bank transfer, or other popular online payment methods. Please ensure payment is completed to confirm your order. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq_container">
+            <div class="faq_question">
+              <div class="faq_question-text">
+                <h3>9. Do you provide food delivery for special occasions like weddings, corporate events, and festivals?</h3>
+              </div>
+            </div>
+            <div class="answercont">
+              <div class="answer">
+                <p>
+                  Yes, we specialize in delivering fresh, flavorful South Indian food for all kinds of occasions — weddings, corporate events, festivals, family gatherings, and more — ensuring your event is perfectly served with authentic taste. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq_container">
+            <div class="faq_question">
+              <div class="faq_question-text">
+                <h3>10. Do you offer takeaway or pickup options?</h3>
+              </div>
+            </div>
+            <div class="answercont">
+              <div class="answer">
+                <p>
+                  Yes, if you prefer to pick up your order yourself, we can arrange it. Just place your order ahead of time and come by to collect it fresh and ready. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq_container">
+            <div class="faq_question">
+              <div class="faq_question-text">
+                <h3>11. How do you ensure the freshness and quality of your food?</h3>
+              </div>
+            </div>
+            <div class="answercont">
+              <div class="answer">
+                <p>
+                  We prepare fresh batter every day, cook items on demand, and use traditional methods to preserve authentic taste and texture. Our team follows strict hygiene protocols to ensure every bite is safe and delicious.
                 </p>
               </div>
             </div>
@@ -846,14 +1201,16 @@
   <section class="ninth_section">
     <div class="ninth_section_wrapper">
       <figure class="ninth_section_banner">
-        <img src="{% static 'img/tsip_banner.svg' %}" alt=" Order authentic South Indian flavors for your next event from The South Indian Plate.">
+        <img src="{% static 'img/tsip_banner.svg' %}"
+          alt=" Order authentic South Indian flavors - 'Idli, Meduvada, Dosa, DalVada and Uttapam' for your next event from The South Indian Plate.">
         <div class="banner_content">
           <h2 class="banner_content_title">Ready to serve authentic South Indian flavors at your next event?</h2>
           <p class="banner_content_para">
             Accompany The South Indian Plate In Your Happy Moments.
           </p>
           <div class="banner_anchor_container">
-            <a href="https://wa.me/+918108672615" class="wa_us" rel="nofollow" title="Whatsapp order link.">Place Your Order</a>
+            <a href="https://wa.me/+918108672615" class="wa_us" rel="nofollow" title="Whatsapp order link.">Place
+              Your Order</a>
           </div>
         </div>
       </figure>
@@ -868,15 +1225,16 @@
 
   <!-- FOOTER SECTION ENDS ******************************************************************** -->
 
-  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
     integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
