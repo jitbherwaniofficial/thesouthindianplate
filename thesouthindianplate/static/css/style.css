@@ -68,6 +68,14 @@ a {
 
 /* SECOND SECTION STARTS  ********************************************************************** */
 
+.burger {
+    display: none;
+}
+
+.mob_nav {
+    display: none;
+}
+
 .second_section {
     padding: var(--section-padding);
     /* position: relative; */

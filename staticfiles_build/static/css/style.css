@@ -18,7 +18,7 @@
     --section-padding: 10vw 0;
     --within-section-padding: 7vw 0;
     --footer-background: #1d1d1d;
-    --new-color: lch(92.56% 18.62 78.13);
+    --new-color: #ffe6c7;
     --brown-color: #600402;
     --green-color: #169c73;
 }
@@ -67,6 +67,14 @@ a {
 }
 
 /* SECOND SECTION STARTS  ********************************************************************** */
+
+.burger {
+    display: none;
+}
+
+.mob_nav {
+    display: none;
+}
 
 .second_section {
     padding: var(--section-padding);

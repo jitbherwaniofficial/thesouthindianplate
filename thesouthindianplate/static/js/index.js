@@ -137,3 +137,34 @@ if (menu) { // Check if element exists
 } else {
   console.error("Error: '.fixed-menu' element not found!");
 }
+
+const mobileNavbar = document.querySelector('.mob_nav')
+const burger = document.querySelector('.burger')
+const lineTwo = document.querySelector('.line_two')
+const lineOne = document.querySelector('.line_one')
+const lineThree = document.querySelector('.line_three')
+const menuAnchor = document.querySelector('.menu_anchor')
+const contactAnchor = document.querySelector('.contact_anchor')
+
+burger.addEventListener('click', () => {
+  mobileNavbar.classList.toggle('activate')
+  lineOne.classList.toggle('hideIt')
+  lineTwo.classList.toggle('right_tilt')
+  lineThree.classList.toggle('left_tilt')
+})
+
+menuAnchor.addEventListener('click', () => {
+  window.location.replace('#menu');
+  mobileNavbar.classList.toggle('activate')
+  lineOne.classList.toggle('hideIt')
+  lineTwo.classList.toggle('right_tilt')
+  lineThree.classList.toggle('left_tilt')
+})
+
+contactAnchor.addEventListener('click', () => {
+  window.location.replace('#contact');
+  mobileNavbar.classList.toggle('activate')
+  lineOne.classList.toggle('hideIt')
+  lineTwo.classList.toggle('right_tilt')
+  lineThree.classList.toggle('left_tilt')
+})
