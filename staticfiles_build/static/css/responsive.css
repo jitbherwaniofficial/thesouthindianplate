@@ -1464,6 +1464,10 @@
     height: 100vh;
   }
 
+  .swiper-slide {
+    height: 100vh;
+  }
+
   .brand_logo img {
     width: 50%;
   }
