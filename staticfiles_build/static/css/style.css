@@ -177,7 +177,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 1.19vw;
-    
+    left: 0;
 }
 
 /* Active content styling */

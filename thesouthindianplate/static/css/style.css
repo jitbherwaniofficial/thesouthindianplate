@@ -47,7 +47,7 @@
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 span {
@@ -78,7 +78,7 @@ a {
 
 .second_section {
     padding: var(--section-padding);
-    /* position: relative; */
+    /* position: static; */
     background-color: var(--white-color);
     /* z-index: 0; */
 }
@@ -177,7 +177,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 1.19vw;
-    
+    left: 0;
 }
 
 /* Active content styling */
